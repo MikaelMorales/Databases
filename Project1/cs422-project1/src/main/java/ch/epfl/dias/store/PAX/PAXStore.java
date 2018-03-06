@@ -7,18 +7,16 @@ import ch.epfl.dias.store.row.DBTuple;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class PAXStore extends Store {
-	private final List<DBPAXpage> database = new ArrayList<DBPAXpage>();
+	private DBPAXpage[] database;
 	private DataType[] schema;
 	private String filename;
 	private String delimiter;
 	private int tuplesPerPage;
 
 	public PAXStore(DataType[] schema, String filename, String delimiter, int tuplesPerPage) {
-		this.schema = schema.clone();
+		this.schema = schema;
 		this.filename = filename;
 		this.delimiter = delimiter;
 		this.tuplesPerPage = tuplesPerPage;
@@ -27,25 +25,41 @@ public class PAXStore extends Store {
 	@Override
 	public void load() {
 		try {
+			int numberLines = countLines(filename);
+			int numberPages = (int) Math.ceil(numberLines/(double)tuplesPerPage);
+			database = new DBPAXpage[numberPages+1];
+
 			BufferedReader br = new BufferedReader(new FileReader(filename));
 			String line;
 			int currentPage = 0;
 			int currentTuplePerPage = 0;
+			Object[][] paxPage = new Object[schema.length][tuplesPerPage];
+
 			while ((line = br.readLine()) != null) {
-			    if (currentTuplePerPage == tuplesPerPage) { // Move to next page
-			        currentPage++;
-			        currentTuplePerPage = 0;
-                }
-                if (currentTuplePerPage == 0) { // Initialize empty page
-			        database.add(new DBPAXpage(schema, tuplesPerPage));
-                }
+				if (currentTuplePerPage == tuplesPerPage) { // Move to next page
+					database[currentPage] = new DBPAXpage(paxPage, schema, currentTuplePerPage);
+					currentPage++;
+					currentTuplePerPage = 0;
+					paxPage = new Object[schema.length][tuplesPerPage]; // Prepare next PAX Page
+				}
 
 				String[] tuple = line.split(delimiter);
-				addData(tuple, currentPage);
-                currentTuplePerPage++;
-            }
+				checkNumberOfAttributes(tuple, schema);
+				Object[] fields = parseDataWithType(tuple, schema);
+				for (int attribute=0; attribute < fields.length; attribute++) {
+					paxPage[attribute][currentTuplePerPage] = fields[attribute];
+				}
+				currentTuplePerPage++;
+			}
 
-			database.add(new DBPAXpage()); // EOF
+			if (currentTuplePerPage != 0) { // The last page might not be entirely filled
+				database[currentPage] = new DBPAXpage(paxPage, schema, currentTuplePerPage);
+				currentPage++;
+			}
+
+			database[currentPage] = new DBPAXpage(); // EOF
+
+			br.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -53,19 +67,13 @@ public class PAXStore extends Store {
 
 	@Override
 	public DBTuple getRow(int rowNumber) {
-	    int pageNumber = rowNumber/tuplesPerPage;
-        int realRowNumber = rowNumber % tuplesPerPage;
-		if (pageNumber < 0 || pageNumber >= database.size())
+		int pageNumber = rowNumber/tuplesPerPage;
+		int realRowNumber = rowNumber % tuplesPerPage;
+		if (pageNumber < 0 || pageNumber >= database.length)
 			throw new IllegalArgumentException("Invalid row number !");
 
-		Object[] tuple = database.get(pageNumber).getRow(realRowNumber);
+		Object[] tuple = database[pageNumber].getRow(realRowNumber);
 
 		return tuple == null ? new DBTuple() : new DBTuple(tuple, schema);
 	}
-
-	private void addData(String[] tuple, int currentPage) throws IOException {
-        checkNumberOfAttributes(tuple, schema);
-        Object[] fields = parseDataWithType(tuple, schema);
-        database.get(currentPage).append(fields);
-    }
 }

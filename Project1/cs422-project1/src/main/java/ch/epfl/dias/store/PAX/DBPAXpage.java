@@ -4,26 +4,20 @@ import ch.epfl.dias.store.DataType;
 
 public class DBPAXpage {
 
-    public Object[][] fields;
+    public Object[][] page;
     public DataType[] types;
     public int endOfMinipage;
     public boolean eof;
 
-    public DBPAXpage(DataType[] types, int tuplePerPage) {
-        this.fields = new Object[types.length][tuplePerPage];
+    public DBPAXpage(Object[][] page, DataType[] types, int endOfMinipage) {
+        this.page = page.clone();
         this.types = types;
+        this.endOfMinipage = endOfMinipage;
         this.eof = false;
     }
 
     public DBPAXpage() {
         this.eof = true;
-    }
-
-    public void append(Object[] o) {
-        for (int i=0; i < o.length; i++) {
-            fields[i][endOfMinipage] = o[i];
-        }
-        endOfMinipage++;
     }
 
     public Object[] getRow(int rowNumber) {
@@ -33,9 +27,9 @@ public class DBPAXpage {
             return null;
         }
 
-        Object[] row = new Object[fields.length];
-        for (int i=0; i < fields.length; i++) {
-            row[i] = fields[i][rowNumber];
+        Object[] row = new Object[page.length];
+        for (int i=0; i < page.length; i++) {
+            row[i] = page[i][rowNumber];
         }
 
         return row;

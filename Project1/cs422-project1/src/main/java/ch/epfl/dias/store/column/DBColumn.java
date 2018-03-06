@@ -2,15 +2,13 @@ package ch.epfl.dias.store.column;
 
 import ch.epfl.dias.store.DataType;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class DBColumn {
-	public final List<Object> attributes = new ArrayList<Object>();
+	public Object[] attributes;
 	public DataType type;
 	public boolean eof;
 
-	public DBColumn(DataType type) {
+	public DBColumn(Object[] attributes, DataType type) {
+		this.attributes = attributes.clone();
 		this.type = type;
 		this.eof = false;
 	}
@@ -19,38 +17,34 @@ public class DBColumn {
 		this.eof = true;
 	}
 
-	public void append(Object o) {
-		attributes.add(o);
-	}
-
 	public int[] getAsInteger() {
-		int[] column = new int[attributes.size()];
+		int[] column = new int[attributes.length];
 		for (int i = 0; i < column.length; i++) {
-				column[i] = (Integer) attributes.get(i);
+			column[i] = (Integer) attributes[i];
 		}
 		return column;
 	}
 
 	public double[] getAsDouble() {
-		double[] column = new double[attributes.size()];
+		double[] column = new double[attributes.length];
 		for (int i = 0; i < column.length; i++) {
-			column[i] = (Double) attributes.get(i);
+			column[i] = (Double) attributes[i];
 		}
 		return column;
 	}
 
 	public String[] getAsString() {
-		String[] column = new String[attributes.size()];
+		String[] column = new String[attributes.length];
 		for (int i = 0; i < column.length; i++) {
-			column[i] = (String) attributes.get(i);
+			column[i] = (String) attributes[i];
 		}
 		return column;
 	}
 
 	public Boolean[] getAsBoolean() {
-		Boolean[] column = new Boolean[attributes.size()];
+		Boolean[] column = new Boolean[attributes.length];
 		for (int i = 0; i < column.length; i++) {
-			column[i] = (Boolean) attributes.get(i);
+			column[i] = (Boolean) attributes[i];
 		}
 		return column;
 	}

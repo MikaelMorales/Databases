@@ -8,7 +8,7 @@ public class DBTuple {
 	public boolean eof;
 
 	public DBTuple(Object[] fields, DataType[] types) {
-		this.fields = fields;
+		this.fields = fields.clone();
 		this.types = types;
 		this.eof = false;
 	}
@@ -20,7 +20,7 @@ public class DBTuple {
 	/**
 	 * XXX Assuming that the caller has ALREADY checked the datatype, and has
 	 * made the right call
-	 * 
+	 *
 	 * @param fieldNo
 	 *            (starting from 0)
 	 * @return cast of field
