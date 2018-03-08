@@ -23,7 +23,7 @@ public class DBPAXpage {
     public Object[] getRow(int rowNumber) {
         if (rowNumber > endOfMinipage) {
             throw new IllegalArgumentException("Invalid row number !");
-        } else if (rowNumber == endOfMinipage) {
+        } else if (rowNumber == endOfMinipage || eof) {
             return null;
         }
 

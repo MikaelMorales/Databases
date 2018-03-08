@@ -17,16 +17,16 @@ public class DBColumn {
 		this.eof = true;
 	}
 
-	public int[] getAsInteger() {
-		int[] column = new int[attributes.length];
+	public Integer[] getAsInteger() {
+		Integer[] column = new Integer[attributes.length];
 		for (int i = 0; i < column.length; i++) {
 			column[i] = (Integer) attributes[i];
 		}
 		return column;
 	}
 
-	public double[] getAsDouble() {
-		double[] column = new double[attributes.length];
+	public Double[] getAsDouble() {
+		Double[] column = new Double[attributes.length];
 		for (int i = 0; i < column.length; i++) {
 			column[i] = (Double) attributes[i];
 		}

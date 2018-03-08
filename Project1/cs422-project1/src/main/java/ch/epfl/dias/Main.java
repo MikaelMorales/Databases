@@ -23,7 +23,7 @@ public class Main {
 
 		PAXStore paxstore = new PAXStore(orderSchema, "input/orders_small.csv", "\\|", 3);
 		paxstore.load();
-		System.out.println(paxstore.getRow(9).toString());
+		System.out.println(paxstore.getRow(10).toString());
 */
 		// ch.epfl.dias.ops.volcano.Scan scan = new ch.epfl.dias.ops.volcano.Scan(paxstore);
 		// DBTuple currentTuple = scan.next();
