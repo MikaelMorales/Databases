@@ -9,9 +9,9 @@ import java.io.IOException;
 
 public class ColumnStore extends Store {
     private DBColumn[] database;
-    private DataType[] schema;
     private String filename;
     private String delimiter;
+    public DataType[] schema;
 
     public ColumnStore(DataType[] schema, String filename, String delimiter) {
         database = new DBColumn[schema.length + 1];
@@ -56,7 +56,7 @@ public class ColumnStore extends Store {
         int i = 0;
         for (Integer index : columnsToGet) {
             if (index < 0 || index >= database.length)
-                throw new IllegalArgumentException("Invalid row number !");
+                throw new IllegalArgumentException("Invalid column number !");
             columns[i] = database[index];
             i++;
         }

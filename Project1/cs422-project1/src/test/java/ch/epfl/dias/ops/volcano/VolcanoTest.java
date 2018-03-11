@@ -1,15 +1,14 @@
 package ch.epfl.dias.ops.volcano;
 
-import static org.junit.Assert.*;
-
 import ch.epfl.dias.ops.Aggregate;
 import ch.epfl.dias.ops.BinaryOp;
 import ch.epfl.dias.store.DataType;
 import ch.epfl.dias.store.row.DBTuple;
 import ch.epfl.dias.store.row.RowStore;
-
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertTrue;
 
 public class VolcanoTest {
 
@@ -131,7 +130,7 @@ public class VolcanoTest {
 	    Select selOrder = new Select(scanOrder, BinaryOp.EQ,0,3);
 	    Select selLineitem = new Select(scanLineitem, BinaryOp.EQ,0,3);
 	
-	    HashJoin join = new HashJoin(selOrder,selLineitem,0,0);
+	    HashJoin join = new HashJoin(selOrder, selLineitem, 0,0);
 	    ProjectAggregate agg = new ProjectAggregate(join,Aggregate.COUNT, DataType.INT,0);
 	
 	    agg.open();
@@ -152,13 +151,14 @@ public class VolcanoTest {
 	    Select selOrder = new Select(scanOrder, BinaryOp.EQ,0,3);
 	    Select selLineitem = new Select(scanLineitem, BinaryOp.EQ,0,3);
 	
-	    HashJoin join = new HashJoin(selLineitem,selOrder,0,0);
+	    HashJoin join = new HashJoin(selLineitem, selOrder, 0,0);
 	    ProjectAggregate agg = new ProjectAggregate(join,Aggregate.COUNT, DataType.INT,0);
 	
 	    agg.open();
 	    //This query should return only one result
 	    DBTuple result = agg.next();
 	    int output = result.getFieldAsInt(0);
+	    System.out.println(output);
 	    assertTrue(output == 3);
 	}
 }

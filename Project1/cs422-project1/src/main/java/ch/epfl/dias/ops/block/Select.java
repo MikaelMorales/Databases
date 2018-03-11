@@ -1,20 +1,49 @@
 package ch.epfl.dias.ops.block;
 
-import java.util.ArrayList;
 import ch.epfl.dias.ops.BinaryOp;
+import ch.epfl.dias.store.DataType;
 import ch.epfl.dias.store.column.DBColumn;
 
-public class Select implements BlockOperator {
+import java.util.Arrays;
 
-	// TODO: Add required structures
+public class Select implements BlockOperator {
+	private BlockOperator child;
+	private BinaryOp op;
+	private int fieldNo;
+	private int value;
 
 	public Select(BlockOperator child, BinaryOp op, int fieldNo, int value) {
-		// TODO: Implement
+		this.child = child;
+		this.op = op;
+		this.fieldNo = fieldNo;
+		this.value = value;
 	}
 
 	@Override
 	public DBColumn[] execute() {
-		// TODO: Implement
-		return null;
+		DBColumn col = child.execute()[fieldNo];
+		if (col.eof)
+			return new DBColumn[]{new DBColumn()};
+
+		Integer[] attribute = col.getAsInteger();
+		Object[] res = Arrays.stream(attribute).filter(attr -> {
+            switch (op) {
+                case GE:
+                    return attr >= value;
+                case EQ:
+                    return attr == value;
+                case GT:
+                    return attr > value;
+                case LE:
+                    return attr <= value;
+                case LT:
+                    return attr < value;
+                case NE:
+                    return attr != value;
+                default: return false;
+            }
+        }).toArray();
+
+		return new DBColumn[]{new DBColumn(res, DataType.INT)};
 	}
 }
