@@ -26,7 +26,7 @@ public class ProjectAggregate implements VolcanoOperator {
 	@Override
 	public DBTuple next() {
 		DBTuple row = child.next();
-		double value = 0.0;
+		double value = setupInitialValue();
 		int numberOfRows = 0;
 		while (!row.eof) {
 			switch (agg) {
@@ -62,6 +62,21 @@ public class ProjectAggregate implements VolcanoOperator {
 		child.close();
 	}
 
+	private double setupInitialValue() {
+		switch (agg) {
+			case COUNT:
+				return 0.0;
+			case AVG:
+				return 0.0;
+			case MAX:
+				return Double.MIN_VALUE;
+			case MIN:
+				return Double.MAX_VALUE;
+			case SUM:
+				return 0.0;
+			default: return 0.0;
+		}
+	}
 	private double getFieldValue(DBTuple row) {
 		if (row.types[fieldNo] == DataType.INT) {
 			return row.getFieldAsInt(fieldNo);
@@ -77,14 +92,14 @@ public class ProjectAggregate implements VolcanoOperator {
 			case COUNT:
 				return new DBTuple(new Object[]{(int) value}, new DataType[]{DataType.INT});
 			case AVG:
-				return new DBTuple(new Object[]{numberOfRows == 0 ? 0.0 : value/(double)numberOfRows}, new DataType[]{DataType.DOUBLE});
+				return new DBTuple(new Object[]{numberOfRows == 0 ? 0.0 : value/numberOfRows}, new DataType[]{DataType.DOUBLE});
 			case MAX:
 			case MIN:
 			case SUM:
 				if(dt == DataType.INT) {
-					return new DBTuple(new Object[]{(int)value}, new DataType[]{DataType.INT});
+					return new DBTuple(new Object[]{(int)value}, new DataType[]{dt});
 				} else if (dt == DataType.DOUBLE){
-					return new DBTuple(new Object[]{value}, new DataType[]{DataType.DOUBLE});
+					return new DBTuple(new Object[]{value}, new DataType[]{dt});
 				}
 			default: throw new IllegalArgumentException("Can't compute MAX, MIN or SUM of type " + dt.name());
 		}

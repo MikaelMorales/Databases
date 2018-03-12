@@ -34,8 +34,9 @@ public class HashJoin implements VolcanoOperator {
 
 	@Override
 	public DBTuple next() {
-		if (cacheOffset >= cache.size()) { // Done with this matching, we can read a new tuple
+		if (cache == null || cacheOffset >= cache.size()) { // Done with this matching, we can read a new tuple
 			currentRow = rightChild.next();
+
 			if (currentRow.eof)
 				return new DBTuple();
 
