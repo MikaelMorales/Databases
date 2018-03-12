@@ -10,7 +10,7 @@ public class Project implements VectorOperator {
 
 	// TODO: Add required structures
 
-	public Project(VectorOperator child, int fieldNo) {
+	public Project(VectorOperator child, int[] fieldNo) {
 		// TODO: Implement
 	}
 

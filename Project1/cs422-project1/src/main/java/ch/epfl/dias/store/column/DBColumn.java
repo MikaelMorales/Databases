@@ -5,16 +5,10 @@ import ch.epfl.dias.store.DataType;
 public class DBColumn {
 	public Object[] attributes;
 	public DataType type;
-	public boolean eof;
 
 	public DBColumn(Object[] attributes, DataType type) {
 		this.attributes = attributes.clone();
 		this.type = type;
-		this.eof = false;
-	}
-
-	public DBColumn() {
-		this.eof = true;
 	}
 
 	public Integer[] getAsInteger() {
@@ -51,9 +45,6 @@ public class DBColumn {
 
 	@Override
 	public String toString() {
-		if (this.eof)
-			return "EOF";
-
 		StringBuilder sb = new StringBuilder();
 		for (Object field : attributes) {
 			sb.append(field.toString());

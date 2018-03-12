@@ -14,7 +14,7 @@ public class ColumnStore extends Store {
     public DataType[] schema;
 
     public ColumnStore(DataType[] schema, String filename, String delimiter) {
-        database = new DBColumn[schema.length + 1];
+        database = new DBColumn[schema.length];
         this.schema = schema;
         this.filename = filename;
         this.delimiter = delimiter;
@@ -41,8 +41,6 @@ public class ColumnStore extends Store {
             for (int i=0; i < columns.length; i++) {
                 database[i] = new DBColumn(columns[i], schema[i]);
             }
-
-            database[database.length - 1] = new DBColumn(); //EOF
 
             br.close();
         } catch (IOException e) {
