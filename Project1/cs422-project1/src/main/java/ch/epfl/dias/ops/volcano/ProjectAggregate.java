@@ -89,20 +89,15 @@ public class ProjectAggregate implements VolcanoOperator {
 	}
 
 	private DBTuple createDBTuple(double value, int numberOfRows) {
-		switch (agg) {
-			case COUNT:
-				return new DBTuple(new Object[]{(int) value}, new DataType[]{DataType.INT});
-			case AVG:
-				return new DBTuple(new Object[]{numberOfRows == 0 ? 0.0 : value/numberOfRows}, new DataType[]{DataType.DOUBLE});
-			case MAX:
-			case MIN:
-			case SUM:
-				if(dt == DataType.INT) {
-					return new DBTuple(new Object[]{(int)value}, new DataType[]{dt});
-				} else if (dt == DataType.DOUBLE){
-					return new DBTuple(new Object[]{value}, new DataType[]{dt});
-				}
-			default: throw new IllegalArgumentException("Can't compute MAX, MIN or SUM of type " + dt.name());
+		if (agg == Aggregate.AVG)
+			value = numberOfRows == 0 ? 0.0 : value/numberOfRows;
+
+		if(dt == DataType.INT) {
+			return new DBTuple(new Object[]{(int)value}, new DataType[]{dt});
+		} else if (dt == DataType.DOUBLE){
+			return new DBTuple(new Object[]{value}, new DataType[]{dt});
+		} else {
+			throw new IllegalArgumentException("Aggregation with invalid return data type " + dt.name());
 		}
 	}
 }

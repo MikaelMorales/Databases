@@ -97,20 +97,12 @@ public class ProjectAggregate implements BlockOperator {
 	}
 
 	private DBColumn createDBColumn(double value) {
-		switch (agg) {
-			case COUNT:
-				return new DBColumn(new Object[]{(int) value}, DataType.INT);
-			case AVG:
-				return new DBColumn(new Object[]{value}, DataType.DOUBLE);
-			case MAX:
-			case MIN:
-			case SUM:
-				if(dt == DataType.INT) {
-					return new DBColumn(new Object[]{(int)value}, dt);
-				} else if (dt == DataType.DOUBLE){
-					return new DBColumn(new Object[]{value}, dt);
-				}
-			default: throw new IllegalArgumentException("Can't compute MAX, MIN or SUM of type " + dt.name());
+		if(dt == DataType.INT) {
+			return new DBColumn(new Object[]{(int)value}, dt);
+		} else if (dt == DataType.DOUBLE){
+			return new DBColumn(new Object[]{value}, dt);
+		} else {
+			throw new IllegalArgumentException("Aggregation with invalid return data type " + dt.name());
 		}
 	}
 }
