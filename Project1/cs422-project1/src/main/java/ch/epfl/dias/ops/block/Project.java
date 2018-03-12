@@ -14,11 +14,10 @@ public class Project implements BlockOperator {
 
 	public DBColumn[] execute() {
 		DBColumn[] c = child.execute();
-		DBColumn[] filtered = new DBColumn[columns.length+1];
+		DBColumn[] filtered = new DBColumn[columns.length];
 		for (int i=0; i < columns.length; i++) {
-			filtered[i] = c[i];
+			filtered[i] = c[columns[i]];
 		}
-		filtered[filtered.length-1] = new DBColumn();
 		return filtered;
 	}
 }

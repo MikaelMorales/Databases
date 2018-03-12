@@ -15,7 +15,7 @@ public class Scan implements BlockOperator {
 
 	@Override
 	public DBColumn[] execute() {
-		int[] a = IntStream.range(0, database.schema.length+1).toArray();
+		int[] a = IntStream.range(0, database.schema.length).toArray();
 		return database.getColumns(a);
 	}
 }

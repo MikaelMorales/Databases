@@ -77,6 +77,7 @@ public class ProjectAggregate implements VolcanoOperator {
 			default: return 0.0;
 		}
 	}
+
 	private double getFieldValue(DBTuple row) {
 		if (row.types[fieldNo] == DataType.INT) {
 			return row.getFieldAsInt(fieldNo);
