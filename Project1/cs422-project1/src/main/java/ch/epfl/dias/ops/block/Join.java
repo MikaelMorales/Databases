@@ -21,13 +21,9 @@ public class Join implements BlockOperator {
 	public DBColumn[] execute() {
 		DBColumn[] left = leftChild.execute();
 		DBColumn[] right = rightChild.execute();
-		Map<Object, List<Integer>> leftChildMap = initializeMap(left[leftFieldNo]);
 
-		final int size = left.length + right.length;
-		List<List<Object>> result = new ArrayList<>(size);
-		for (int i=0; i < size; i++) {
-			result.add(new ArrayList<>());
-		}
+		Map<Object, List<Integer>> leftChildMap = initializeMap(left[leftFieldNo]);
+		List<List<Object>> result = createEmptyList(left.length + right.length);
 
 		DBColumn targetRight = right[rightFieldNo];
 		for(int i=0; i < targetRight.attributes.length; i++) {
@@ -45,12 +41,7 @@ public class Join implements BlockOperator {
 	}
 
 	private List<List<Object>> joinColumns(DBColumn[] left, DBColumn[] right, int rightIndex, List<Integer> leftIndices) {
-		final int size = left.length + right.length;
-		List<List<Object>> result = new ArrayList<>(size);
-		for (int i=0; i < size; i++) {
-			result.add(new ArrayList<>());
-		}
-
+		List<List<Object>> result = createEmptyList(left.length + right.length);
 		for (Integer leftIndex : leftIndices) {
 			Object[] leftRow = getRow(left, leftIndex);
 			Object[] rightRow = getRow(right, rightIndex);
@@ -93,5 +84,13 @@ public class Join implements BlockOperator {
 				res[i] = new DBColumn(result.get(i).toArray(), right[i-left.length].type);
 		}
 		return res;
+	}
+
+	private List<List<Object>> createEmptyList(int size) {
+		List<List<Object>> result = new ArrayList<>(size);
+		for (int i=0; i < size; i++) {
+			result.add(new ArrayList<>());
+		}
+		return result;
 	}
 }

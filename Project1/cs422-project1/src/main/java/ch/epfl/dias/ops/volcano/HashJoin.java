@@ -34,28 +34,28 @@ public class HashJoin implements VolcanoOperator {
 
 	@Override
 	public DBTuple next() {
-		if (cache == null || cacheOffset >= cache.size()) { // Done with this matching, we can read a new tuple
+		if (cacheOffset >= cache.size()) { // Done with the cache matching, we can read a new tuple
 			currentRow = rightChild.next();
+			cacheOffset = 0;
+
+			while(!currentRow.eof && !hashMap.containsKey(currentRow.fields[rightFieldNo])) {
+				currentRow = rightChild.next();
+			}
 
 			if (currentRow.eof)
 				return new DBTuple();
 
-			cacheOffset = 0;
 			cache = hashMap.get(currentRow.fields[rightFieldNo]);
 		}
 
-		if (cache != null) {
-			Object[] joinedRow = Stream.concat(Arrays.stream(currentRow.fields),
-					Arrays.stream(cache.get(cacheOffset).fields)).toArray(Object[]::new);
+		Object[] joinedRow = Stream.concat(Arrays.stream(currentRow.fields),
+				Arrays.stream(cache.get(cacheOffset).fields)).toArray(Object[]::new);
 
-			DataType[] joinedType = Stream.concat(Arrays.stream(currentRow.types),
-					Arrays.stream(cache.get(cacheOffset).types)).toArray(DataType[]::new);
+		DataType[] joinedType = Stream.concat(Arrays.stream(currentRow.types),
+				Arrays.stream(cache.get(cacheOffset).types)).toArray(DataType[]::new);
 
-			cacheOffset++;
-			return new DBTuple(joinedRow, joinedType);
-		} else {
-			return next();
-		}
+		cacheOffset++;
+		return new DBTuple(joinedRow, joinedType);
 	}
 
 	@Override

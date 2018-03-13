@@ -15,12 +15,16 @@ public class VolcanoTest {
     DataType[] orderSchema;
     DataType[] lineitemSchema;
     DataType[] schema;
-    
+
     RowStore rowstoreData;
     RowStore rowstoreOrder;
     RowStore rowstoreLineItem;
-    
-    @Before
+
+	RowStore rowstoreBigOrder;
+	RowStore rowstoreBigLineItem;
+
+
+	@Before
     public void init()  {
     	
 		schema = new DataType[]{ 
@@ -71,7 +75,10 @@ public class VolcanoTest {
         rowstoreOrder.load();
         
         rowstoreLineItem = new RowStore(lineitemSchema, "input/lineitem_small.csv", "\\|");
-        rowstoreLineItem.load();        
+        rowstoreLineItem.load();
+
+        rowstoreBigLineItem = new RowStore(lineitemSchema, "../big/lineitem_big.csv", "\\|");
+		rowstoreBigOrder = new RowStore(orderSchema, "../big/orders_big.csv", "\\|");
     }
     
 	@Test
@@ -158,7 +165,6 @@ public class VolcanoTest {
 	    //This query should return only one result
 	    DBTuple result = agg.next();
 	    int output = result.getFieldAsInt(0);
-	    System.out.println(output);
 	    assertTrue(output == 3);
 	}
 
@@ -407,5 +413,47 @@ public class VolcanoTest {
 		DBTuple result = agg.next();
 		int output = result.getFieldAsInt(0);
 		assertTrue(output == 10);
+	}
+
+	@Test
+	public void joinTestBig1(){
+	    /* SELECT COUNT(*) FROM order JOIN lineitem ON (o_orderkey = orderkey) WHERE orderkey = 3;*/
+
+		ch.epfl.dias.ops.volcano.Scan scanOrder = new ch.epfl.dias.ops.volcano.Scan(rowstoreBigOrder);
+		ch.epfl.dias.ops.volcano.Scan scanLineitem = new ch.epfl.dias.ops.volcano.Scan(rowstoreBigLineItem);
+
+	    /*Filtering on both sides */
+		Select selOrder = new Select(scanOrder, BinaryOp.EQ,0,3);
+		Select selLineitem = new Select(scanLineitem, BinaryOp.EQ,0,3);
+
+		HashJoin join = new HashJoin(selOrder, selLineitem, 0,0);
+		ProjectAggregate agg = new ProjectAggregate(join,Aggregate.COUNT, DataType.INT,0);
+
+		agg.open();
+		//This query should return only one result
+		DBTuple result = agg.next();
+		int output = result.getFieldAsInt(0);
+		assertTrue(output == 6);
+	}
+
+	@Test
+	public void joinTestBig2(){
+	    /* SELECT COUNT(*) FROM lineitem JOIN order ON (o_orderkey = orderkey) WHERE orderkey = 3;*/
+
+		ch.epfl.dias.ops.volcano.Scan scanOrder = new ch.epfl.dias.ops.volcano.Scan(rowstoreBigOrder);
+		ch.epfl.dias.ops.volcano.Scan scanLineitem = new ch.epfl.dias.ops.volcano.Scan(rowstoreBigLineItem);
+
+	    /*Filtering on both sides */
+		Select selOrder = new Select(scanOrder, BinaryOp.EQ,0,3);
+		Select selLineitem = new Select(scanLineitem, BinaryOp.EQ,0,3);
+
+		HashJoin join = new HashJoin(selLineitem, selOrder, 0,0);
+		ProjectAggregate agg = new ProjectAggregate(join,Aggregate.COUNT, DataType.INT,0);
+
+		agg.open();
+		//This query should return only one result
+		DBTuple result = agg.next();
+		int output = result.getFieldAsInt(0);
+		assertTrue(output == 6);
 	}
 }

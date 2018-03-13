@@ -20,6 +20,9 @@ public class ColumnarTest {
 	ColumnStore columnstoreOrder;
 	ColumnStore columnstoreLineItem;
 
+	ColumnStore columnstoreBigOrder;
+	ColumnStore columnstoreBigLineItem;
+
 	@Before
 	public void init() {
 
@@ -41,6 +44,9 @@ public class ColumnarTest {
 
 		columnstoreLineItem = new ColumnStore(lineitemSchema, "input/lineitem_small.csv", "\\|");
 		columnstoreLineItem.load();
+
+		columnstoreBigLineItem = new ColumnStore(lineitemSchema, "../big/lineitem_big.csv", "\\|");
+		columnstoreBigOrder = new ColumnStore(orderSchema, "../big/orders_big.csv", "\\|");
 	}
 
 	@Test
@@ -376,5 +382,59 @@ public class ColumnarTest {
 		String output = result[0].getAsString()[0];
 		System.out.println(output);
 		assertTrue("nal foxes wake.".equals(output));
+	}
+
+	@Test
+	public void joinTestBig1() {
+		/*
+		 * SELECT COUNT(*) FROM order JOIN lineitem ON (o_orderkey = orderkey)
+		 * WHERE orderkey = 3;
+		 */
+		columnstoreBigLineItem.load();
+		columnstoreBigOrder.load();
+
+		ch.epfl.dias.ops.block.Scan scanOrder = new ch.epfl.dias.ops.block.Scan(columnstoreBigOrder);
+		ch.epfl.dias.ops.block.Scan scanLineitem = new ch.epfl.dias.ops.block.Scan(columnstoreBigLineItem);
+
+		/* Filtering on both sides */
+		ch.epfl.dias.ops.block.Select selOrder = new ch.epfl.dias.ops.block.Select(scanOrder, BinaryOp.EQ, 0, 3);
+		ch.epfl.dias.ops.block.Select selLineitem = new ch.epfl.dias.ops.block.Select(scanLineitem, BinaryOp.EQ, 0, 3);
+
+		ch.epfl.dias.ops.block.Join join = new ch.epfl.dias.ops.block.Join(selOrder, selLineitem, 0, 0);
+		ch.epfl.dias.ops.block.ProjectAggregate agg = new ch.epfl.dias.ops.block.ProjectAggregate(join, Aggregate.COUNT,
+				DataType.INT, 0);
+
+		DBColumn[] result = agg.execute();
+
+		// This query should return only one result
+		int output = result[0].getAsInteger()[0];
+		assertTrue(output == 6);
+	}
+
+	@Test
+	public void joinTestBig2() {
+		/*
+		 * SELECT COUNT(*) FROM lineitem JOIN order ON (o_orderkey = orderkey)
+		 * WHERE orderkey = 3;
+		 */
+		columnstoreBigLineItem.load();
+		columnstoreBigOrder.load();
+
+		ch.epfl.dias.ops.block.Scan scanOrder = new ch.epfl.dias.ops.block.Scan(columnstoreBigOrder);
+		ch.epfl.dias.ops.block.Scan scanLineitem = new ch.epfl.dias.ops.block.Scan(columnstoreBigLineItem);
+
+		/* Filtering on both sides */
+		ch.epfl.dias.ops.block.Select selOrder = new ch.epfl.dias.ops.block.Select(scanOrder, BinaryOp.EQ, 0, 3);
+		ch.epfl.dias.ops.block.Select selLineitem = new ch.epfl.dias.ops.block.Select(scanLineitem, BinaryOp.EQ, 0, 3);
+
+		ch.epfl.dias.ops.block.Join join = new ch.epfl.dias.ops.block.Join(selLineitem, selOrder, 0, 0);
+		ch.epfl.dias.ops.block.ProjectAggregate agg = new ch.epfl.dias.ops.block.ProjectAggregate(join, Aggregate.COUNT,
+				DataType.INT, 0);
+
+		DBColumn[] result = agg.execute();
+
+		// This query should return only one result
+		int output = result[0].getAsInteger()[0];
+		assertTrue(output == 6);
 	}
 }

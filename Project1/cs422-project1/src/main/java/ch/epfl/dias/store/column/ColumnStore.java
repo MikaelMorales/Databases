@@ -6,12 +6,13 @@ import ch.epfl.dias.store.Store;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.stream.IntStream;
 
 public class ColumnStore extends Store {
     private DBColumn[] database;
     private String filename;
     private String delimiter;
-    public DataType[] schema;
+    private DataType[] schema;
 
     public ColumnStore(DataType[] schema, String filename, String delimiter) {
         database = new DBColumn[schema.length];
@@ -59,5 +60,10 @@ public class ColumnStore extends Store {
             i++;
         }
         return columns;
+    }
+
+    public DBColumn[] getAllColumns() {
+        int[] allColumns = IntStream.range(0, schema.length).toArray();
+        return getColumns(allColumns);
     }
 }

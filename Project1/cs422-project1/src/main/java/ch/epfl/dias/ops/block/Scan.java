@@ -3,8 +3,6 @@ package ch.epfl.dias.ops.block;
 import ch.epfl.dias.store.column.ColumnStore;
 import ch.epfl.dias.store.column.DBColumn;
 
-import java.util.stream.IntStream;
-
 public class Scan implements BlockOperator {
 
 	private ColumnStore database;
@@ -15,7 +13,6 @@ public class Scan implements BlockOperator {
 
 	@Override
 	public DBColumn[] execute() {
-		int[] a = IntStream.range(0, database.schema.length).toArray();
-		return database.getColumns(a);
+		return database.getAllColumns();
 	}
 }

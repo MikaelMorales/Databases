@@ -42,14 +42,4 @@ public class DBColumn {
 		}
 		return column;
 	}
-
-	@Override
-	public String toString() {
-		StringBuilder sb = new StringBuilder();
-		for (Object field : attributes) {
-			sb.append(field.toString());
-			sb.append("\n");
-		}
-		return sb.toString();
-	}
 }

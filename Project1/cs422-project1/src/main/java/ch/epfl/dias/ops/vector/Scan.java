@@ -7,7 +7,7 @@ public class Scan implements VectorOperator {
 
 	// TODO: Add required structures
 
-	public Scan(Store store) {
+	public Scan(Store store, int vectorSize) {
 		// TODO: Implement
 	}
 	

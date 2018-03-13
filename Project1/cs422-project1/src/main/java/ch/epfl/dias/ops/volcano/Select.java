@@ -25,10 +25,22 @@ public class Select implements VolcanoOperator {
 	@Override
 	public DBTuple next() {
 		DBTuple row = child.next();
+		while(!row.eof && !isValid(row.getFieldAsInt(fieldNo))) {
+			row = child.next();
+		}
+
 		if (row.eof)
 			return new DBTuple();
+		else
+			return row;
+	}
 
-		Integer attribute = row.getFieldAsInt(fieldNo);
+	@Override
+	public void close() {
+		child.close();
+	}
+
+	private boolean isValid(Integer attribute) {
 		boolean isValid = false;
 		switch (op) {
 			case EQ:
@@ -51,11 +63,6 @@ public class Select implements VolcanoOperator {
 				break;
 		}
 
-		return isValid ? row : next();
-	}
-
-	@Override
-	public void close() {
-		child.close();
+		return isValid;
 	}
 }

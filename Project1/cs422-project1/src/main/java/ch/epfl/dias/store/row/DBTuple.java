@@ -40,17 +40,4 @@ public class DBTuple {
 	public String getFieldAsString(int fieldNo) {
 		return (String) fields[fieldNo];
 	}
-
-	@Override
-	public String toString() {
-		if (this.eof)
-			return "EOF";
-
-		StringBuilder sb = new StringBuilder();
-		for (Object field : fields) {
-			sb.append(field.toString());
-			sb.append(", ");
-		}
-		return sb.toString();
-	}
 }

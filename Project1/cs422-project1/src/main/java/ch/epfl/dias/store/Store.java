@@ -28,7 +28,7 @@ public abstract class Store {
 	 */
 	public DBTuple getRow(int rownumber) {
 		return null;
-	};
+	}
 
 	/**
 	 * Method to access columns available only for column store
@@ -39,7 +39,7 @@ public abstract class Store {
 	 */
 	public DBColumn[] getColumns(int[] columnsToGet) {
 		return null;
-	};
+	}
 
 	/**
 	 * Method that check if a tuple contains the correct amount of
@@ -95,9 +95,8 @@ public abstract class Store {
 	 * @return the number of lines in the file
 	 * @throws IOException If the file can't be opened
 	 */
-	public int countLines(String filename) throws IOException {
-		InputStream is = new BufferedInputStream(new FileInputStream(filename));
-		try {
+	protected int countLines(String filename) throws IOException {
+		try (InputStream is = new BufferedInputStream(new FileInputStream(filename))) {
 			byte[] c = new byte[1024];
 			int count = 0;
 			int readChars = 0;
@@ -113,8 +112,6 @@ public abstract class Store {
 				++count;
 			}
 			return count;
-		} finally {
-			is.close();
 		}
 	}
 }
