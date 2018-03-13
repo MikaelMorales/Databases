@@ -77,8 +77,8 @@ public class VolcanoTest {
         rowstoreLineItem = new RowStore(lineitemSchema, "input/lineitem_small.csv", "\\|");
         rowstoreLineItem.load();
 
-        rowstoreBigLineItem = new RowStore(lineitemSchema, "../big/lineitem_big.csv", "\\|");
-		rowstoreBigOrder = new RowStore(orderSchema, "../big/orders_big.csv", "\\|");
+        rowstoreBigLineItem = new RowStore(lineitemSchema, "input/lineitem_big.csv", "\\|");
+		rowstoreBigOrder = new RowStore(orderSchema, "input/orders_big.csv", "\\|");
     }
     
 	@Test
