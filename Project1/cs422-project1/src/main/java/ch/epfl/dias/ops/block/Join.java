@@ -18,6 +18,7 @@ public class Join implements BlockOperator {
 		this.rightFieldNo = rightFieldNo;
 	}
 
+	@Override
 	public DBColumn[] execute() {
 		DBColumn[] left = leftChild.execute();
 		DBColumn[] right = rightChild.execute();

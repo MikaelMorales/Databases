@@ -456,4 +456,18 @@ public class VolcanoTest {
 		int output = result.getFieldAsInt(0);
 		assertTrue(output == 6);
 	}
+
+	@Test
+	public void testDoubleAvgIntRes(){
+        /* SELECT AVG(col4) FROM data*/
+		ch.epfl.dias.ops.volcano.Scan scan = new ch.epfl.dias.ops.volcano.Scan(rowstoreLineItem);
+		ch.epfl.dias.ops.volcano.ProjectAggregate agg = new ch.epfl.dias.ops.volcano.ProjectAggregate(scan, Aggregate.AVG, DataType.INT, 4);
+
+		agg.open();
+
+		// This query should return only one result
+		DBTuple result = agg.next();
+		int output = result.getFieldAsInt(0);
+		assertTrue(output == 30);
+	}
 }

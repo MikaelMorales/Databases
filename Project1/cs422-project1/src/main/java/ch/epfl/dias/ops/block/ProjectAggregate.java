@@ -54,7 +54,7 @@ public class ProjectAggregate implements BlockOperator {
 		} else if (type == DataType.DOUBLE) {
 			value = Arrays.stream(col.getAsDouble()).mapToDouble(a -> a).average();
 		} else {
-			throw new IllegalArgumentException("Invalid type to compute sum");
+			throw new IllegalArgumentException("Invalid type to compute average");
 		}
 		return value.orElse(0.0);
 	}
@@ -68,7 +68,7 @@ public class ProjectAggregate implements BlockOperator {
 			Optional<Double> value = Arrays.stream(col.getAsDouble()).max(Double::compareTo);
 			return value.orElse(0.0);
 		} else {
-			throw new IllegalArgumentException("Invalid type to compute sum");
+			throw new IllegalArgumentException("Invalid type to compute max");
 		}
 	}
 
@@ -81,7 +81,7 @@ public class ProjectAggregate implements BlockOperator {
 			Optional<Double> value = Arrays.stream(col.getAsDouble()).min(Double::compareTo);
 			return value.orElse(0.0);
 		} else {
-			throw new IllegalArgumentException("Invalid type to compute sum");
+			throw new IllegalArgumentException("Invalid type to compute min");
 		}
 	}
 

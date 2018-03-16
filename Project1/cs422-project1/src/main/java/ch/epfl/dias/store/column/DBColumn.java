@@ -5,10 +5,16 @@ import ch.epfl.dias.store.DataType;
 public class DBColumn {
 	public Object[] attributes;
 	public DataType type;
+	public boolean eof;
 
 	public DBColumn(Object[] attributes, DataType type) {
 		this.attributes = attributes.clone();
 		this.type = type;
+		this.eof = false;
+	}
+
+	public DBColumn() {
+		this.eof = true;
 	}
 
 	public Integer[] getAsInteger() {

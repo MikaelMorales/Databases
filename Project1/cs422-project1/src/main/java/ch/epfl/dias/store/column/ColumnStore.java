@@ -51,6 +51,10 @@ public class ColumnStore extends Store {
 
     @Override
     public DBColumn[] getColumns(int[] columnsToGet) {
+        if (columnsToGet == null) {
+            columnsToGet = IntStream.range(0, schema.length).toArray();
+        }
+
         DBColumn[] columns = new DBColumn[columnsToGet.length];
         int i = 0;
         for (Integer index : columnsToGet) {
@@ -60,10 +64,5 @@ public class ColumnStore extends Store {
             i++;
         }
         return columns;
-    }
-
-    public DBColumn[] getAllColumns() {
-        int[] allColumns = IntStream.range(0, schema.length).toArray();
-        return getColumns(allColumns);
     }
 }

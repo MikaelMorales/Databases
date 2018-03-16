@@ -28,5 +28,6 @@ public class Scan implements VolcanoOperator {
 	@Override
 	public void close() {
 		database = null;
+		currentLine = 0;
 	}
 }

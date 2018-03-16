@@ -437,4 +437,15 @@ public class ColumnarTest {
 		int output = result[0].getAsInteger()[0];
 		assertTrue(output == 6);
 	}
+
+	@Test
+	public void testDoubleAvgIntRes(){
+        /* SELECT AVG(col4) FROM data*/
+		ch.epfl.dias.ops.block.Scan scan = new ch.epfl.dias.ops.block.Scan(columnstoreLineItem);
+		ch.epfl.dias.ops.block.ProjectAggregate agg = new ch.epfl.dias.ops.block.ProjectAggregate(scan, Aggregate.AVG, DataType.INT, 4);
+
+		DBColumn[] result = agg.execute();
+		int output = result[0].getAsInteger()[0];
+		assertTrue(output == 30);
+	}
 }
