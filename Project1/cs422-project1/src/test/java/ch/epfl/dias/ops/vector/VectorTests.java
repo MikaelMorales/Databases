@@ -149,23 +149,25 @@ public class VectorTests {
 		 * WHERE orderkey = 3;
 		 */
         for (int i = 1; i < MAX_VECTOR_SIZE; i++) {
-            ch.epfl.dias.ops.vector.Scan scanOrder = new ch.epfl.dias.ops.vector.Scan(colstoreOrder, i);
-            ch.epfl.dias.ops.vector.Scan scanLineitem = new ch.epfl.dias.ops.vector.Scan(colstoreLineItem, i);
+            for (int j = 1; j < MAX_VECTOR_SIZE; j++) {
+                ch.epfl.dias.ops.vector.Scan scanOrder = new ch.epfl.dias.ops.vector.Scan(colstoreOrder, i);
+                ch.epfl.dias.ops.vector.Scan scanLineitem = new ch.epfl.dias.ops.vector.Scan(colstoreLineItem, j);
 
-		/* Filtering on both sides */
-            ch.epfl.dias.ops.vector.Select selOrder = new ch.epfl.dias.ops.vector.Select(scanOrder, BinaryOp.EQ, 0, 3);
-            ch.epfl.dias.ops.vector.Select selLineitem = new ch.epfl.dias.ops.vector.Select(scanLineitem, BinaryOp.EQ, 0, 3);
+		        /* Filtering on both sides */
+                ch.epfl.dias.ops.vector.Select selOrder = new ch.epfl.dias.ops.vector.Select(scanOrder, BinaryOp.EQ, 0, 3);
+                ch.epfl.dias.ops.vector.Select selLineitem = new ch.epfl.dias.ops.vector.Select(scanLineitem, BinaryOp.EQ, 0, 3);
 
-            ch.epfl.dias.ops.vector.Join join = new ch.epfl.dias.ops.vector.Join(selOrder, selLineitem, 0, 0);
-            ch.epfl.dias.ops.vector.ProjectAggregate agg = new ch.epfl.dias.ops.vector.ProjectAggregate(join, Aggregate.COUNT,
-                    DataType.INT, 0);
+                ch.epfl.dias.ops.vector.Join join = new ch.epfl.dias.ops.vector.Join(selOrder, selLineitem, 0, 0);
+                ch.epfl.dias.ops.vector.ProjectAggregate agg = new ch.epfl.dias.ops.vector.ProjectAggregate(join, Aggregate.COUNT,
+                        DataType.INT, 0);
 
-            agg.open();
-            DBColumn[] result = agg.next();
+                agg.open();
+                DBColumn[] result = agg.next();
 
-            // This query should return only one result
-            int output = result[0].getAsInteger()[0];
-            assertTrue(output == 3);
+                // This query should return only one result
+                int output = result[0].getAsInteger()[0];
+                assertTrue(output == 3);
+            }
         }
     }
 
@@ -176,24 +178,25 @@ public class VectorTests {
 		 * WHERE orderkey = 3;
 		 */
         for (int i = 1; i < MAX_VECTOR_SIZE; i++) {
-            ch.epfl.dias.ops.vector.Scan scanLineitem = new ch.epfl.dias.ops.vector.Scan(colstoreLineItem, i);
-            ch.epfl.dias.ops.vector.Scan scanOrder = new ch.epfl.dias.ops.vector.Scan(colstoreOrder, i);
+            for (int j = 1; j < MAX_VECTOR_SIZE; j++) {
+                ch.epfl.dias.ops.vector.Scan scanLineitem = new ch.epfl.dias.ops.vector.Scan(colstoreLineItem, i);
+                ch.epfl.dias.ops.vector.Scan scanOrder = new ch.epfl.dias.ops.vector.Scan(colstoreOrder, j);
 
-		/* Filtering on both sides */
-            ch.epfl.dias.ops.vector.Select selOrder = new ch.epfl.dias.ops.vector.Select(scanOrder, BinaryOp.EQ, 0, 3);
-            ch.epfl.dias.ops.vector.Select selLineitem = new ch.epfl.dias.ops.vector.Select(scanLineitem, BinaryOp.EQ, 0, 3);
+		        /* Filtering on both sides */
+                ch.epfl.dias.ops.vector.Select selOrder = new ch.epfl.dias.ops.vector.Select(scanOrder, BinaryOp.EQ, 0, 3);
+                ch.epfl.dias.ops.vector.Select selLineitem = new ch.epfl.dias.ops.vector.Select(scanLineitem, BinaryOp.EQ, 0, 3);
 
-            ch.epfl.dias.ops.vector.Join join = new ch.epfl.dias.ops.vector.Join(selLineitem, selOrder, 0, 0);
-            ch.epfl.dias.ops.vector.ProjectAggregate agg = new ch.epfl.dias.ops.vector.ProjectAggregate(join, Aggregate.COUNT,
-                    DataType.INT, 0);
+                ch.epfl.dias.ops.vector.Join join = new ch.epfl.dias.ops.vector.Join(selLineitem, selOrder, 0, 0);
+                ch.epfl.dias.ops.vector.ProjectAggregate agg = new ch.epfl.dias.ops.vector.ProjectAggregate(join, Aggregate.COUNT,
+                        DataType.INT, 0);
 
-            agg.open();
-            DBColumn[] result = agg.next();
+                agg.open();
+                DBColumn[] result = agg.next();
 
-            // This query should return only one result
-            int output = result[0].getAsInteger()[0];
-            System.out.println(output);
-            assertTrue(output == 3);
+                // This query should return only one result
+                int output = result[0].getAsInteger()[0];
+                assertTrue(output == 3);
+            }
         }
     }
 
@@ -585,6 +588,24 @@ public class VectorTests {
             DBColumn[] result = agg.next();
             int output = result[0].getAsInteger()[0];
             assertTrue(output == 30);
+        }
+    }
+
+    @Test
+    public void testTooSelective() {
+        /* SELECT COUNT(*) FROM data where col0 = 15; */
+        for (int i = 1; i < MAX_VECTOR_SIZE; i++) {
+            ch.epfl.dias.ops.vector.Scan scanData = new ch.epfl.dias.ops.vector.Scan(colstoreData, i);
+
+            ch.epfl.dias.ops.vector.Select sel = new ch.epfl.dias.ops.vector.Select(scanData, BinaryOp.EQ, 0, 15);
+
+            ch.epfl.dias.ops.vector.ProjectAggregate agg = new  ch.epfl.dias.ops.vector.ProjectAggregate(sel, Aggregate.COUNT, DataType.INT, 0);
+
+            agg.open();
+            //This query should return only one result
+            DBColumn[] result = agg.next();
+            int output = result[0].getAsInteger()[0];
+            assertTrue(output == 0);
         }
     }
 }

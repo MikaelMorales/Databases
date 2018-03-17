@@ -348,7 +348,6 @@ public class ColumnarTest {
 
 		// This query should return only one result
 		int output = result[0].getAsInteger()[0];
-		System.out.println(output);
 		assertTrue(output == 4);
 	}
 
@@ -364,7 +363,6 @@ public class ColumnarTest {
 
 		// This query should return only one result
 		double output = result[0].getAsDouble()[0];
-		System.out.println(output);
 		assertTrue(output == 39620.34);
 	}
 
@@ -380,7 +378,6 @@ public class ColumnarTest {
 
 		// This query should return only one result
 		String output = result[0].getAsString()[0];
-		System.out.println(output);
 		assertTrue("nal foxes wake.".equals(output));
 	}
 
@@ -447,5 +444,19 @@ public class ColumnarTest {
 		DBColumn[] result = agg.execute();
 		int output = result[0].getAsInteger()[0];
 		assertTrue(output == 30);
+	}
+
+	@Test
+	public void testTooSelective() {
+        /* SELECT COUNT(*) FROM data where col0 = 15; */
+		ch.epfl.dias.ops.block.Scan scanData = new ch.epfl.dias.ops.block.Scan(columnstoreData);
+
+		ch.epfl.dias.ops.block.Select sel = new ch.epfl.dias.ops.block.Select(scanData, BinaryOp.EQ, 0, 15);
+
+		ch.epfl.dias.ops.block.ProjectAggregate agg = new ch.epfl.dias.ops.block.ProjectAggregate(sel, Aggregate.COUNT, DataType.INT, 0);
+
+		DBColumn[] result = agg.execute();
+		int output = result[0].getAsInteger()[0];
+		assertTrue(output == 0);
 	}
 }

@@ -470,4 +470,20 @@ public class VolcanoTest {
 		int output = result.getFieldAsInt(0);
 		assertTrue(output == 30);
 	}
+
+	@Test
+	public void testTooSelective() {
+        /* SELECT COUNT(*) FROM data where col0 = 15; */
+		ch.epfl.dias.ops.volcano.Scan scanData = new ch.epfl.dias.ops.volcano.Scan(rowstoreData);
+
+		ch.epfl.dias.ops.volcano.Select sel = new ch.epfl.dias.ops.volcano.Select(scanData, BinaryOp.EQ, 0, 15);
+
+		ch.epfl.dias.ops.volcano.ProjectAggregate agg = new ch.epfl.dias.ops.volcano.ProjectAggregate(sel, Aggregate.COUNT, DataType.INT, 0);
+
+		agg.open();
+		//This query should return only one result
+		DBTuple result = agg.next();
+		int output = result.getFieldAsInt(0);
+		assertTrue(output == 0);
+	}
 }

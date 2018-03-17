@@ -13,6 +13,9 @@ public class Scan implements VectorOperator {
 	private int currentRow;
 
 	public Scan(Store store, int vectorSize) {
+		if (vectorSize == 0)
+			throw new IllegalArgumentException("Vector size can't be equal to 0 !");
+
 		this.database = store;
 		this.vectorSize = vectorSize;
 	}
