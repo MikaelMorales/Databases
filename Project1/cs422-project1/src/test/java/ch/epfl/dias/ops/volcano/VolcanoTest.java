@@ -8,6 +8,8 @@ import ch.epfl.dias.store.row.RowStore;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.assertTrue;
 
 public class VolcanoTest {
@@ -418,6 +420,8 @@ public class VolcanoTest {
 	@Test
 	public void joinTestBig1(){
 	    /* SELECT COUNT(*) FROM order JOIN lineitem ON (o_orderkey = orderkey) WHERE orderkey = 3;*/
+		rowstoreBigOrder.load();
+		rowstoreBigLineItem.load();
 
 		ch.epfl.dias.ops.volcano.Scan scanOrder = new ch.epfl.dias.ops.volcano.Scan(rowstoreBigOrder);
 		ch.epfl.dias.ops.volcano.Scan scanLineitem = new ch.epfl.dias.ops.volcano.Scan(rowstoreBigLineItem);
@@ -439,6 +443,8 @@ public class VolcanoTest {
 	@Test
 	public void joinTestBig2(){
 	    /* SELECT COUNT(*) FROM lineitem JOIN order ON (o_orderkey = orderkey) WHERE orderkey = 3;*/
+		rowstoreBigOrder.load();
+		rowstoreBigLineItem.load();
 
 		ch.epfl.dias.ops.volcano.Scan scanOrder = new ch.epfl.dias.ops.volcano.Scan(rowstoreBigOrder);
 		ch.epfl.dias.ops.volcano.Scan scanLineitem = new ch.epfl.dias.ops.volcano.Scan(rowstoreBigLineItem);
@@ -485,5 +491,64 @@ public class VolcanoTest {
 		DBTuple result = agg.next();
 		int output = result.getFieldAsInt(0);
 		assertTrue(output == 0);
+	}
+
+	@Test
+	public void testJoinOrder1() {
+		ch.epfl.dias.ops.volcano.Scan scanOrder = new ch.epfl.dias.ops.volcano.Scan(rowstoreOrder);
+		ch.epfl.dias.ops.volcano.Scan scanLineitem = new ch.epfl.dias.ops.volcano.Scan(rowstoreLineItem);
+
+	    /*Filtering on both sides */
+		ch.epfl.dias.ops.volcano.Select selOrder = new ch.epfl.dias.ops.volcano.Select(scanOrder, BinaryOp.EQ,0,3);
+		ch.epfl.dias.ops.volcano.Select selLineitem = new ch.epfl.dias.ops.volcano.Select(scanLineitem, BinaryOp.EQ,0,3);
+
+		ch.epfl.dias.ops.volcano.HashJoin join = new ch.epfl.dias.ops.volcano.HashJoin(selOrder, selLineitem,0,0);
+		ch.epfl.dias.ops.volcano.Project project = new ch.epfl.dias.ops.volcano.Project(join, new int[]{8, 24});
+		project.open();
+		DBTuple result = project.next();
+		System.out.println(Arrays.toString(result.fields));
+
+		assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result.getFieldAsString(0)));
+		assertTrue("ongside of the furiously brave acco".equals(result.getFieldAsString(1)));
+
+		result = project.next();
+		assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result.getFieldAsString(0)));
+		assertTrue(" unusual accounts. eve".equals(result.getFieldAsString(1)));
+
+		result = project.next();
+		assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result.getFieldAsString(0)));
+		assertTrue("nal foxes wake.".equals(result.getFieldAsString(1)));
+
+		result = project.next();
+		assertTrue(result.eof);
+	}
+
+	@Test
+	public void testJoinOrder2() {
+		ch.epfl.dias.ops.volcano.Scan scanOrder = new ch.epfl.dias.ops.volcano.Scan(rowstoreOrder);
+		ch.epfl.dias.ops.volcano.Scan scanLineitem = new ch.epfl.dias.ops.volcano.Scan(rowstoreLineItem);
+
+	    /*Filtering on both sides */
+		ch.epfl.dias.ops.volcano.Select selOrder = new ch.epfl.dias.ops.volcano.Select(scanOrder, BinaryOp.EQ,0,3);
+		ch.epfl.dias.ops.volcano.Select selLineitem = new ch.epfl.dias.ops.volcano.Select(scanLineitem, BinaryOp.EQ,0,3);
+
+		ch.epfl.dias.ops.volcano.HashJoin join = new ch.epfl.dias.ops.volcano.HashJoin(selLineitem, selOrder,0,0);
+		ch.epfl.dias.ops.volcano.Project project = new ch.epfl.dias.ops.volcano.Project(join, new int[]{15, 24});
+		project.open();
+		DBTuple result = project.next();
+
+		assertTrue("ongside of the furiously brave acco".equals(result.getFieldAsString(0)));
+		assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result.getFieldAsString(1)));
+
+		result = project.next();
+		assertTrue(" unusual accounts. eve".equals(result.getFieldAsString(0)));
+		assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result.getFieldAsString(1)));
+
+		result = project.next();
+		assertTrue("nal foxes wake.".equals(result.getFieldAsString(0)));
+		assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result.getFieldAsString(1)));
+
+		result = project.next();
+		assertTrue(result.eof);
 	}
 }

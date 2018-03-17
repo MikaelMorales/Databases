@@ -8,6 +8,8 @@ import ch.epfl.dias.store.column.DBColumn;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.assertTrue;
 
 public class ColumnarTest {
@@ -458,5 +460,58 @@ public class ColumnarTest {
 		DBColumn[] result = agg.execute();
 		int output = result[0].getAsInteger()[0];
 		assertTrue(output == 0);
+	}
+
+	@Test
+	public void testJoinOrder1() {
+		ch.epfl.dias.ops.block.Scan scanOrder = new ch.epfl.dias.ops.block.Scan(columnstoreOrder);
+		ch.epfl.dias.ops.block.Scan scanLineitem = new ch.epfl.dias.ops.block.Scan(columnstoreLineItem);
+
+        /*Filtering on both sides */
+		ch.epfl.dias.ops.block.Select selOrder = new ch.epfl.dias.ops.block.Select(scanOrder, BinaryOp.EQ, 0, 3);
+		ch.epfl.dias.ops.block.Select selLineitem = new ch.epfl.dias.ops.block.Select(scanLineitem, BinaryOp.EQ, 0, 3);
+
+		ch.epfl.dias.ops.block.Join join = new ch.epfl.dias.ops.block.Join(selOrder, selLineitem, 0, 0);
+		ch.epfl.dias.ops.block.Project project = new ch.epfl.dias.ops.block.Project(join, new int[]{8, 24});
+		DBColumn[] result = project.execute();
+		System.out.println(result.length);
+		for (DBColumn res: result) {
+			System.out.println(Arrays.toString(res.attributes));
+		}
+
+		assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[0].getAsString()[0]));
+		assertTrue("ongside of the furiously brave acco".equals(result[1].getAsString()[0]));
+
+		assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[0].getAsString()[1]));
+		assertTrue(" unusual accounts. eve".equals(result[1].getAsString()[1]));
+
+		assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[0].getAsString()[2]));
+		assertTrue("nal foxes wake.".equals(result[1].getAsString()[2]));
+	}
+
+	@Test
+	public void testJoinOrder2() {
+		ch.epfl.dias.ops.block.Scan scanOrder = new ch.epfl.dias.ops.block.Scan(columnstoreOrder);
+		ch.epfl.dias.ops.block.Scan scanLineitem = new ch.epfl.dias.ops.block.Scan(columnstoreLineItem);
+
+        /*Filtering on both sides */
+		ch.epfl.dias.ops.block.Select selOrder = new ch.epfl.dias.ops.block.Select(scanOrder, BinaryOp.EQ, 0, 3);
+		ch.epfl.dias.ops.block.Select selLineitem = new ch.epfl.dias.ops.block.Select(scanLineitem, BinaryOp.EQ, 0, 3);
+
+		ch.epfl.dias.ops.block.Join join = new ch.epfl.dias.ops.block.Join(selLineitem, selOrder, 0, 0);
+		ch.epfl.dias.ops.block.Project project = new ch.epfl.dias.ops.block.Project(join, new int[]{15, 24});
+		DBColumn[] result = project.execute();
+		System.out.println(result.length);
+		for (DBColumn res : result) {
+			System.out.println(Arrays.toString(res.attributes));
+		}
+		assertTrue("ongside of the furiously brave acco".equals(result[0].getAsString()[0]));
+		assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[1].getAsString()[0]));
+
+		assertTrue(" unusual accounts. eve".equals(result[0].getAsString()[1]));
+		assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[1].getAsString()[1]));
+
+		assertTrue("nal foxes wake.".equals(result[0].getAsString()[2]));
+		assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[1].getAsString()[2]));
 	}
 }

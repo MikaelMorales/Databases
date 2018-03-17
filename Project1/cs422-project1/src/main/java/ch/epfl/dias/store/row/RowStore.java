@@ -26,11 +26,13 @@ public class RowStore extends Store {
 			database = new DBTuple[numberLines+1];
 			BufferedReader br = new BufferedReader(new FileReader(filename));
 			String line;
+			String[] tuple;
+			Object[] fields;
 			int index = 0;
 			while ((line = br.readLine()) != null) {
-				String[] tuple = line.split(delimiter);
+				tuple = line.split(delimiter);
 				checkNumberOfAttributes(tuple, schema);
-				Object[] fields = parseDataWithType(tuple, schema);
+				fields = parseDataWithType(tuple, schema);
 				database[index] = new DBTuple(fields, schema);
 				index++;
 			}

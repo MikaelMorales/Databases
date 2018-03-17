@@ -22,7 +22,6 @@ public class Scan implements VectorOperator {
 	
 	@Override
 	public void open() {
-		database.load();
 		currentRow = 0;
 		columns = database.getColumns(null);
 	}
@@ -36,7 +35,6 @@ public class Scan implements VectorOperator {
 
 	@Override
 	public void close() {
-		database = null;
 		currentRow = 0;
 	}
 

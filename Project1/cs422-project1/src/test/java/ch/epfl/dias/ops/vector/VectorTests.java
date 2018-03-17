@@ -8,6 +8,8 @@ import ch.epfl.dias.store.column.DBColumn;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.assertTrue;
 
 public class VectorTests {
@@ -80,10 +82,14 @@ public class VectorTests {
                 DataType.STRING, DataType.STRING, DataType.STRING, DataType.STRING, DataType.STRING};
 
         colstoreData = new ColumnStore(schema, "input/data.csv", ",");
+        colstoreData.load();
         colstoreOrder = new ColumnStore(orderSchema, "input/orders_small.csv", "\\|");
+        colstoreOrder.load();
+        colstoreLineItem = new ColumnStore(lineitemSchema, "input/lineitem_small.csv", "\\|");
+        colstoreLineItem.load();
+
         colstoreLineItemBig = new ColumnStore(lineItemBigSchema, "input/lineitem_big.csv", "\\|");
         colstoreOrderBig = new ColumnStore(orderBigSchema, "input/orders_big.csv", "\\|");
-        colstoreLineItem = new ColumnStore(lineitemSchema, "input/lineitem_small.csv", "\\|");
     }
 
     @Test
@@ -481,9 +487,11 @@ public class VectorTests {
 
     @Test
     public void bigJoinTest1() {
-
 		 /* SELECT COUNT(*) FROM order_big JOIN lineitem_big ON (o_orderkey = orderkey)
 		 * WHERE orderkey = 3;*/
+        colstoreOrderBig.load();
+        colstoreLineItemBig.load();
+
         ch.epfl.dias.ops.vector.Scan scanOrder = new ch.epfl.dias.ops.vector.Scan(colstoreOrderBig, VECTOR_SIZE_BIG);
         ch.epfl.dias.ops.vector.Scan scanLineitem = new ch.epfl.dias.ops.vector.Scan(colstoreLineItemBig, VECTOR_SIZE_BIG);
 
@@ -506,9 +514,11 @@ public class VectorTests {
 
     @Test
     public void bigJoinTest2() {
-
 		 /* SELECT COUNT(*) FROM lineitem_big JOIN order_big ON (o_orderkey = orderkey)
 		 * WHERE orderkey = 3; */
+        colstoreOrderBig.load();
+        colstoreLineItemBig.load();
+
         ch.epfl.dias.ops.vector.Scan scanOrder = new ch.epfl.dias.ops.vector.Scan(colstoreOrderBig, VECTOR_SIZE_BIG);
         ch.epfl.dias.ops.vector.Scan scanLineitem = new ch.epfl.dias.ops.vector.Scan(colstoreLineItemBig, VECTOR_SIZE_BIG);
 
@@ -607,5 +617,76 @@ public class VectorTests {
             int output = result[0].getAsInteger()[0];
             assertTrue(output == 0);
         }
+    }
+
+    @Test
+    public void testJoinOrder1() {
+        ch.epfl.dias.ops.vector.Scan scanOrder = new ch.epfl.dias.ops.vector.Scan(colstoreOrder, 1);
+        ch.epfl.dias.ops.vector.Scan scanLineitem = new ch.epfl.dias.ops.vector.Scan(colstoreLineItem, 1);
+
+        /*Filtering on both sides */
+        ch.epfl.dias.ops.vector.Select selOrder = new ch.epfl.dias.ops.vector.Select(scanOrder, BinaryOp.EQ, 0, 3);
+        ch.epfl.dias.ops.vector.Select selLineitem = new ch.epfl.dias.ops.vector.Select(scanLineitem, BinaryOp.EQ, 0, 3);
+
+        ch.epfl.dias.ops.vector.Join join = new ch.epfl.dias.ops.vector.Join(selOrder, selLineitem, 0, 0);
+        ch.epfl.dias.ops.vector.Project project = new ch.epfl.dias.ops.vector.Project(join, new int[]{8, 24});
+        project.open();
+        DBColumn[] result = project.next();
+        System.out.println(result.length);
+        for (DBColumn res: result) {
+            System.out.println(Arrays.toString(res.attributes));
+        }
+
+        assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[0].getAsString()[0]));
+        assertTrue("ongside of the furiously brave acco".equals(result[1].getAsString()[0]));
+
+        result = project.next();
+        System.out.println(result.length);
+        for (DBColumn res: result) {
+            System.out.println(Arrays.toString(res.attributes));
+        }
+        assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[0].getAsString()[0]));
+        assertTrue(" unusual accounts. eve".equals(result[1].getAsString()[0]));
+
+        result = project.next();
+        System.out.println(result.length);
+        for (DBColumn res: result) {
+            System.out.println(Arrays.toString(res.attributes));
+        }
+        assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[0].getAsString()[0]));
+        assertTrue("nal foxes wake.".equals(result[1].getAsString()[0]));
+
+        result = project.next();
+        assertTrue(result[0].eof);
+    }
+
+    @Test
+    public void testJoinOrder2() {
+        ch.epfl.dias.ops.vector.Scan scanOrder = new ch.epfl.dias.ops.vector.Scan(colstoreOrder, 1);
+        ch.epfl.dias.ops.vector.Scan scanLineitem = new ch.epfl.dias.ops.vector.Scan(colstoreLineItem, 1);
+
+        /*Filtering on both sides */
+        ch.epfl.dias.ops.vector.Select selOrder = new ch.epfl.dias.ops.vector.Select(scanOrder, BinaryOp.EQ, 0, 3);
+        ch.epfl.dias.ops.vector.Select selLineitem = new ch.epfl.dias.ops.vector.Select(scanLineitem, BinaryOp.EQ, 0, 3);
+
+        ch.epfl.dias.ops.vector.Join join = new ch.epfl.dias.ops.vector.Join(selLineitem, selOrder, 0, 0);
+        Project project = new Project(join, new int[]{15, 24});
+        project.open();
+        DBColumn[] result = project.next();
+        System.out.println(result.length);
+        for (DBColumn res : result) {
+            System.out.println(Arrays.toString(res.attributes));
+        }
+        assertTrue("ongside of the furiously brave acco".equals(result[0].getAsString()[0]));
+        assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[1].getAsString()[0]));
+
+        assertTrue(" unusual accounts. eve".equals(result[0].getAsString()[1]));
+        assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[1].getAsString()[1]));
+
+        assertTrue("nal foxes wake.".equals(result[0].getAsString()[2]));
+        assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[1].getAsString()[2]));
+
+        result = project.next();
+        assertTrue(result[0].eof);
     }
 }

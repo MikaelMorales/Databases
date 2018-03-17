@@ -15,7 +15,6 @@ public class Scan implements VolcanoOperator {
 	@Override
 	public void open() {
 		currentLine = 0;
-		database.load();
 	}
 
 	@Override
@@ -27,7 +26,6 @@ public class Scan implements VolcanoOperator {
 
 	@Override
 	public void close() {
-		database = null;
 		currentLine = 0;
 	}
 }

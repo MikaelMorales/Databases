@@ -48,11 +48,11 @@ public class HashJoin implements VolcanoOperator {
 			cache = hashMap.get(currentRow.fields[rightFieldNo]);
 		}
 
-		Object[] joinedRow = Stream.concat(Arrays.stream(currentRow.fields),
-				Arrays.stream(cache.get(cacheOffset).fields)).toArray(Object[]::new);
+		Object[] joinedRow = Stream.concat(Arrays.stream(cache.get(cacheOffset).fields),
+				Arrays.stream(currentRow.fields)).toArray(Object[]::new);
 
-		DataType[] joinedType = Stream.concat(Arrays.stream(currentRow.types),
-				Arrays.stream(cache.get(cacheOffset).types)).toArray(DataType[]::new);
+		DataType[] joinedType = Stream.concat(Arrays.stream(cache.get(cacheOffset).types),
+				Arrays.stream(currentRow.types)).toArray(DataType[]::new);
 
 		cacheOffset++;
 		return new DBTuple(joinedRow, joinedType);

@@ -34,6 +34,8 @@ public class PAXStore extends Store {
 			int currentPage = 0;
 			int currentTuplePerPage = 0;
 			Object[][] paxPage = new Object[schema.length][tuplesPerPage];
+			String[] tuple;
+			Object[] fields;
 
 			while ((line = br.readLine()) != null) {
 				if (currentTuplePerPage == tuplesPerPage) { // Move to next page
@@ -43,9 +45,9 @@ public class PAXStore extends Store {
 					paxPage = new Object[schema.length][tuplesPerPage]; // Prepare next PAX Page
 				}
 
-				String[] tuple = line.split(delimiter);
+				tuple = line.split(delimiter);
 				checkNumberOfAttributes(tuple, schema);
-				Object[] fields = parseDataWithType(tuple, schema);
+				fields = parseDataWithType(tuple, schema);
 				for (int attribute=0; attribute < fields.length; attribute++) {
 					paxPage[attribute][currentTuplePerPage] = fields[attribute];
 				}
