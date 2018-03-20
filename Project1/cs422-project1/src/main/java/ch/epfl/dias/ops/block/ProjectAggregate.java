@@ -124,12 +124,12 @@ public class ProjectAggregate implements BlockOperator {
 			case COUNT:
 				return 0.0;
 			case MAX:
-				if (col.type == DataType.DOUBLE || col.type == DataType.INT)
+				if (col.type != null && (col.type == DataType.DOUBLE || col.type == DataType.INT))
 					return Double.MIN_VALUE;
 				else
 					return null;
 			case MIN:
-				if (col.type == DataType.DOUBLE || col.type == DataType.INT)
+				if (col.type != null && (col.type == DataType.DOUBLE || col.type == DataType.INT))
 					return Double.MAX_VALUE;
 				else
 					return null;
