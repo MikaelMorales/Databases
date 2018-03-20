@@ -51,7 +51,7 @@ public class ProjectAggregate implements BlockOperator {
 		DataType type = col.type;
 		OptionalDouble value;
 		if (type == DataType.INT) {
-			value = Arrays.stream(col.getAsInteger()).mapToDouble(a -> a).average();
+			value = Arrays.stream(col.getAsInteger()).mapToDouble(Integer::doubleValue).average();
 		} else if (type == DataType.DOUBLE) {
 			value = Arrays.stream(col.getAsDouble()).mapToDouble(a -> a).average();
 		} else {
@@ -95,7 +95,7 @@ public class ProjectAggregate implements BlockOperator {
 	private Object getSUM(DBColumn col) {
 		DataType type = col.type;
 		if (type == DataType.INT) {
-			return (double) Arrays.stream(col.getAsInteger()).mapToInt(i -> i).sum();
+			return Arrays.stream(col.getAsInteger()).mapToDouble(Integer::doubleValue).sum();
 		} else if (type == DataType.DOUBLE) {
 			return Arrays.stream(col.getAsDouble()).mapToDouble(i -> i).sum();
 		} else {
