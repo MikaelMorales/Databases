@@ -8,8 +8,6 @@ import ch.epfl.dias.store.column.DBColumn;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Arrays;
-
 import static org.junit.Assert.assertTrue;
 
 public class VectorTests {
@@ -631,28 +629,16 @@ public class VectorTests {
         ch.epfl.dias.ops.vector.Join join = new ch.epfl.dias.ops.vector.Join(selOrder, selLineitem, 0, 0);
         ch.epfl.dias.ops.vector.Project project = new ch.epfl.dias.ops.vector.Project(join, new int[]{8, 24});
         project.open();
-        DBColumn[] result = project.next();
-        System.out.println(result.length);
-        for (DBColumn res: result) {
-            System.out.println(Arrays.toString(res.attributes));
-        }
 
+        DBColumn[] result = project.next();
         assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[0].getAsString()[0]));
         assertTrue("ongside of the furiously brave acco".equals(result[1].getAsString()[0]));
 
         result = project.next();
-        System.out.println(result.length);
-        for (DBColumn res: result) {
-            System.out.println(Arrays.toString(res.attributes));
-        }
         assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[0].getAsString()[0]));
         assertTrue(" unusual accounts. eve".equals(result[1].getAsString()[0]));
 
         result = project.next();
-        System.out.println(result.length);
-        for (DBColumn res: result) {
-            System.out.println(Arrays.toString(res.attributes));
-        }
         assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[0].getAsString()[0]));
         assertTrue("nal foxes wake.".equals(result[1].getAsString()[0]));
 
@@ -673,10 +659,6 @@ public class VectorTests {
         Project project = new Project(join, new int[]{15, 24});
         project.open();
         DBColumn[] result = project.next();
-        System.out.println(result.length);
-        for (DBColumn res : result) {
-            System.out.println(Arrays.toString(res.attributes));
-        }
         assertTrue("ongside of the furiously brave acco".equals(result[0].getAsString()[0]));
         assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[1].getAsString()[0]));
 
@@ -688,5 +670,33 @@ public class VectorTests {
 
         result = project.next();
         assertTrue(result[0].eof);
+    }
+
+    @Test
+    public void testMinString() {
+       for (int i = 1; i < MAX_VECTOR_SIZE; i++) {
+            ch.epfl.dias.ops.vector.Scan scan = new ch.epfl.dias.ops.vector.Scan(colstoreLineItem, i);
+            ch.epfl.dias.ops.vector.ProjectAggregate agg = new ch.epfl.dias.ops.vector.ProjectAggregate(scan, Aggregate.MIN, DataType.STRING, 8);
+
+            agg.open();
+            DBColumn[] result = agg.next();
+
+            String output = result[0].getAsString()[0];
+            assertTrue("A".equals(output));
+        }
+    }
+
+    @Test
+    public void testMaxString() {
+        for (int i = 1; i < MAX_VECTOR_SIZE; i++) {
+            ch.epfl.dias.ops.vector.Scan scan = new ch.epfl.dias.ops.vector.Scan(colstoreLineItem, i);
+            ch.epfl.dias.ops.vector.ProjectAggregate agg = new ch.epfl.dias.ops.vector.ProjectAggregate(scan, Aggregate.MAX, DataType.STRING, 8);
+
+            agg.open();
+            DBColumn[] result = agg.next();
+
+            String output = result[0].getAsString()[0];
+            assertTrue("R".equals(output));
+        }
     }
 }

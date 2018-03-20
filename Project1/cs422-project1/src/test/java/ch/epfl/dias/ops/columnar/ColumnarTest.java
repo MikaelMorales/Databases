@@ -8,8 +8,6 @@ import ch.epfl.dias.store.column.DBColumn;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Arrays;
-
 import static org.junit.Assert.assertTrue;
 
 public class ColumnarTest {
@@ -474,10 +472,6 @@ public class ColumnarTest {
 		ch.epfl.dias.ops.block.Join join = new ch.epfl.dias.ops.block.Join(selOrder, selLineitem, 0, 0);
 		ch.epfl.dias.ops.block.Project project = new ch.epfl.dias.ops.block.Project(join, new int[]{8, 24});
 		DBColumn[] result = project.execute();
-		System.out.println(result.length);
-		for (DBColumn res: result) {
-			System.out.println(Arrays.toString(res.attributes));
-		}
 
 		assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[0].getAsString()[0]));
 		assertTrue("ongside of the furiously brave acco".equals(result[1].getAsString()[0]));
@@ -501,10 +495,6 @@ public class ColumnarTest {
 		ch.epfl.dias.ops.block.Join join = new ch.epfl.dias.ops.block.Join(selLineitem, selOrder, 0, 0);
 		ch.epfl.dias.ops.block.Project project = new ch.epfl.dias.ops.block.Project(join, new int[]{15, 24});
 		DBColumn[] result = project.execute();
-		System.out.println(result.length);
-		for (DBColumn res : result) {
-			System.out.println(Arrays.toString(res.attributes));
-		}
 		assertTrue("ongside of the furiously brave acco".equals(result[0].getAsString()[0]));
 		assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[1].getAsString()[0]));
 
@@ -513,5 +503,23 @@ public class ColumnarTest {
 
 		assertTrue("nal foxes wake.".equals(result[0].getAsString()[2]));
 		assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[1].getAsString()[2]));
+	}
+
+	@Test
+	public void testMinString() {
+		ch.epfl.dias.ops.block.Scan scanLineitem = new ch.epfl.dias.ops.block.Scan(columnstoreLineItem);
+		ch.epfl.dias.ops.block.ProjectAggregate agg = new ch.epfl.dias.ops.block.ProjectAggregate(scanLineitem, Aggregate.MIN, DataType.STRING, 8);
+
+		String output = agg.execute()[0].getAsString()[0];
+		assertTrue("A".equals(output));
+	}
+
+	@Test
+	public void testMaxString() {
+		ch.epfl.dias.ops.block.Scan scanLineitem = new ch.epfl.dias.ops.block.Scan(columnstoreLineItem);
+		ch.epfl.dias.ops.block.ProjectAggregate agg = new ch.epfl.dias.ops.block.ProjectAggregate(scanLineitem, Aggregate.MAX, DataType.STRING, 8);
+
+		String output = agg.execute()[0].getAsString()[0];
+		assertTrue("R".equals(output));
 	}
 }

@@ -25,10 +25,11 @@ public class ProjectAggregate implements BlockOperator {
 	@Override
 	public DBColumn[] execute() {
 		DBColumn col = child.execute()[fieldNo];
-		double value = 0.0;
+		checkValidOperation(col);
+		Object value = setupInitialValue(col);
 		switch (agg) {
 			case COUNT:
-				value = col.attributes.length;
+				value = (double) col.attributes.length;
 				break;
 			case AVG:
 				value = getAVG(col);
@@ -46,7 +47,7 @@ public class ProjectAggregate implements BlockOperator {
 		return new DBColumn[]{createDBColumn(value)};
 	}
 
-	private double getAVG(DBColumn col) {
+	private Object getAVG(DBColumn col) {
 		DataType type = col.type;
 		OptionalDouble value;
 		if (type == DataType.INT) {
@@ -59,7 +60,7 @@ public class ProjectAggregate implements BlockOperator {
 		return value.orElse(0.0);
 	}
 
-	private double getMAX(DBColumn col) {
+	private Object getMAX(DBColumn col) {
 		DataType type = col.type;
 		if (type == DataType.INT) {
 			Optional<Integer> value = Arrays.stream(col.getAsInteger()).max(Integer::compareTo);
@@ -67,12 +68,15 @@ public class ProjectAggregate implements BlockOperator {
 		} else if (type == DataType.DOUBLE) {
 			Optional<Double> value = Arrays.stream(col.getAsDouble()).max(Double::compareTo);
 			return value.orElse(0.0);
+		} else if (type == DataType.STRING) {
+			Optional<String> value = Arrays.stream(col.getAsString()).max(String::compareTo);
+			return value.orElse(null);
 		} else {
 			throw new IllegalArgumentException("Invalid type to compute max");
 		}
 	}
 
-	private double getMIN(DBColumn col) {
+	private Object getMIN(DBColumn col) {
 		DataType type = col.type;
 		if (type == DataType.INT) {
 			Optional<Integer> value = Arrays.stream(col.getAsInteger()).min(Integer::compareTo);
@@ -80,15 +84,18 @@ public class ProjectAggregate implements BlockOperator {
 		} else if (type == DataType.DOUBLE) {
 			Optional<Double> value = Arrays.stream(col.getAsDouble()).min(Double::compareTo);
 			return value.orElse(0.0);
+		} else if (type == DataType.STRING) {
+			Optional<String> value = Arrays.stream(col.getAsString()).min(String::compareTo);
+			return value.orElse(null);
 		} else {
 			throw new IllegalArgumentException("Invalid type to compute min");
 		}
 	}
 
-	private double getSUM(DBColumn col) {
+	private Object getSUM(DBColumn col) {
 		DataType type = col.type;
 		if (type == DataType.INT) {
-			return Arrays.stream(col.getAsInteger()).mapToInt(i -> i).sum();
+			return (double) Arrays.stream(col.getAsInteger()).mapToInt(i -> i).sum();
 		} else if (type == DataType.DOUBLE) {
 			return Arrays.stream(col.getAsDouble()).mapToDouble(i -> i).sum();
 		} else {
@@ -96,13 +103,43 @@ public class ProjectAggregate implements BlockOperator {
 		}
 	}
 
-	private DBColumn createDBColumn(double value) {
+	private DBColumn createDBColumn(Object value) {
 		if(dt == DataType.INT) {
-			return new DBColumn(new Object[]{(int)value}, dt);
-		} else if (dt == DataType.DOUBLE){
-			return new DBColumn(new Object[]{value}, dt);
+			return new DBColumn(new Object[]{((Double)value).intValue()}, dt);
+		} else if (dt == DataType.DOUBLE) {
+			return new DBColumn(new Object[]{(Double) value}, dt);
+		} else if (dt == DataType.STRING) {
+			return new DBColumn(new Object[]{(String) value}, dt);
 		} else {
 			throw new IllegalArgumentException("Aggregation with invalid return data type " + dt.name());
+		}
+	}
+
+	private Object setupInitialValue(DBColumn col) {
+		switch (agg) {
+			case AVG:
+				return 0.0;
+			case SUM:
+				return 0.0;
+			case COUNT:
+				return 0.0;
+			case MAX:
+				if (col.type == DataType.DOUBLE || col.type == DataType.INT)
+					return Double.MIN_VALUE;
+				else
+					return null;
+			case MIN:
+				if (col.type == DataType.DOUBLE || col.type == DataType.INT)
+					return Double.MAX_VALUE;
+				else
+					return null;
+			default: return 0.0;
+		}
+	}
+
+	private void checkValidOperation(DBColumn col) {
+		if ((agg == Aggregate.AVG || agg == Aggregate.SUM) && col.type == DataType.STRING) {
+			throw new IllegalArgumentException("Invalid Aggregation on data type string");
 		}
 	}
 }

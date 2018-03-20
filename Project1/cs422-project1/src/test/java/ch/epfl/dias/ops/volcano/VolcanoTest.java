@@ -8,8 +8,6 @@ import ch.epfl.dias.store.row.RowStore;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Arrays;
-
 import static org.junit.Assert.assertTrue;
 
 public class VolcanoTest {
@@ -506,8 +504,6 @@ public class VolcanoTest {
 		ch.epfl.dias.ops.volcano.Project project = new ch.epfl.dias.ops.volcano.Project(join, new int[]{8, 24});
 		project.open();
 		DBTuple result = project.next();
-		System.out.println(Arrays.toString(result.fields));
-
 		assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result.getFieldAsString(0)));
 		assertTrue("ongside of the furiously brave acco".equals(result.getFieldAsString(1)));
 
@@ -550,5 +546,25 @@ public class VolcanoTest {
 
 		result = project.next();
 		assertTrue(result.eof);
+	}
+
+	@Test
+	public void testMinString() {
+		ch.epfl.dias.ops.volcano.Scan scanLineitem = new ch.epfl.dias.ops.volcano.Scan(rowstoreLineItem);
+		ch.epfl.dias.ops.volcano.ProjectAggregate agg = new ch.epfl.dias.ops.volcano.ProjectAggregate(scanLineitem, Aggregate.MIN, DataType.STRING, 8);
+
+		agg.open();
+		String output = agg.next().getFieldAsString(0);
+		assertTrue("A".equals(output));
+	}
+
+	@Test
+	public void testMaxString() {
+		ch.epfl.dias.ops.volcano.Scan scanLineitem = new ch.epfl.dias.ops.volcano.Scan(rowstoreLineItem);
+		ch.epfl.dias.ops.volcano.ProjectAggregate agg = new ch.epfl.dias.ops.volcano.ProjectAggregate(scanLineitem, Aggregate.MAX, DataType.STRING, 8);
+
+		agg.open();
+		String output = agg.next().getFieldAsString(0);
+		assertTrue("R".equals(output));
 	}
 }

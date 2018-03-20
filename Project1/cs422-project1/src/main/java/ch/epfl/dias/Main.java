@@ -11,7 +11,6 @@ import ch.epfl.dias.store.row.DBTuple;
 import ch.epfl.dias.store.row.RowStore;
 
 public class Main {
-
 	public static void main(String[] args) {
 		DataType[] orderSchema = new DataType[] { DataType.INT, DataType.INT, DataType.STRING, DataType.DOUBLE, DataType.STRING,
 				DataType.STRING, DataType.STRING, DataType.INT, DataType.STRING };
@@ -23,6 +22,7 @@ public class Main {
 		testTupleAtAtime("- TUPLE AT A TIME WITH NSM", lineitemSchema, orderSchema, true);
 		testTupleAtAtime("- TUPLE AT A TIME WITH PAX", lineitemSchema, orderSchema, false);
 
+		// Loaded here since it's the same store for column and vector.
 		System.out.println("LOADING THE DATA AS COLUMNS...");
 		ColumnStore columnStoreBigLineItem = new ColumnStore(lineitemSchema, "input/lineitem_big.csv", "\\|");
 		columnStoreBigLineItem.load();
@@ -61,7 +61,6 @@ public class Main {
 		int output = result[0].getAsInteger()[0];
 		System.out.println(output);
 		*/
-
 	}
 
 	private static void testTupleAtAtime(String title, DataType[] lineitemSchema, DataType[] orderSchema, boolean isRowStoreStore) {
@@ -96,7 +95,7 @@ public class Main {
 		long end = System.currentTimeMillis();
 		printResults("SELECT L.orderkey, L.partkey FROM lineitem_big L WHERE L.orderkey > 100;", start, end);
 
-		/* SELECT L.orderkey, L.partkey FROM lineitem_big L, orders_big O WHERE L.l_orderkey=O.orderkey; */
+		/* SELECT L.orderkey, L.partkey FROM lineitem_big L, orders_big O WHERE L.orderkey=O.orderkey; */
 		ch.epfl.dias.ops.volcano.Scan scanOrder2 = new ch.epfl.dias.ops.volcano.Scan(storeBigOrder);
 		ch.epfl.dias.ops.volcano.Scan scanLineitem2 = new ch.epfl.dias.ops.volcano.Scan(storeBigLineItem);
 		ch.epfl.dias.ops.volcano.HashJoin join2 = new ch.epfl.dias.ops.volcano.HashJoin(scanOrder2, scanLineitem2, 0, 0);
@@ -110,7 +109,7 @@ public class Main {
 		}
 		proj2.close();
 		end = System.currentTimeMillis();
-		printResults("SELECT L.orderkey, L.partkey FROM lineitem_big L, orders_big O WHERE L.l_orderkey = O.orderkey;", start, end);
+		printResults("SELECT L.orderkey, L.partkey FROM lineitem_big L, orders_big O WHERE L.orderkey = O.orderkey;", start, end);
 
 
 		/* SELECT MAX(L.orderkey) FROM lineitem_big L WHERE L.orderkey > 3; */
@@ -151,7 +150,7 @@ public class Main {
 		long end = System.currentTimeMillis();
 		printResults("SELECT L.orderkey, L.partkey FROM lineitem_big L WHERE L.orderkey > 100;", start, end);
 
-		/* SELECT L.orderkey, L.partkey FROM lineitem_big L, orders_big O WHERE L.l_orderkey=O.orderkey; */
+		/* SELECT L.orderkey, L.partkey FROM lineitem_big L, orders_big O WHERE L.orderkey=O.orderkey; */
 		ch.epfl.dias.ops.block.Scan scanOrder2 = new ch.epfl.dias.ops.block.Scan(columnstoreBigOrder);
 		ch.epfl.dias.ops.block.Scan scanLineitem2 = new ch.epfl.dias.ops.block.Scan(columnstoreBigLineItem);
 		ch.epfl.dias.ops.block.Join join2 = new ch.epfl.dias.ops.block.Join(scanOrder2, scanLineitem2, 0, 0);
@@ -160,7 +159,7 @@ public class Main {
 		start = System.currentTimeMillis();
 		proj2.execute();
 		end = System.currentTimeMillis();
-		printResults("SELECT L.orderkey, L.partkey FROM lineitem_big L, orders_big O WHERE L.l_orderkey = O.orderkey;", start, end);
+		printResults("SELECT L.orderkey, L.partkey FROM lineitem_big L, orders_big O WHERE L.orderkey = O.orderkey;", start, end);
 
 
 		/* SELECT MAX(L.orderkey) FROM lineitem_big L WHERE L.orderkey > 3; */
@@ -203,7 +202,7 @@ public class Main {
 		long end = System.currentTimeMillis();
 		printResults("SELECT L.orderkey, L.partkey FROM lineitem_big L WHERE L.orderkey > 100;", start, end);
 
-		/* SELECT L.orderkey, L.partkey FROM lineitem_big L, orders_big O WHERE L.l_orderkey=O.orderkey; */
+		/* SELECT L.orderkey, L.partkey FROM lineitem_big L, orders_big O WHERE L.orderkey=O.orderkey; */
 		ch.epfl.dias.ops.vector.Scan scanOrder2 = new ch.epfl.dias.ops.vector.Scan(columnstoreBigOrder, VECTOR_SIZE);
 		ch.epfl.dias.ops.vector.Scan scanLineitem2 = new ch.epfl.dias.ops.vector.Scan(columnstoreBigLineItem, VECTOR_SIZE);
 		ch.epfl.dias.ops.vector.Join join2 = new ch.epfl.dias.ops.vector.Join(scanOrder2, scanLineitem2, 0, 0);
@@ -217,7 +216,7 @@ public class Main {
 		}
 		proj2.close();
 		end = System.currentTimeMillis();
-		printResults("SELECT L.orderkey, L.partkey FROM lineitem_big L, orders_big O WHERE L.l_orderkey = O.orderkey;", start, end);
+		printResults("SELECT L.orderkey, L.partkey FROM lineitem_big L, orders_big O WHERE L.orderkey = O.orderkey;", start, end);
 
 
 		/* SELECT MAX(L.orderkey) FROM lineitem_big L WHERE L.orderkey > 3; */
