@@ -208,7 +208,7 @@ public class VectorTests {
     public void testGE() {
 		/* SELECT COUNT(*) FROM data WHERE col0 >= 4 */
         for (int i = 1; i < MAX_VECTOR_SIZE; i++) {
-            ch.epfl.dias.ops.vector.Scan scan = new ch.epfl.dias.ops.vector.Scan(colstoreData, i);
+            ch.epfl.dias.ops.vector.Scan scan = new ch.epfl.dias.ops.vector.Scan(colstoreData, 2);
             ch.epfl.dias.ops.vector.Select sel = new ch.epfl.dias.ops.vector.Select(scan, BinaryOp.GE, 0, 4);
             ch.epfl.dias.ops.vector.ProjectAggregate agg = new ch.epfl.dias.ops.vector.ProjectAggregate(sel, Aggregate.COUNT,
                     DataType.INT, 2);

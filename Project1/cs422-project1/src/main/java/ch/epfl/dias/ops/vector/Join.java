@@ -40,7 +40,7 @@ public class Join implements VectorOperator {
 		if (right[0].eof) {
 			DBColumn[] res = new DBColumn[leftChildData.length + right.length];
 			for (int i=0; i < res.length; i++) {
-				res[i] = new DBColumn();
+				res[i].setEOF(true);
 			}
 			return res;
 		}

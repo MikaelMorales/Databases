@@ -14,6 +14,7 @@ public class Select implements VectorOperator {
 	private int value;
 	private DBColumn[] cacheColumns;
 	private int vectorSize = -1;
+	private int currentSize = 0;
 
 	public Select(VectorOperator child, BinaryOp op, int fieldNo, int value) {
 		this.child = child;
@@ -30,7 +31,7 @@ public class Select implements VectorOperator {
 	@Override
 	public DBColumn[] next() {
 		DBColumn[] columns;
-		int currentSize = 0;
+		currentSize = 0;
 
 		if(cacheColumns != null) {
 			columns = cacheColumns.clone();
@@ -39,48 +40,27 @@ public class Select implements VectorOperator {
 			columns = child.next();
 		}
 
-		if (columns[0].eof) {
+		if (columns[0].attributes == null) {
 			return columns;
 		}
 
 		if (vectorSize == -1)
-			vectorSize = columns[0].attributes == null ? 0 : columns[0].attributes.length;
+			vectorSize = columns[0].attributes.length;
 
 		DBColumn[] result = new DBColumn[columns.length];
+		compute(columns, result);
 
-		while (!columns[0].eof && vectorSize != currentSize) {
-			List<Integer> validIndices = new ArrayList<>();
-			Integer[] attr = columns[fieldNo].getAsInteger();
-
-			int index = 0;
-			while (index < attr.length && currentSize < vectorSize) {
-				if(isValidIndex(attr[index])) {
-					validIndices.add(index);
-					currentSize++;
-				}
-				index++;
-			}
-
-			for (int i = 0; i < result.length; i++) {
-				result[i] = fillColumns(result[i], columns[i], validIndices);
-			}
-
-			if (index != attr.length) {
-				cacheColumns = new DBColumn[columns.length];
-				for (int i = 0; i < result.length; i++) {
-					cacheColumns[i] = fillCache(columns[i], index);
-				}
-			}
-
-			if (vectorSize != currentSize)
-				columns = child.next();
+		while(!columns[0].eof && vectorSize != currentSize) {
+			columns = child.next();
+			compute(columns, result);
 		}
 
-		if (columns[0].eof && result[0].attributes.length == 0) {
-			for (int i=0; i < columns.length; i++) {
-				result[i] = new DBColumn();
+		if (columns[0].eof && cacheColumns == null) {
+			for (int i = 0; i < columns.length; i++) {
+				result[i].setEOF(true);
 			}
 		}
+
 		return result;
 	}
 
@@ -89,10 +69,38 @@ public class Select implements VectorOperator {
 		child.close();
 	}
 
+	private void compute(DBColumn[] columns, DBColumn[] result) {
+		List<Integer> validIndices = new ArrayList<>();
+		Integer[] attr = columns[fieldNo].getAsInteger();
+
+		int index = 0;
+		while (index < attr.length && currentSize < vectorSize) {
+			if(isValidIndex(attr[index])) {
+				validIndices.add(index);
+				currentSize++;
+			}
+			index++;
+		}
+
+		for (int i = 0; i < result.length; i++) {
+			result[i] = fillColumns(result[i], columns[i], validIndices);
+		}
+
+		if (index != attr.length) {
+			cacheColumns = new DBColumn[columns.length];
+			for (int i = 0; i < result.length; i++) {
+				cacheColumns[i] = fillCache(columns[i], index);
+			}
+		}
+	}
+
 	private DBColumn fillCache(DBColumn col, Integer start) {
 		Object[] cache = new Object[col.attributes.length - start];
 		System.arraycopy(col.attributes, start, cache, 0, col.attributes.length - start);
-		return new DBColumn(cache, col.type);
+		DBColumn res = new DBColumn(cache, col.type);
+		if (col.eof)
+			res.setEOF(true);
+		return res;
 	}
 
 	private DBColumn fillColumns(DBColumn res, DBColumn col, List<Integer> validIndices) {

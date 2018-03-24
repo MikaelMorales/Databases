@@ -23,6 +23,8 @@ public class Project implements VectorOperator {
 		DBColumn[] filtered = new DBColumn[fieldNo.length];
 		for (int i=0; i < fieldNo.length; i++) {
 			filtered[i] = c[fieldNo[i]];
+			if (c[fieldNo[i]].eof)
+				filtered[i].setEOF(true);
 		}
 		return filtered;
 	}

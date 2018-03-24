@@ -13,8 +13,8 @@ public class DBColumn {
 		this.eof = false;
 	}
 
-	public DBColumn() {
-		this.eof = true;
+	public void setEOF(boolean eof) {
+		this.eof = eof;
 	}
 
 	public Integer[] getAsInteger() {

@@ -13,6 +13,8 @@ public class ProjectAggregate implements VectorOperator {
 	private Aggregate agg;
 	private DataType dt;
 	private int fieldNo;
+	private double numberOfRows = 0.0;
+	private Object value;
 
 	public ProjectAggregate(VectorOperator child, Aggregate agg, DataType dt, int fieldNo) {
 		this.child = child;
@@ -30,29 +32,14 @@ public class ProjectAggregate implements VectorOperator {
 	public DBColumn[] next() {
 		DBColumn col = child.next()[fieldNo];
 		checkValidOperation(col);
-		Object value = setupInitialValue(col);
-		double numberOfRows = 0.0;
-		while (!col.eof) {
-			switch (agg) {
-				case AVG:
-					value = getSUM(col, value);
-					break;
-				case COUNT:
-					value = (double) col.attributes.length + (Double) value;
-					break;
-				case MAX:
-					value = getMAX(col, value);
-					break;
-				case MIN:
-					value = getMIN(col, value);
-					break;
-				case SUM:
-					value = getSUM(col, value);
-					break;
-			}
-			numberOfRows += col.attributes.length;
+		value = setupInitialValue(col);
+		compute(col);
+
+		while(!col.eof) {
 			col = child.next()[fieldNo];
+			compute(col);
 		}
+
 		return new DBColumn[]{createDBColumn(value, numberOfRows)};
 	}
 
@@ -61,6 +48,26 @@ public class ProjectAggregate implements VectorOperator {
 		child.close();
 	}
 
+	private void compute(DBColumn col) {
+		switch (agg) {
+			case AVG:
+				value = getSUM(col, value);
+				break;
+			case COUNT:
+				value = (double) col.attributes.length + (Double) value;
+				break;
+			case MAX:
+				value = getMAX(col, value);
+				break;
+			case MIN:
+				value = getMIN(col, value);
+				break;
+			case SUM:
+				value = getSUM(col, value);
+				break;
+		}
+		numberOfRows += col.attributes.length;
+	}
 
 	private Object getMAX(DBColumn col, Object value) {
 		DataType type = col.type;
