@@ -245,7 +245,7 @@ public class Main {
 	}
 
 	private static void printResults(String query, long startWithOpen, long endTime) {
-		//System.out.println(query);
+		System.out.println(query);
 		System.out.println("Execution time: " + (endTime - startWithOpen) + " ms");
 		System.out.println();
 	}
