@@ -641,8 +641,6 @@ public class VectorTests {
         result = project.next();
         assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[0].getAsString()[0]));
         assertTrue("nal foxes wake.".equals(result[1].getAsString()[0]));
-
-        result = project.next();
         assertTrue(result[0].eof);
     }
 
@@ -662,11 +660,13 @@ public class VectorTests {
         assertTrue("ongside of the furiously brave acco".equals(result[0].getAsString()[0]));
         assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[1].getAsString()[0]));
 
-        assertTrue(" unusual accounts. eve".equals(result[0].getAsString()[1]));
-        assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[1].getAsString()[1]));
+        result = project.next();
+        assertTrue(" unusual accounts. eve".equals(result[0].getAsString()[0]));
+        assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[1].getAsString()[0]));
 
-        assertTrue("nal foxes wake.".equals(result[0].getAsString()[2]));
-        assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[1].getAsString()[2]));
+        result = project.next();
+        assertTrue("nal foxes wake.".equals(result[0].getAsString()[0]));
+        assertTrue("sly final accounts boost. carefully regular ideas cajole carefully. depos".equals(result[1].getAsString()[0]));
 
         result = project.next();
         assertTrue(result[0].eof);
