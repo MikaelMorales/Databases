@@ -1,0 +1,30 @@
+Q1 = SELECT L.orderkey, L.partkey FROM lineitem_big L WHERE L.orderkey > 100;
+Q2 = SELECT L.orderkey, L.partkey FROM lineitem_big L, orders_big O WHERE L.orderkey = O.orderkey;
+Q3 = SELECT MAX(L.orderkey) FROM lineitem_big L WHERE L.orderkey > 3;
+Q4 = SELECT COUNT(L.orderkey) FROM lineitem_big L, orders_big O WHERE L.orderkey = O.orderkey;
+
+- TUPLE AT A TIME WITH NSM
+Execution time: 60 ms
+Execution time: 171 ms
+Execution time: 74 ms
+Execution time: 1002 ms
+
+- TUPLE AT A TIME WITH PAX
+Execution time: 169 ms
+Execution time: 210 ms
+Execution time: 92 ms
+Execution time: 871 ms
+
+- COLUMN AT A TIME
+Execution time: 286 ms
+Execution time: 2692 ms
+Execution time: 517 ms
+Execution time: 2605 ms
+
+- VECTOR AT A TIME
+Execution time: 69 ms
+Execution time: 370 ms
+Execution time: 411 ms
+Execution time: 3506 ms
+
+Note: These execution times don't include the time needed to load the files into the database.
