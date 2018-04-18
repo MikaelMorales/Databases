@@ -1,0 +1,21 @@
+version: '2'
+services:
+  master:
+    image: diasmaster
+    environment:
+     - MASTER_SCRIPT=master.sh
+    volumes:
+     - ../../CS422-Project2/src/test/resources/:/root/workloads/project2-input
+     - ./workloads/samples:/root/workloads/samples
+     - ./jars:/root/jars
+     - ./scripts:/root/scripts
+     - ./config/slaves:/root/hadoop-2.7.5/etc/hadoop/slaves:ro
+    depends_on:
+      - slave
+    ports:
+      - 50070:50070
+      - 8080:8080
+  slave:
+    volumes:
+      - ./config/slaves:/root/hadoop-2.7.5/etc/hadoop/slaves:ro
+    image: diasslave

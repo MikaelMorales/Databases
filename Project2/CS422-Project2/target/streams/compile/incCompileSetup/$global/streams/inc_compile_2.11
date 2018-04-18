@@ -1,0 +1,846 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes
+compile options:
+0 items
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.11.7
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+32 items
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$1.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$2.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$3.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$4$$anonfun$apply$1.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$4.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$5$$anonfun$apply$2.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$5.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$combinations$1.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$combine$1.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$combine$2.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$combine$3.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$convertKeyToString$1.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$mMap$1.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$mapReduce$1.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$reduce$1.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$reduce$2.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/Dataset.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/Main$$anonfun$1.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/Main$.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/Main.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/streaming/Main$.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/streaming/Main.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/streaming/SparkStreaming$$anonfun$1.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/streaming/SparkStreaming.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/thetajoin/Dataset.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/thetajoin/Main$$anonfun$1.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/thetajoin/Main$$anonfun$2.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/thetajoin/Main$.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/thetajoin/Main.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/thetajoin/ThetaJoin$$anonfun$local_thetajoin$1.class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/thetajoin/ThetaJoin.class
+binary dependencies:
+42 items
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/jars/spark-catalyst_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/jars/spark-catalyst_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> /Users/Mikael/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/jars/spark-catalyst_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-sql_2.11/jars/spark-sql_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> /Users/Mikael/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> /Users/Mikael/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/jars/spark-catalyst_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-sql_2.11/jars/spark-sql_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> /Users/Mikael/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> /Users/Mikael/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.4.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> /Users/Mikael/.ivy2/cache/org.apache.hadoop/hadoop-common/jars/hadoop-common-2.7.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/jars/spark-catalyst_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-sketch_2.11/jars/spark-sketch_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-sql_2.11/jars/spark-sql_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-streaming_2.11/jars/spark-streaming_2.11-2.1.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> /Users/Mikael/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/jars/spark-catalyst_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> /Users/Mikael/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/jars/spark-catalyst_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-sql_2.11/jars/spark-sql_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> /Users/Mikael/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/jars/spark-catalyst_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> /Users/Mikael/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.2.0.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> /Users/Mikael/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> /Users/Mikael/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.16.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+7 items
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> /Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+32 items
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> cubeoperator.CubeOperator
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> cubeoperator.CubeOperator$$anonfun$1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> cubeoperator.CubeOperator$$anonfun$2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> cubeoperator.CubeOperator$$anonfun$3
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> cubeoperator.CubeOperator$$anonfun$4
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> cubeoperator.CubeOperator$$anonfun$4$$anonfun$apply$1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> cubeoperator.CubeOperator$$anonfun$5
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> cubeoperator.CubeOperator$$anonfun$5$$anonfun$apply$2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> cubeoperator.CubeOperator$$anonfun$combinations$1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> cubeoperator.CubeOperator$$anonfun$combine$1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> cubeoperator.CubeOperator$$anonfun$combine$2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> cubeoperator.CubeOperator$$anonfun$combine$3
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> cubeoperator.CubeOperator$$anonfun$convertKeyToString$1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> cubeoperator.CubeOperator$$anonfun$mMap$1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> cubeoperator.CubeOperator$$anonfun$mapReduce$1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> cubeoperator.CubeOperator$$anonfun$reduce$1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> cubeoperator.CubeOperator$$anonfun$reduce$2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> cubeoperator.Dataset
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> cubeoperator.Main
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> cubeoperator.Main$
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> cubeoperator.Main$$anonfun$1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> streaming.Main
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> streaming.Main$
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> streaming.SparkStreaming
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> streaming.SparkStreaming$$anonfun$1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> thetajoin.Dataset
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> thetajoin.Main
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> thetajoin.Main$
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> thetajoin.Main$$anonfun$1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> thetajoin.Main$$anonfun$2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> thetajoin.ThetaJoin
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> thetajoin.ThetaJoin$$anonfun$local_thetajoin$1
+used names:
+578 items
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> +
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> ++
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> /
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> :+
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> ::
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> <
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> <init>
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> <repeated>
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> ==
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> A
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Any
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> AnyRef
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> B
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Boolean
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> C
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> CanBuildFrom
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> ClassTag
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Coll
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> CubeOperator
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Dataset
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Double
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> DoubleIsFractional
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Function1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Function2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> GenTraversableOnce
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> IllegalArgumentException
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Int
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Iterable
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> K
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> List
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> MatchError
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Nil
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Nothing
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Null
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Numeric
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Object
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Ordering
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> PairRDDFunctions
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Predef
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> RDD
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Row
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> String
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> StringContext
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> T
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> T0
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> T1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> T2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> That
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> TraversableOnce
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Tuple2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> U
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> Unit
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> V
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> W
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> _$7
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> _1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> _2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> agg
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> aggAttribute
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> aggregateByKey
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> apache
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> apply
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> asInstanceOf
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> canBuildFrom
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> comb
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> combinations
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> combineByKey
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> convertKeyToString
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> count
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> cubeoperator
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> dataset
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> empty
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> f
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> flatMap
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> foreach
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> get
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> getDouble
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> getRDD
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> getSchema
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> globalCombiner
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> groupByKey
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> groupingAttributes
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> head
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> i
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> immutable
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> in
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> index
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> indexAgg
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> indexOf
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> initialValue
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> isInstanceOf
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> join
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> localAggregate
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> localCombiner
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> mMap
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> map
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> mapReduce
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> mapReduceResult
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> mapValues
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> materializeClassTag
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> math
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> max
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> merge
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> min
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> myMap
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> newRes
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> org
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> package
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> r
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> rdd
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> rddToPairRDDFunctions
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> res
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> row
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> s
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> scala
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> schema
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> spark
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> sql
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> sum
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> t
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> toString
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> u
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> v
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$10
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$11
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$12
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$13
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$14
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$15
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$16
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$17
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$18
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$19
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$20
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$21
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$22
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$23
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$24
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$25
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$26
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$27
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$28
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$29
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$30
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$31
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$32
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$33
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$34
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$35
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$36
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$37
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$6
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$7
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$8
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> x$9
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> xs
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> y
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> <init>
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> ==
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> Any
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> AnyRef
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> Boolean
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> Dataset
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> List
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> MatchError
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> Object
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> Predef
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> RDD
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> Row
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> String
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> Unit
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> apache
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> cubeoperator
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> org
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> package
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> rdd
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> scala
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> schema
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> spark
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> sql
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> unchecked
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> <init>
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> <repeated>
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> A
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> Any
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> AnyRef
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> Array
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> B
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> CanBuildFrom
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> Coll
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> Column
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> CubeOperator
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> DataFrame
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> DataFrameReader
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> Dataset
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> Double
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> Function1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> Int
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> List
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> Main
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> Nothing
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> Object
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> Predef
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> RDD
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> RelationalGroupedDataset
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> Row
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> SQLContext
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> SparkConf
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> SparkContext
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> String
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> StructField
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> StructType
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> That
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> Tuple2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> Unit
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> agg
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> apache
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> apply
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> as
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> canBuildFrom
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> cb
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> ctx
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> cube
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> cubeoperator
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> dataset
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> df
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> format
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> functions
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> groupingList
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> immutable
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> inputFile
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> load
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> map
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> name
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> option
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> org
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> output
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> package
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> q1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> rdd
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> read
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> reducers
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> res
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> saveAsTextFile
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> scala
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> schema
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> setAppName
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> setMaster
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> show
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> spark
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> sparkConf
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> sql
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> sqlContext
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> sum
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> toList
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> x
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> <init>
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> AnyRef
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> Array
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> Config
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> ConfigFactory
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> DataFrame
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> Main
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> Object
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> Predef
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> RDD
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> Row
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> SQLContext
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> SparkConf
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> SparkContext
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> SparkStreaming
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> String
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> Unit
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> apache
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> args
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> com
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> config
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> consume
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> expressions
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> functions
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> io
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> java
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> org
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> rdd
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> scala
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> setAppName
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> spark
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> sparkConf
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> sql
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> streaming
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> types
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> typesafe
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> <init>
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Any
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> AnyRef
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Array
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Boolean
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> BufferedWriter
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> CharSequence
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Class
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> ClassTag
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Configuration
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> CountMinSketch
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> DStream
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Duration
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> FSDataInputStream
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> FSDataOutputStream
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> FileSystem
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Function1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> IOUtils
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Int
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Long
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Nothing
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Object
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> OutputStreamWriter
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Path
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Predef
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Rule
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Seconds
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Seq
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Source
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> SparkConf
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> SparkSession
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> SparkStreaming
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> StorageLevel
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Strategy
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> StreamingContext
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> String
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> StringOps
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> T
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> T1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> T2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> TOPK
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Tuple2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> U
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> URI
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> Unit
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> _$7
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> aggregate
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> apache
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> apply
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> args
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> augmentString
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> awaitTermination
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> catalyst
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> collection
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> command
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> commons
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> conf
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> contains
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> control
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> datasources
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> execType
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> execution
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> expressions
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> fs
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> hadoop
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> inputDirectory
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> io
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> java
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> linesDStream
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> logical
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> map
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> materializeClassTag
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> net
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> org
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> package
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> physical
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> planning
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> plans
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> rules
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> scala
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> seconds
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> sketch
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> spark
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> sparkConf
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> sparkconf
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> split
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> sql
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> ssc
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> start
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> storage
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> streaming
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> textFileStream
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> toInt
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> toLong
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> util
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> x
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> <init>
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> ==
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> Any
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> AnyRef
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> Boolean
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> Dataset
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> List
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> MatchError
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> Object
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> Predef
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> RDD
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> Row
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> String
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> Unit
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> apache
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> org
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> package
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> rdd
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> scala
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> schema
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> spark
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> sql
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> thetajoin
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> unchecked
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> <init>
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> A
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> Any
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> AnyRef
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> Array
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> B
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> CanBuildFrom
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> Coll
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> DataFrame
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> DataFrameReader
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> Dataset
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> Function1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> Int
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> List
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> Long
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> Main
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> Nothing
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> Object
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> Predef
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> RDD
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> Row
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> SQLContext
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> SparkConf
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> SparkContext
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> String
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> StructField
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> StructType
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> That
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> ThetaJoin
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> Tuple2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> Unit
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> apache
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> canBuildFrom
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> count
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> ctx
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> dataset1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> dataset2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> df1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> df2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> expressions
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> format
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> functions
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> getRDD
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> immutable
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> inputFile1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> inputFile2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> io
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> java
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> load
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> map
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> maxInput
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> name
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> option
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> org
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> package
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> println
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> rdd
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> rdd1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> rdd2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> read
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> reducers
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> res
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> scala
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> schema
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> schema1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> schema2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> setAppName
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> spark
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> sparkConf
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> sql
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> sqlContext
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> theta_join
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> thetajoin
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> tj
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> toList
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> types
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> x
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> :+
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> <
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> <=
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> <init>
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> <repeated>
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> ==
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> >
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> >=
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> A
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> Any
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> Array
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> B
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> Boolean
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> CanBuildFrom
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> ClassTag
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> Coll
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> Dataset
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> Function1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> Int
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> Iterator
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> List
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> Logger
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> LoggerFactory
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> Long
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> MatchError
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> Nil
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> Nothing
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> Object
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> Predef
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> RDD
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> Row
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> Serializable
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> String
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> T
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> T1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> T2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> That
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> ThetaJoin
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> Tuple2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> U
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> Unit
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> _2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> apache
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> apply
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> attr1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> attr2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> canBuildFrom
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> checkCondition
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> dat1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> dat2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> dat2List
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> dataset1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> dataset2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> foreach
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> getLogger
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> getRDD
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> getSchema
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> hasNext
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> horizontalBoundaries
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> horizontalCounts
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> immutable
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> indexOf
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> io
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> iterator
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> java
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> logger
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> materializeClassTag
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> next
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> op
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> org
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> package
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> rdd
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> res
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> row1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> row2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> scala
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> schema1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> schema2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> slf4j
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> spark
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> thetajoin
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> toList
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> value1
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> value2
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> verticalBoundaries
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> verticalCounts
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> while$1
+product stamps:
+32 items
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$1.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$2.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$3.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$4$$anonfun$apply$1.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$4.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$5$$anonfun$apply$2.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$5.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$combinations$1.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$combine$1.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$combine$2.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$combine$3.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$convertKeyToString$1.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$mMap$1.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$mapReduce$1.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$reduce$1.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator$$anonfun$reduce$2.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/CubeOperator.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/Dataset.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/Main$$anonfun$1.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/Main$.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/cubeoperator/Main.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/streaming/Main$.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/streaming/Main.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/streaming/SparkStreaming$$anonfun$1.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/streaming/SparkStreaming.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/thetajoin/Dataset.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/thetajoin/Main$$anonfun$1.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/thetajoin/Main$$anonfun$2.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/thetajoin/Main$.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/thetajoin/Main.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/thetajoin/ThetaJoin$$anonfun$local_thetajoin$1.class -> lastModified(1523973619000)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/target/scala-2.11/classes/thetajoin/ThetaJoin.class -> lastModified(1523973619000)
+source stamps:
+8 items
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> hash(192e5e01c648e12f7e76b116883785784f175b64)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> hash(9e3fc5d14b8376d1f0ce37a9114e3d52a446c10f)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> hash(6f407878fc8e28f559e2a5f40f10d481e8b8acc2)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> hash(f7cf7ee4f3cb2efbd806f647e43cd9f420fea967)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> hash(34a6d0f4d0f527d2b56147ed8fd58728c9187938)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> hash(d484d92bcdffb5e96674221d832ce777f0198a74)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> hash(9965d8b6fb5f61351604ca77286a938f77113934)
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> hash(49f1ef0daf2afa1b32f8d75e84f74da7b9c9d27f)
+binary stamps:
+11 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar -> lastModified(1489567893000)
+/Users/Mikael/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar -> lastModified(1431099969000)
+/Users/Mikael/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.4.jar -> lastModified(1339539723000)
+/Users/Mikael/.ivy2/cache/org.apache.hadoop/hadoop-common/jars/hadoop-common-2.7.0.jar -> lastModified(1428705793000)
+/Users/Mikael/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/jars/spark-catalyst_2.11-2.2.0.jar -> lastModified(1498869487000)
+/Users/Mikael/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.2.0.jar -> lastModified(1498869279000)
+/Users/Mikael/.ivy2/cache/org.apache.spark/spark-sketch_2.11/jars/spark-sketch_2.11-2.2.0.jar -> lastModified(1498869388000)
+/Users/Mikael/.ivy2/cache/org.apache.spark/spark-sql_2.11/jars/spark-sql_2.11-2.2.0.jar -> lastModified(1498869654000)
+/Users/Mikael/.ivy2/cache/org.apache.spark/spark-streaming_2.11/jars/spark-streaming_2.11-2.1.0.jar -> lastModified(1481871949000)
+/Users/Mikael/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar -> lastModified(1438617791000)
+/Users/Mikael/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.16.jar -> lastModified(1455222363000)
+class names:
+11 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar -> java.lang.Object
+/Users/Mikael/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar -> com.typesafe.config.Config
+/Users/Mikael/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.4.jar -> org.apache.commons.io.IOUtils
+/Users/Mikael/.ivy2/cache/org.apache.hadoop/hadoop-common/jars/hadoop-common-2.7.0.jar -> org.apache.hadoop.conf.Configuration
+/Users/Mikael/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/jars/spark-catalyst_2.11-2.2.0.jar -> org.apache.spark.sql.Row
+/Users/Mikael/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.2.0.jar -> org.apache.spark.rdd.RDD$
+/Users/Mikael/.ivy2/cache/org.apache.spark/spark-sketch_2.11/jars/spark-sketch_2.11-2.2.0.jar -> org.apache.spark.util.sketch.CountMinSketch
+/Users/Mikael/.ivy2/cache/org.apache.spark/spark-sql_2.11/jars/spark-sql_2.11-2.2.0.jar -> org.apache.spark.sql.DataFrameReader
+/Users/Mikael/.ivy2/cache/org.apache.spark/spark-streaming_2.11/jars/spark-streaming_2.11-2.1.0.jar -> org.apache.spark.streaming.Seconds$
+/Users/Mikael/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar -> scala.collection.immutable.List
+/Users/Mikael/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.16.jar -> org.slf4j.LoggerFactory
+internal apis:
+8 items
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwZ6h6BgAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAdc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwUvbMXHQABm5vdGlmeXNxAH4ADPVnJ+90AAxDdWJlT3BlcmF0b3JzcQB+AAx8EEDcdAAEd2FpdHNxAH4ADG/KI+N0AA0kYXNJbnN0YW5jZU9mc3EAfgAMfzYpuHQABmVxdWFsc3NxAH4ADFT9/sF0AAltYXBSZWR1Y2VzcQB+AAwJFuGHdAAMYXNJbnN0YW5jZU9mc3EAfgAM44VZknQADHN5bmNocm9uaXplZHNxAH4ADEEJVz90AApjdWJlX25haXZlc3EAfgAM7JEVJnQADSRpc0luc3RhbmNlT2ZzcQB+AAyOuR2vdAAEY3ViZXNxAH4ADL0uen90AAlub3RpZnlBbGxzcQB+AAymdi+SdAAMaXNJbnN0YW5jZU9mc3EAfgAMGjpbY3QABjxpbml0PnNxAH4ADGEoOZh0AAxjb21iaW5hdGlvbnNzcQB+AAzIxquodAAEbU1hcHNxAH4ADIEiJHR0AAI9PXNxAH4ADED79Ld0AAVjbG9uZXNxAH4ADJ4NYed0AAZyZWR1Y2VzcQB+AAyHKhx7dAAHY29tYmluZXNxAH4ADEttHm10AAh0b1N0cmluZ3NxAH4ADJ0i40F0AAIhPXNxAH4ADNWayBp0AAhnZXRDbGFzc3NxAH4ADGEg/mh0AAJuZXNxAH4ADIKkkFl0ABJjb252ZXJ0S2V5VG9TdHJpbmdzcQB+AAwCLRSsdAACZXFzcQB+AAzjl2/ZdAACIyNzcQB+AAyT1d3QdAAIZmluYWxpemVzcQB+AAwQh5rLdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBReHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHAAdAAZY3ViZW9wZXJhdG9yLkN1YmVPcGVyYXRvcnVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyACF4c2J0aS5hcGkuQWJzdHJhY3RMYXp5JFN0cmljdExhenkNZhxrKRYquAIAAUwABXZhbHVldAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgBpc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AFFMAAlpbmhlcml0ZWRxAH4AUUwAB3BhcmVudHNxAH4AUXhxAH4AbnNxAH4AaXVxAH4ATAAAAABzcQB+AGl1cQB+AEwAAAAAc3EAfgBpdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBtdAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBtc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCGdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCHc3EAfgB6dAADQW55c3EAfgB+c3EAfgCBdXEAfgCEAAAAAnNxAH4AhnQABXNjYWxhcQB+AI11cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAxjdWJlb3BlcmF0b3JzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAWLT57ybdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAUy9Vc2Vycy9NaWthZWwvRG9jdW1lbnRzL0RhdGFiYXNlcy9Qcm9qZWN0Mi9DUzQyMi1Qcm9qZWN0Mi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUGS5eAcZI4S9+drEWiDeFeE8XW2Q=
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwmBtzDAAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAXc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwQR84dnQABm5vdGlmeXNxAH4ADA7so3Z0AAR3YWl0c3EAfgAMsQwReXQADSRhc0luc3RhbmNlT2ZzcQB+AAyOxlMfdAAGZXF1YWxzc3EAfgAMrcZMbXQAB0RhdGFzZXRzcQB+AAwpIpDwdAAMYXNJbnN0YW5jZU9mc3EAfgAMGaqMoXQACWdldFNjaGVtYXNxAH4ADI+vcKl0AAxzeW5jaHJvbml6ZWRzcQB+AAwJKavWdAANJGlzSW5zdGFuY2VPZnNxAH4ADN0a8cx0AAlub3RpZnlBbGxzcQB+AAzLHBuCdAAMaXNJbnN0YW5jZU9mc3EAfgAMj3zbynQABjxpbml0PnNxAH4ADGxsj3p0AAZnZXRSRERzcQB+AAx0SxXcdAACPT1zcQB+AAxMTje0dAAFY2xvbmVzcQB+AAwtPvY5dAAIdG9TdHJpbmdzcQB+AAyM8dScdAACIT1zcQB+AAwoJEhPdAAIZ2V0Q2xhc3NzcQB+AAyLublYdAACbmVzcQB+AAxqrnctdAACZXFzcQB+AAxXhvshdAACIyNzcQB+AAxJk328dAAIZmluYWxpemVzcQB+AAysW6R3dAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBFeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHAAdAAUY3ViZW9wZXJhdG9yLkRhdGFzZXR1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AXXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBFTAAJaW5oZXJpdGVkcQB+AEVMAAdwYXJlbnRzcQB+AEV4cQB+AGJzcQB+AF11cQB+AEAAAAAAc3EAfgBddXEAfgBAAAAAAHNxAH4AXXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AYXQABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AYXNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4AenQABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4Ae3NxAH4AbnQAA0FueXNxAH4AcnNxAH4AdXVxAH4AeAAAAAJzcQB+AHp0AAVzY2FsYXEAfgCBdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAAMY3ViZW9wZXJhdG9yc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFi0+e8m3VyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AFMvVXNlcnMvTWlrYWVsL0RvY3VtZW50cy9EYXRhYmFzZXMvUHJvamVjdDIvQ1M0MjItUHJvamVjdDIvdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFJ4/xdFLg3bR8M43qRFOPVKkRsEP
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwR1H42QAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAVc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwdAUdx3QABm5vdGlmeXNxAH4ADEQaYDJ0AAR3YWl0c3EAfgAM5AK2dXQADSRhc0luc3RhbmNlT2ZzcQB+AAw1UzHQdAAGZXF1YWxzc3EAfgAM/tNvyHQADGFzSW5zdGFuY2VPZnNxAH4ADJ/CPn50AAxzeW5jaHJvbml6ZWRzcQB+AAzSisQJdAANJGlzSW5zdGFuY2VPZnNxAH4ADE0WY250AARtYWluc3EAfgAM4t5vpHQACW5vdGlmeUFsbHNxAH4ADGfz8yd0AAxpc0luc3RhbmNlT2ZzcQB+AAzRpVFOdAACPT1zcQB+AAy1iuQYdAAFY2xvbmVzcQB+AAyG6o7DdAAETWFpbnNxAH4ADAnQoWV0AAh0b1N0cmluZ3NxAH4ADOo3vJF0AAIhPXNxAH4ADNw3vQ50AAhnZXRDbGFzc3NxAH4ADF6kU1J0AAJuZXNxAH4ADMsn6t10AAJlcXNxAH4ADB7Y4nJ0AAIjI3NxAH4ADBPq5dh0AAhmaW5hbGl6ZXNxAH4ADIhW00F0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AEF4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc5fnYdwTJnuzAgABQgAFZmxhZ3N4cAB0ABFjdWJlb3BlcmF0b3IuTWFpbnVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AWXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBBTAAJaW5oZXJpdGVkcQB+AEFMAAdwYXJlbnRzcQB+AEF4cQB+AF5zcQB+AFl1cQB+ADwAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+AEJxAH4AS3VxAH4ATAAAAABzcQB+AE4AcQB+AB11cQB+AFEAAAAAc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AXXQABFVuaXRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AF1zcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AHl1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4ADUwAA3RwZXEAfgBmeHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgBUdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgBtWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgBdc3EAfgBsdAAFQXJyYXlxAH4AcnVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgBsdAAGU3RyaW5nc3EAfgBwc3EAfgBzdXEAfgB2AAAAA3NxAH4AeHQABGphdmFzcQB+AHh0AARsYW5ncQB+AH1zcQB+AFl1cQB+ADwAAAAAc3EAfgBZdXEAfgCRAAAAAnNxAH4AbHQABk9iamVjdHEAfgCVc3EAfgBsdAADQW55cQB+AHJ1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAxjdWJlb3BlcmF0b3JzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAWLT57ybdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAUy9Vc2Vycy9NaWthZWwvRG9jdW1lbnRzL0RhdGFiYXNlcy9Qcm9qZWN0Mi9DUzQyMi1Qcm9qZWN0Mi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUb0B4ePyOKPVZ4qX0DxDUgei4rMI=
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhw++Qw+QAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAVc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwseRb6nQABm5vdGlmeXNxAH4ADPaFl+R0AAR3YWl0c3EAfgAMu6YmoXQADSRhc0luc3RhbmNlT2ZzcQB+AAy63m4SdAAGZXF1YWxzc3EAfgAM7f1DH3QADGFzSW5zdGFuY2VPZnNxAH4ADNHrgR50AAxzeW5jaHJvbml6ZWRzcQB+AAwRAIa1dAANJGlzSW5zdGFuY2VPZnNxAH4ADBd6UoV0AARtYWluc3EAfgAMBY064HQACW5vdGlmeUFsbHNxAH4ADDoAo050AAxpc0luc3RhbmNlT2ZzcQB+AAwO7mVYdAACPT1zcQB+AAz5tuFUdAAFY2xvbmVzcQB+AAxpN3XQdAAETWFpbnNxAH4ADFmGh9Z0AAh0b1N0cmluZ3NxAH4ADEAahgl0AAIhPXNxAH4ADJV6C+R0AAhnZXRDbGFzc3NxAH4ADFAm2Wl0AAJuZXNxAH4ADMbZSmV0AAJlcXNxAH4ADMPNRWN0AAIjI3NxAH4ADNn3y2p0AAhmaW5hbGl6ZXNxAH4ADFXgfPx0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AEF4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc5fnYdwTJnuzAgABQgAFZmxhZ3N4cAB0AA5zdHJlYW1pbmcuTWFpbnVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AWXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBBTAAJaW5oZXJpdGVkcQB+AEFMAAdwYXJlbnRzcQB+AEF4cQB+AF5zcQB+AFl1cQB+ADwAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+AEJxAH4AS3VxAH4ATAAAAABzcQB+AE4AcQB+AB11cQB+AFEAAAAAc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AXXQABFVuaXRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AF1zcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AHl1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4ADUwAA3RwZXEAfgBmeHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgBUdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgBtWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgBdc3EAfgBsdAAFQXJyYXlxAH4AcnVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgBsdAAGU3RyaW5nc3EAfgBwc3EAfgBzdXEAfgB2AAAAA3NxAH4AeHQABGphdmFzcQB+AHh0AARsYW5ncQB+AH1zcQB+AFl1cQB+ADwAAAAAc3EAfgBZdXEAfgCRAAAAAnNxAH4AbHQABk9iamVjdHEAfgCVc3EAfgBsdAADQW55cQB+AHJ1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAlzdHJlYW1pbmdzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAWLT57ybdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAUy9Vc2Vycy9NaWthZWwvRG9jdW1lbnRzL0RhdGFiYXNlcy9Qcm9qZWN0Mi9DUzQyMi1Qcm9qZWN0Mi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU989+5PPLLvvYBvZH5DzZ9CD+qWc=
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwgGF6zAAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAcc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwnJGHhXQADlNwYXJrU3RyZWFtaW5nc3EAfgAMtK8tdnQABm5vdGlmeXNxAH4ADAmYOPt0AAR3YWl0c3EAfgAM3tIkcHQADSRhc0luc3RhbmNlT2ZzcQB+AAztpkfpdAAGZXF1YWxzc3EAfgAM4f+b93QADGFzSW5zdGFuY2VPZnNxAH4ADFHXaRx0AAdzZWNvbmRzc3EAfgAMxxnIIXQADHN5bmNocm9uaXplZHNxAH4ADFWDBnV0AA0kaXNJbnN0YW5jZU9mc3EAfgAMMYrsinQAA3NzY3NxAH4ADCjEAut0AAlub3RpZnlBbGxzcQB+AAy5gcncdAAMaXNJbnN0YW5jZU9mc3EAfgAMdqI59HQACXNwYXJrY29uZnNxAH4ADJHcLhh0AAY8aW5pdD5zcQB+AAx2h5IUdAACPT1zcQB+AAwdubTgdAAOaW5wdXREaXJlY3RvcnlzcQB+AAxpEfJ5dAAFY2xvbmVzcQB+AAyKCRT4dAAEVE9QS3NxAH4ADOAf0WJ0AAh0b1N0cmluZ3NxAH4ADGp8H8V0AAIhPXNxAH4ADH3cpn10AAdjb25zdW1lc3EAfgAMdxI+dXQACGdldENsYXNzc3EAfgAMYPOkaXQAAm5lc3EAfgAMqyFdunQACGV4ZWNUeXBlc3EAfgAMue0QDXQAAmVxc3EAfgAMDCCbW3QAAiMjc3EAfgAMGcIKe3QACGZpbmFsaXplc3EAfgAML0p8fXQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AT3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAHQAGHN0cmVhbWluZy5TcGFya1N0cmVhbWluZ3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyACF4c2J0aS5hcGkuQWJzdHJhY3RMYXp5JFN0cmljdExhenkNZhxrKRYquAIAAUwABXZhbHVldAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgBnc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AE9MAAlpbmhlcml0ZWRxAH4AT0wAB3BhcmVudHNxAH4AT3hxAH4AbHNxAH4AZ3VxAH4ASgAAAABzcQB+AGd1cQB+AEoAAAAAc3EAfgBndXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBrdAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBrc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCEdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCFc3EAfgB4dAADQW55c3EAfgB8c3EAfgB/dXEAfgCCAAAAAnNxAH4AhHQABXNjYWxhcQB+AIt1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAlzdHJlYW1pbmdzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAWLT57ybdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAUy9Vc2Vycy9NaWthZWwvRG9jdW1lbnRzL0RhdGFiYXNlcy9Qcm9qZWN0Mi9DUzQyMi1Qcm9qZWN0Mi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUNKbQ9ND1J9K1YUftj9WHKMkYeTg=
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwiNRaeQAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAXc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwdgjzRnQABm5vdGlmeXNxAH4ADCd7clV0AAR3YWl0c3EAfgAMLiG91HQADSRhc0luc3RhbmNlT2ZzcQB+AAxyFIGkdAAGZXF1YWxzc3EAfgAMEZJRTHQAB0RhdGFzZXRzcQB+AAxDhYqxdAAMYXNJbnN0YW5jZU9mc3EAfgAM0MoaOHQACWdldFNjaGVtYXNxAH4ADCeP1t10AAxzeW5jaHJvbml6ZWRzcQB+AAxPezzKdAANJGlzSW5zdGFuY2VPZnNxAH4ADO/xt9t0AAlub3RpZnlBbGxzcQB+AAy92XawdAAMaXNJbnN0YW5jZU9mc3EAfgAM1jEL2HQABjxpbml0PnNxAH4ADFibplB0AAZnZXRSRERzcQB+AAypenoMdAACPT1zcQB+AAxhdN65dAAFY2xvbmVzcQB+AAzzOVkfdAAIdG9TdHJpbmdzcQB+AAye6D4wdAACIT1zcQB+AAyLPNEkdAAIZ2V0Q2xhc3NzcQB+AAy1RaNedAACbmVzcQB+AAyTaM35dAACZXFzcQB+AAyEK2xcdAACIyNzcQB+AAzGHJ2RdAAIZmluYWxpemVzcQB+AAxcaAu2dAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBFeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHAAdAARdGhldGFqb2luLkRhdGFzZXR1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AXXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBFTAAJaW5oZXJpdGVkcQB+AEVMAAdwYXJlbnRzcQB+AEV4cQB+AGJzcQB+AF11cQB+AEAAAAAAc3EAfgBddXEAfgBAAAAAAHNxAH4AXXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AYXQABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AYXNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4AenQABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4Ae3NxAH4AbnQAA0FueXNxAH4AcnNxAH4AdXVxAH4AeAAAAAJzcQB+AHp0AAVzY2FsYXEAfgCBdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAAJdGhldGFqb2luc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFi0+e8m3VyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AFMvVXNlcnMvTWlrYWVsL0RvY3VtZW50cy9EYXRhYmFzZXMvUHJvamVjdDIvQ1M0MjItUHJvamVjdDIvdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFNSE2SvN/7XpZnQiHYMs53fwGYp0
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhw650kmAAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAVc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hw3ioUunQABm5vdGlmeXNxAH4ADOcfN7x0AAR3YWl0c3EAfgAMYAoFQHQADSRhc0luc3RhbmNlT2ZzcQB+AAyuGNIVdAAGZXF1YWxzc3EAfgAMiuJkQHQADGFzSW5zdGFuY2VPZnNxAH4ADNWO3d90AAxzeW5jaHJvbml6ZWRzcQB+AAwylfc8dAANJGlzSW5zdGFuY2VPZnNxAH4ADNC4wSl0AARtYWluc3EAfgAMATXe1HQACW5vdGlmeUFsbHNxAH4ADIQa9kB0AAxpc0luc3RhbmNlT2ZzcQB+AAwmQEdNdAACPT1zcQB+AAyRySOvdAAFY2xvbmVzcQB+AAzHRnlhdAAETWFpbnNxAH4ADOlP42Z0AAh0b1N0cmluZ3NxAH4ADGHL7cd0AAIhPXNxAH4ADL0cvKh0AAhnZXRDbGFzc3NxAH4ADIHzaV50AAJuZXNxAH4ADD7H7rB0AAJlcXNxAH4ADJ+DkSt0AAIjI3NxAH4ADPWafxV0AAhmaW5hbGl6ZXNxAH4ADALieY50AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AEF4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc5fnYdwTJnuzAgABQgAFZmxhZ3N4cAB0AA50aGV0YWpvaW4uTWFpbnVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AWXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBBTAAJaW5oZXJpdGVkcQB+AEFMAAdwYXJlbnRzcQB+AEF4cQB+AF5zcQB+AFl1cQB+ADwAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+AEJxAH4AS3VxAH4ATAAAAABzcQB+AE4AcQB+AB11cQB+AFEAAAAAc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AXXQABFVuaXRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AF1zcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AHl1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4ADUwAA3RwZXEAfgBmeHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgBUdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgBtWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgBdc3EAfgBsdAAFQXJyYXlxAH4AcnVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgBsdAAGU3RyaW5nc3EAfgBwc3EAfgBzdXEAfgB2AAAAA3NxAH4AeHQABGphdmFzcQB+AHh0AARsYW5ncQB+AH1zcQB+AFl1cQB+ADwAAAAAc3EAfgBZdXEAfgCRAAAAAnNxAH4AbHQABk9iamVjdHEAfgCVc3EAfgBsdAADQW55cQB+AHJ1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAl0aGV0YWpvaW5zcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAWLT57ybdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAUy9Vc2Vycy9NaWthZWwvRG9jdW1lbnRzL0RhdGFiYXNlcy9Qcm9qZWN0Mi9DUzQyMi1Qcm9qZWN0Mi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUmWXYtvtfYTUWBMp3KGqTj3cROTQ=
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwFEpHEwAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAdc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hw/kVUYnQABm5vdGlmeXNxAH4ADPjYjqp0ABJ2ZXJ0aWNhbEJvdW5kYXJpZXNzcQB+AAxNuNmZdAAEd2FpdHNxAH4ADPg43TF0AA5jaGVja0NvbmRpdGlvbnNxAH4ADKelyC50AA0kYXNJbnN0YW5jZU9mc3EAfgAMHMOCyHQABmxvZ2dlcnNxAH4ADC6d8xB0AAZlcXVhbHNzcQB+AAwE5b6ZdAAMYXNJbnN0YW5jZU9mc3EAfgAMxjB0aXQADHN5bmNocm9uaXplZHNxAH4ADPsQSCV0AA0kaXNJbnN0YW5jZU9mc3EAfgAMuWkjDnQAD2xvY2FsX3RoZXRham9pbnNxAH4ADLm2H050AA52ZXJ0aWNhbENvdW50c3NxAH4ADKDUg+10ABBob3Jpem9udGFsQ291bnRzc3EAfgAM6LikE3QACW5vdGlmeUFsbHNxAH4ADGt8Znx0AAxpc0luc3RhbmNlT2ZzcQB+AAwZyX3ZdAAJVGhldGFKb2luc3EAfgAMLHDvinQABjxpbml0PnNxAH4ADJLD0S10AAI9PXNxAH4ADKqST7N0AAVjbG9uZXNxAH4ADFVq/TJ0AAh0b1N0cmluZ3NxAH4ADMPanGZ0AAIhPXNxAH4ADGPAI7V0AAhnZXRDbGFzc3NxAH4ADO9Q63l0ABRob3Jpem9udGFsQm91bmRhcmllc3NxAH4ADJUOow10AAJuZXNxAH4ADAp9A+l0AAJlcXNxAH4ADP1TnUJ0AAp0aGV0YV9qb2luc3EAfgAMeyZ4b3QAAiMjc3EAfgAMJJok1nQACGZpbmFsaXplc3EAfgAMBYqhZnQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AUXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAHQAE3RoZXRham9pbi5UaGV0YUpvaW51cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AaXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBRTAAJaW5oZXJpdGVkcQB+AFFMAAdwYXJlbnRzcQB+AFF4cQB+AG5zcQB+AGl1cQB+AEwAAAAAc3EAfgBpdXEAfgBMAAAAAHNxAH4AaXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAADc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AbXQADFNlcmlhbGl6YWJsZXNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AbXNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4AhnQAAmlvc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AIdzcQB+AHp0AAZPYmplY3RzcQB+AH5zcQB+AIF1cQB+AIQAAAADc3EAfgCGcQB+AIlzcQB+AIZ0AARsYW5ncQB+AI1zcQB+AHp0AANBbnlzcQB+AH5zcQB+AIF1cQB+AIQAAAACc3EAfgCGdAAFc2NhbGFxAH4AjXVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQACXRoZXRham9pbnNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYtPnvJt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABTL1VzZXJzL01pa2FlbC9Eb2N1bWVudHMvRGF0YWJhc2VzL1Byb2plY3QyL0NTNDIyLVByb2plY3QyL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABRJ8e8Nryr6GzL4116E902nucnSfw==
+external apis:
+0 items
+source infos:
+8 items
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/CubeOperator.scala -> 
+AAAAAAAAAAA=
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Dataset.scala -> 
+AAAAAAAAAAA=
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/cubeoperator/Main.scala -> 
+AAAAAAAAAAA=
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/Main.scala -> 
+AAAAAAAAAAA=
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/streaming/SparkStreaming.scala -> 
+AAAAAAAAAAA=
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Dataset.scala -> 
+AAAAAAAAAAA=
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/Main.scala -> 
+AAAAAAAAAAA=
+/Users/Mikael/Documents/Databases/Project2/CS422-Project2/src/main/scala/thetajoin/ThetaJoin.scala -> 
+AAAAAAAAAAA=
+compilations:
+1 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYtPnvJt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAUy9Vc2Vycy9NaWthZWwvRG9jdW1lbnRzL0RhdGFiYXNlcy9Qcm9qZWN0Mi9DUzQyMi1Qcm9qZWN0Mi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
