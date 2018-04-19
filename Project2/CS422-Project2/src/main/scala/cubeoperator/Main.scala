@@ -33,6 +33,7 @@ object Main {
     var groupingList = List("lo_suppkey","lo_shipmode","lo_orderdate")
 
     val res = cb.cube(dataset, groupingList, "lo_supplycost", "SUM")
+    //val res = cb.cube_naive(dataset, groupingList, "lo_supplycost", "SUM")
 
     /*
        The above call corresponds to the query:

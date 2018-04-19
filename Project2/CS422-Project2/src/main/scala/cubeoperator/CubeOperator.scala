@@ -41,15 +41,16 @@ class CubeOperator(reducers: Int) {
     val index = groupingAttributes.map(x => schema.indexOf(x))
     val indexAgg = schema.indexOf(aggAttribute)
 
-    val firstMapping = mapPhase(rdd, index, indexAgg, agg)
-    val comb = combinations(firstMapping)
-
     val result = agg match {
       case "AVG" =>
-        val sum = combineAndReduce(comb, "SUM")
-        val count = combineAndReduce(comb, "COUNT")
+        val sumComb = combinations(mapPhase(rdd, index, indexAgg, "SUM"))
+        val sum = combineAndReduce(sumComb, "SUM")
+        val countComb = combinations(mapPhase(rdd, index, indexAgg, "COUNT"))
+        val count = combineAndReduce(countComb, "COUNT")
         sum.join(count).mapValues(t => t._1 / t._2)
-      case _ => combineAndReduce(comb, agg)
+      case _ =>
+        val comb = combinations(mapPhase(rdd, index, indexAgg, agg))
+        combineAndReduce(comb, agg)
     }
 
     convertKeyToString(result)
