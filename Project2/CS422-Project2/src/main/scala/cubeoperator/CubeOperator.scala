@@ -25,53 +25,59 @@ class CubeOperator(reducers: Int) {
 
     val mapReduceResult = agg match {
       case "AVG" =>
-        val sum = mapReduce(rdd, index, indexAgg, "SUM")
-        val count = mapReduce(rdd, index, indexAgg, "COUNT")
+        val sum = twoPassMapReduce(rdd, index, indexAgg, "SUM")
+        val count = twoPassMapReduce(rdd, index, indexAgg, "COUNT")
         sum.join(count).mapValues(t => t._1 / t._2)
-      case _ => mapReduce(rdd, index, indexAgg, agg)
+      case _ => twoPassMapReduce(rdd, index, indexAgg, agg)
     }
 
     convertKeyToString(mapReduceResult)
   }
 
   def cube_naive(dataset: Dataset, groupingAttributes: List[String], aggAttribute: String, agg: String): RDD[(String, Double)] = {
-    //TODO naive algorithm for cube computation
-    null
+    val rdd = dataset.getRDD()
+    val schema = dataset.getSchema()
+
+    val index = groupingAttributes.map(x => schema.indexOf(x))
+    val indexAgg = schema.indexOf(aggAttribute)
+
+    val firstMapping = mapPhase(rdd, index, indexAgg, agg)
+    val comb = combinations(firstMapping)
+
+    val result = agg match {
+      case "AVG" =>
+        val sum = combineAndReduce(comb, "SUM")
+        val count = combineAndReduce(comb, "COUNT")
+        sum.join(count).mapValues(t => t._1 / t._2)
+      case _ => combineAndReduce(comb, agg)
+    }
+
+    convertKeyToString(result)
   }
 
-  def mapReduce(rdd: RDD[Row], index: List[Int], indexAgg: Int, agg: String): RDD[(List[Any], Double)] = {
-    val myMap = mMap(rdd,index,indexAgg,agg)
-    val mapReduceResult = myMap.groupByKey().mapValues(f => agg match {
-      case "COUNT" => f.sum
-      case "SUM" => f.sum
-      case "MIN" => f.min
-      case "MAX" => f.max
-    })
+  def twoPassMapReduce(rdd: RDD[Row], index: List[Int], indexAgg: Int, agg: String): RDD[(List[Any], Double)] = {
+    // Alternative implementation
+    //   val combineResult = combine(mapPhase(rdd,index,indexAgg,agg), agg)
+    //   val mapReduceResult = reduce(combineResult, agg)
 
-//   val mapResult = mMap(rdd,index,indexAgg,agg)
-//   val combineResult = combine(mapResult, agg)
-//   val mapReduceResult = reduce(combineResult, agg)
-   
-   val res = mapReduceResult.flatMap(t => {
-     val c = t._1.foldLeft(List(Nil): List[List[Any]])((acc, l) => {
-       var newRes: List[List[Any]] = List.empty
-       acc.foreach { r => 
-         newRes = newRes :+ (r :+ "*") :+ (r :+ l)
-       }
-       newRes
-     })
-     c.map(u => (u, t._2))
-   })
- 
-   res.groupByKey().map(t => agg match {
-     case "COUNT" => (t._1, t._2.sum)
-     case "SUM" => (t._1, t._2.sum)
-     case "MIN" => (t._1, t._2.min)
-     case "MAX" => (t._1, t._2.max)
-   })
+    /** MapReduce first pass */
+    val mapReduceResult = combineAndReduce(mapPhase(rdd,index,indexAgg,agg), agg)
+
+    /** Generate combinations */
+    val comb = combinations(mapReduceResult)
+
+    /** MapReduce second pass with combinations */
+    combineAndReduce(comb, agg)
   }
 
-  def mMap(rdd: RDD[Row], index: List[Int], indexAgg: Int, agg: String): RDD[(List[Any], Double)] = {
+  def combinations(rdd: RDD[(List[Any], Double)]): RDD[(List[Any], Double)] = {
+    rdd.flatMap(t =>
+      t._1.foldLeft(List((Nil, t._2)): List[(List[Any], Double)])((b, l) =>
+        b.map(x => (x._1 :+ "*", x._2)) ++ b.map(x => (x._1 :+ l, x._2)))
+    )
+  }
+
+  def mapPhase(rdd: RDD[Row], index: List[Int], indexAgg: Int, agg: String): RDD[(List[Any], Double)] = {
     val res = rdd.map(row => (index.map(i => row.get(i)), row.getInt(indexAgg)))
     res.mapValues( t => agg match {
       case "COUNT" => 1.0
@@ -82,6 +88,36 @@ class CubeOperator(reducers: Int) {
     })
   }
 
+  def combineAndReduce(rdd: RDD[(List[Any], Double)], agg: String): RDD[(List[Any], Double)] = {
+    rdd.groupByKey().mapValues(t => agg match {
+      case "COUNT" => t.sum
+      case "SUM" => t.sum
+      case "MIN" => t.min
+      case "MAX" => t.max
+    })
+  }
+
+  /**
+    * Utility method to convert a List[Any] to a string
+    * @param rdd RDD of tuples
+    * @return An RDD with the key converted to string
+    */
+  def convertKeyToString(rdd: RDD[(List[Any], Double)]): RDD[(String, Double)] = {
+    rdd.map(t => {
+      val s = t._1.foldLeft("")((acc,b) => {
+        if (!acc.isEmpty)
+          acc + "," + b.toString
+        else
+          b.toString
+      })
+      (s, t._2)
+    })
+  }
+
+  /**************************************************************************
+    * Alternative implementation of reduce and combine that shows every step
+    * of the algorithm as shown in the project statement
+    *************************************************************************/
   def combine(rdd: RDD[(List[Any], Double)], agg: String): RDD[(List[Any], List[Double])] = {
     val initialValue = (x: Double) => x :: Nil
     val globalCombiner = (x: List[Double], y: List[Double]) => x ++ y
@@ -96,7 +132,7 @@ class CubeOperator(reducers: Int) {
   }
 
   def reduce(rdd: RDD[(List[Any], List[Double])], agg: String): RDD[(List[Any], Double)] = {
-    val localAggregate = (init: Double, v: List[Double]) => agg match {
+    val localAggregate = (_: Double, v: List[Double]) => agg match {
       case "COUNT" => v.sum
       case "SUM" => v.sum
       case "MIN" => v.min
@@ -110,17 +146,5 @@ class CubeOperator(reducers: Int) {
     }
 
     rdd.aggregateByKey(0.0)(localAggregate, merge)
-  }
-
-  def convertKeyToString(rdd: RDD[(List[Any], Double)]): RDD[(String, Double)] = {
-    rdd.map(t => {
-      val s = t._1.foldLeft("")((acc,b) => {
-        if (!acc.isEmpty())
-          acc + "," + b.toString()
-        else
-          b.toString()
-      })
-      (s, t._2)
-    })
   }
 }

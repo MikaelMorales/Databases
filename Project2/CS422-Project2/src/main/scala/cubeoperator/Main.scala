@@ -47,6 +47,9 @@ object Main {
     val q1 = df.cube("lo_suppkey","lo_shipmode","lo_orderdate")
       .agg(sum("lo_supplycost") as "sum supplycost")
     q1.show
-    q1.coalesce(1).write.format("com.databricks.spark.csv").save("/Users/Mikael/Documents/Databases/Project2/CS422-Project2/output/sql.csv")
+    q1.coalesce(1)
+      .write
+      .format("com.databricks.spark.csv")
+      .save("/Users/Mikael/Documents/Databases/Project2/CS422-Project2/output/sql.csv")
   }
 }
