@@ -1,77 +1,95 @@
 package thetajoin
 
-import org.scalatest._
+import org.apache.spark.rdd.RDD
+import org.apache.spark.sql.Row
 import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.spark.sql.types._
-import org.apache.spark.sql.expressions._
-import org.apache.spark.sql.functions._
-import java.io._
+import org.scalatest._
 
-class ThetaJoinTest extends FlatSpec {   
+class ThetaJoinTest extends FlatSpec {
   val sparkConf = new SparkConf().setAppName("CS422-Project2").setMaster("local[16]")
   val ctx = new SparkContext(sparkConf)
-  val sqlContext = new org.apache.spark.sql.SQLContext(ctx)  
-  
-  test
-  
+  val sqlContext = new org.apache.spark.sql.SQLContext(ctx)
+
+  test()
+
   def test() {
     val reducers = 10
-    val maxInput = 1000 
-    
-    val inputFile1="input1_1K.csv"
-    val inputFile2="input2_1K.csv"
-    
-    val input1 = new File(getClass.getResource(inputFile1).getFile).getPath
-    val input2 = new File(getClass.getResource(inputFile2).getFile).getPath
-      
-    val output = "output"
-    
+    val maxInput = 1000
+
+    //    val inputFile1="input1_1K.csv"
+    //    val inputFile2="input2_1K.csv"
+
+    val input1="/Users/Mikael/Documents/Databases/Project2/CS422-Project2/input1_1K.csv"
+    val input2="/Users/Mikael/Documents/Databases/Project2/CS422-Project2/input2_1K.csv"
+
+    //    val input1 = new File(getClass.getResource(inputFile1).getFile).getPath
+    //    val input2 = new File(getClass.getResource(inputFile2).getFile).getPath
+
+    val output = "outputTest"
+
     val df1 = sqlContext.read
       .format("com.databricks.spark.csv")
       .option("header", "true")
       .option("inferSchema", "true")
       .option("delimiter", ",")
       .load(input1)
-    
+
     val df2 = sqlContext.read
       .format("com.databricks.spark.csv")
       .option("header", "true")
       .option("inferSchema", "true")
       .option("delimiter", ",")
       .load(input2)
-    
+
     val rdd1 = df1.rdd
     val rdd2 = df2.rdd
-      
+
     val schema1 = df1.schema.toList.map(x => x.name)
     val schema2 = df2.schema.toList.map(x => x.name)
-      
+
     val dataset1 = new Dataset(rdd1, schema1)
-    val dataset2 = new Dataset(rdd2, schema2)  
-    
-    val t1 = System.nanoTime    
-    val tj = new ThetaJoin(dataset1.getRDD.count, dataset2.getRDD.count, reducers, maxInput)
-    val res = tj.theta_join(dataset1, dataset2, "num", "num", "<")           
-    
-    val resultSize = res.count     
+    val dataset2 = new Dataset(rdd2, schema2)
+
+    test(dataset1, dataset2, reducers, maxInput, "=", (x, y) => x == y, schema1, schema2, rdd1, rdd2)
+    test(dataset1, dataset2, reducers, maxInput, "<=", (x, y) => x <= y, schema1, schema2, rdd1, rdd2)
+    test(dataset1, dataset2, reducers, maxInput, ">=", (x, y) => x >= y, schema1, schema2, rdd1, rdd2)
+    test(dataset1, dataset2, reducers, maxInput, "<>", (x, y) => x != y, schema1, schema2, rdd1, rdd2)
+    test(dataset1, dataset2, reducers, maxInput, "<", (x, y) => x < y, schema1, schema2, rdd1, rdd2)
+    test(dataset1, dataset2, reducers, maxInput, ">", (x, y) => x > y, schema1, schema2, rdd1, rdd2)
+  }
+
+  def test(dataset1: Dataset, dataset2: Dataset, reducers: Int, maxInput: Int, op: String, cond: (Int, Int) => Boolean, schema1: List[String], schema2: List[String], rdd1: RDD[Row], rdd2: RDD[Row]) = {
+    val t1 = System.nanoTime
+    val resultSize = getTestedImplementationResult(dataset1, dataset2, reducers, maxInput, op)
     val t2 = System.nanoTime
-    
+
     println((t2-t1)/(Math.pow(10,9)))
-    
+
     val index1 = schema1.indexOf("num")
-    val index2 = schema2.indexOf("num")          
-    
+    val index2 = schema2.indexOf("num")
+
+    val resultSizeCartesian = getReferenceImplementationResult(rdd1, rdd2, index1, index2, cond)
+
+    assert(resultSize === resultSizeCartesian)
+  }
+
+  def getTestedImplementationResult(dataset1: Dataset, dataset2: Dataset, reducers: Int, maxInput: Int, op: String): Long = {
+    val tj = new ThetaJoin(dataset1.getRDD.count, dataset2.getRDD.count, reducers, maxInput)
+    val res = tj.theta_join(dataset1, dataset2, "num", "num", op)
+
+    res.count
+  }
+
+  def getReferenceImplementationResult(rdd1: RDD[Row], rdd2: RDD[Row], index1: Int, index2: Int, cond: (Int, Int) => Boolean): Long = {
     val cartRes = rdd1.cartesian(rdd2).flatMap(x => {
       val v1 = x._1(index1).asInstanceOf[Int]
       val v2 = x._2(index2).asInstanceOf[Int]
-      if(v1 < v2)
+      if(cond(v1, v2))
         List((v1, v2))
       else
         List()
     })
-    
-    val resultSizeCartesian = cartRes.count                    
-        
-    assert(resultSize === resultSizeCartesian)
-  }    
+
+    cartRes.count
+  }
 }

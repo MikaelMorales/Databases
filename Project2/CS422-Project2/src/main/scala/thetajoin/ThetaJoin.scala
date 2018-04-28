@@ -1,9 +1,11 @@
 package thetajoin
 
+import org.apache.spark.HashPartitioner
 import org.apache.spark.rdd.RDD
+import org.apache.spark.sql.Row
 import org.slf4j.{Logger, LoggerFactory}
 
-import scala.collection.mutable.ArrayBuffer
+import scala.collection.mutable.{ArrayBuffer, ListBuffer}
 
 
 class ThetaJoin(numR: Long, numS: Long, reducers: Int, bucketsize: Int) extends java.io.Serializable {
@@ -40,110 +42,123 @@ class ThetaJoin(numR: Long, numS: Long, reducers: Int, bucketsize: Int) extends 
     val index1 = schema1.indexOf(attr1)
     val index2 = schema2.indexOf(attr2)        
     
-    // Implements the algorithm
+    // Sample both datasets
     val cs = numS / Math.sqrt(numS*numR*reducers)
     val cr = numR / Math.sqrt(numS*numR*reducers)
-    horizontalBoundaries = rdd2.map(r => r.getInt(index2)).distinct().sample(withReplacement = false, cs).sortBy(identity).collect()
-    verticalBoundaries = rdd1.map(r => r.getInt(index1)).distinct().sample(withReplacement = false, cr).sortBy(identity).collect()
+    horizontalBoundaries = initializeBoundaries(rdd2, index2, cs)
+    verticalBoundaries = initializeBoundaries(rdd1, index1, cr)
+    verticalCounts = initializeCount(rdd1, index1, verticalBoundaries)
+    horizontalCounts = initializeCount(rdd2, index2, horizontalBoundaries)
 
-    horizontalBoundaries +:= Int.MinValue
-    horizontalBoundaries :+= Int.MaxValue
-    verticalBoundaries +:= Int.MinValue
-    verticalBoundaries :+= Int.MaxValue
-    horizontalCounts = new Array[Int](horizontalBoundaries.length)
-    verticalCounts = new Array[Int](verticalBoundaries.length)
-
-    val vSums = rdd1.map(r => {
-      val value = r.getInt(index1)
-      val res = verticalBoundaries.zipWithIndex.find(v => value <= v._1)
-      (res.get._2, 1)
-    }).groupByKey().mapValues(t => t.sum).collect()
-    vSums.foreach { case (index, value) => verticalCounts(index) = value }
-
-    val hSums = rdd2.map(r => {
-      val value = r.getInt(index1)
-      val res = horizontalBoundaries.zipWithIndex.find(v => value <= v._1)
-      (res.get._2, 1)
-    }).groupByKey().mapValues(t => t.sum).collect()
-    hSums.foreach { case (index, value) => horizontalCounts(index) = value }
-
-//    println(verticalBoundaries.toList)
-//    println(verticalCounts.toList)
-//    println(horizontalBoundaries.toList)
-//    println(horizontalCounts.toList)
-
-    val buckets = M_Bucket_I(bucketsize, reducers, op).zipWithIndex
+    val buckets = M_Bucket_I(bucketsize, op).zipWithIndex
     val sortedR = rdd1.map(r => r.getInt(index1)).sortBy(identity)
-    val sortedS = rdd2.map(r => r.getInt(index1)).sortBy(identity)
+    val sortedS = rdd2.map(r => r.getInt(index2)).sortBy(identity)
 
-    val rWithBuckets = sortedR.zipWithIndex().map { case (v,i) =>
-        val b = buckets.find { case (region, _) => region.rowS >= i && region.rowF <= i }
-        (b.get._2, v)
+    val rWithBuckets = sortedR.zipWithIndex().flatMap { case (v,i) =>
+      val b = buckets.filter{ case (region, _) => region.rowS <= i && i <= region.rowF }
+      b.map { case (_, bucketNb) => (bucketNb,v) }
     }
 
-    val sWithBuckets = sortedS.zipWithIndex().map { case (v,i) =>
-      val b = buckets.find { case (region, _) => region.colS >= i && region.colF <= i }
-      (b.get._2, v)
+    val sWithBuckets = sortedS.zipWithIndex().flatMap { case (v,i) =>
+      val b = buckets.filter{ case (region, _) => region.colS <= i && i <= region.colF }
+      b.map { case (_, bucketNb) => (bucketNb,v) }
     }
 
-    rWithBuckets.zipPartitions(sWithBuckets){ case (i1, i2) => local_thetajoin(i1, i2, op)}
+    val partitionedR = rWithBuckets.partitionBy(new HashPartitioner(reducers))
+    val partitionedS = sWithBuckets.partitionBy(new HashPartitioner(reducers))
+
+    partitionedR.zipPartitions(partitionedS){ case (i1, i2) => local_thetajoin(i1, i2, op)}
   }
 
-  private def M_Bucket_I(bucketSize: Int, reducer: Int, op:String): Array[Region] = {
-    var row = 0L
-    val res: ArrayBuffer[Region] = ArrayBuffer.empty
-    while (row < numR) {
-      val (regions, r) = coverSubMatrix(row, bucketsize, reducers, op)
-      row = regions.head.rowF
-      if (r < 0)
-        throw new IllegalArgumentException("Not enough reducers !")
+  private def initializeBoundaries(rdd: RDD[Row], index: Int, fraction: Double): Array[Int] = {
+    val samples = rdd.map(r => r.getInt(index)).distinct().sample(withReplacement = false, fraction).sortBy(identity).collect()
 
-      res.appendAll(regions)
+    val boundaries = new Array[Int](samples.length + 2)
+    Array.copy(samples, 0, boundaries, 1, samples.length)
+    boundaries(0) = Int.MinValue
+    boundaries(boundaries.length-1) = Int.MaxValue
+    boundaries
+  }
+
+  private def initializeCount(rdd: RDD[Row], index: Int, boundaries: Array[Int]): Array[Int] = {
+    val sums = rdd.map { r =>
+      val value = r.getInt(index)
+      boundaries.indexWhere(v => value <= v)
+    }.countByValue()
+
+    val counts = new Array[Int](boundaries.length)
+    sums.foreach { case (i, value) => counts(i) = value.toInt }
+    counts
+  }
+
+  private def M_Bucket_I(bucketSize: Int, op:String): Array[Region] = {
+    var row = 0L
+    val res = new ArrayBuffer[Region]()
+    while (row < numR) {
+      val regions = coverSubMatrix(row, bucketsize, op)
+      if (regions != null) {
+        row = regions.head.rowF + 1
+        res.appendAll(regions)
+      } else {
+        row += bucketSize
+      }
     }
     res.toArray
   }
 
-  private def coverSubMatrix(row: Long, bucketSize: Int, reducer: Int, op:String): (Array[Region], Int) = {
+  private def coverSubMatrix(row: Long, bucketSize: Int, op:String): Array[Region] = {
     var maxScore = 0L
-    var rUsed = 0
     var bestRegions: Array[Region] = null
-    for (i <- 0 until bucketSize) {
-      if(row + i < numR) {
+    var i = 0
+    while (i < bucketSize) {
+      if(row + i < numR && (i == 0 || bucketSize % i == 0)) {
         val (regions, totalCandidatesCells) = coverRows(row, row + i, bucketSize, op)
-        val score = if (regions.length == 0) 0 else totalCandidatesCells / regions.length
+        val score = if (regions.length == 0) -1 else totalCandidatesCells / regions.length
         if (score >= maxScore) {
           maxScore = score
-          rUsed = regions.length
           bestRegions = regions
         }
       }
+
+      i += 1
     }
 
-    (bestRegions, reducers - rUsed)
+    bestRegions
   }
 
-  private def coverRows (rowF: Long, rowL: Long, bucketSize: Int, op:String): (Array[Region], Long) = {
+  private def coverRows(rowF: Long, rowL: Long, bucketSize: Int, op:String): (Array[Region], Long) = {
     var totalCandidateCells = 0L
-    var currentRegionCells = 0L
     var startingCol = 0L
-    val regions: ArrayBuffer[(Long, Long)] = ArrayBuffer.empty
+    var endingCol = 0L
+
+    val columnLength = rowL-rowF+1
+    var currentCells = 0L
+
+    val regions = new ArrayBuffer[(Long, Long)]()
     val vertical = getVerticalBoundaryIndexes(rowF,rowL)
-    for (c <- 0L until numS) {
-      val b = getHorizontalBoundaryIndex(c)
-      val numberCandidateCells = vertical.foldLeft(0)((acc, v) => {
+
+    var c = 0L
+    while (c < numS) {
+      val b = getBoundaryIndex(c, isHorizontal = true)
+      val numberCandidateCells = vertical.iterator.map { v =>
         val valid = checkIfValidBoundaries(v, b, op)
-        val candidates = if (valid) verticalCounts(v._1) else 0
-        acc + candidates
-      })
+        if (valid) verticalCounts(v._2) else 0
+      }.sum
       if (numberCandidateCells > 0) {
-        if (currentRegionCells + numberCandidateCells > bucketSize) {
-          regions.append((startingCol, c))
+        if (currentCells + columnLength > bucketSize) {
+          regions += ((startingCol, c-1))
           startingCol = c
-          currentRegionCells = 0
+          currentCells = 0
         }
-        currentRegionCells += numberCandidateCells
+        currentCells += columnLength
         totalCandidateCells += numberCandidateCells
+        endingCol = c
       }
+      c += 1
+    }
+
+    if (currentCells > 0) {
+      regions.append((startingCol, endingCol))
     }
 
     val mRegions = regions.toArray.map { case (cS, cL) => Region(rowF, rowL, cS, cL)}
@@ -156,64 +171,33 @@ class ThetaJoin(numR: Long, numS: Long, reducers: Int, bucketsize: Int) extends 
     val Sl = horizontalBoundaries(indexS._1)
     val Su = horizontalBoundaries(indexS._2)
     op match {
+      case "<" => Rl < Su
+      case "<=" => Rl <= Su
       case "=" => (Rl >= Sl && Rl <= Su) || Ru >= Sl
-      case "<" => Rl < Sl || Rl < Su
-      case ">" => Rl > Sl || Rl > Su
-      case "<=" => Rl <= Sl || Rl <= Su
-      case ">=" => Rl >= Sl || Rl >= Su
-      case "<>" => Rl > Su || Ru < Sl
+      case "<>" => Rl != Sl || Ru != Sl || Rl != Ru
+      case ">" => Ru > Sl
+      case ">=" => Ru >= Sl
     }
   }
 
-  def getHorizontalBoundaryIndex(col: Long): (Int, Int) = {
-    val c = col + 1
-    var count = horizontalCounts.head
+  private def getVerticalBoundaryIndexes(rowStart: Long, rowEnd: Long): List[(Int, Int)] = {
+    val (lb1, ub1) = getBoundaryIndex(rowStart, isHorizontal = false)
+    val (lb2, ub2) = getBoundaryIndex(rowEnd, isHorizontal = false)
+
+    (lb1 to lb2).zip(ub1 to ub2).toList
+  }
+
+  private def getBoundaryIndex(r: Long, isHorizontal: Boolean) = {
+    val i = r + 1
+    var count = if (isHorizontal) horizontalCounts.head else verticalCounts.head
     var index = 0
-    while (count < c) {
+    while (count < i) {
       index += 1
-      count += horizontalCounts(index)
+      count += (if (isHorizontal) horizontalCounts(index) else verticalCounts(index))
     }
 
     (index - 1, index)
   }
-
-  def getVerticalBoundaryIndex(row: Long): (Int, Int) = {
-    val r = row + 1
-    var count = verticalCounts.head
-    var index = 0
-    while (count < r) {
-      index += 1
-      count += verticalCounts(index)
-    }
-
-    (index - 1, index)
-  }
-
-  def getVerticalBoundaryIndexes(rowF: Long, rowL: Long): List[(Int, Int)] = {
-    val rowFIdx = getVerticalBoundaryIndex(rowF)
-    val rowLIdx = getVerticalBoundaryIndex(rowL)
-
-    (rowFIdx._1 to rowLIdx._1).zip(rowFIdx._2 to rowLIdx._2).toList
-  }
-
-//  private def getValidVerticalBoundaries(rowS: Long, rowF: Long): Array[(Int, Int)] = {
-//    val start = findMatchingIndexBoundary(rowS, isHorizontal = false)
-//    val end = findMatchingIndexBoundary(rowF, isHorizontal = false)
-//    Array.tabulate[(Int, Int)](end-start+1)(i => (i+start, i+start+1))
-//  }
-//
-//  private def findMatchingIndexBoundary(row: Long, isHorizontal: Boolean): Int = {
-//    var firstIndex = 0
-//    var lineNumber = 0
-//    while (lineNumber < row) {
-//      if (isHorizontal)
-//        lineNumber += horizontalCounts(firstIndex)
-//      else
-//        lineNumber += verticalCounts(firstIndex)
-//      firstIndex += 1
-//    }
-//    firstIndex
-//  }
 
   /*
    * this method takes as input two lists of values that belong to the same partition
@@ -223,18 +207,17 @@ class ThetaJoin(numR: Long, numS: Long, reducers: Int, bucketsize: Int) extends 
    * fit your needs :)
    * */  
   def local_thetajoin(dat1:Iterator[(Int, Int)], dat2:Iterator[(Int, Int)], op:String) : Iterator[(Int, Int)] = {
-    var res = List[(Int, Int)]()
-    val dat2List = dat2.toList
-        
-    while(dat1.hasNext) {
-      val row1 = dat1.next()      
-      for(row2 <- dat2List) {
-        if(checkCondition(row1._2, row2._2, op)) {
-          res = res :+ (row1._2, row2._2)
-        }        
-      }      
-    }    
-    res.iterator
+    val res = new ListBuffer[(Int, Int)]()
+    val dat2L = dat2.toList
+
+    for (row1 <- dat1) {
+      for (row2 <- dat2L) {
+        if (row1._1 == row2._1 && checkCondition(row1._2, row2._2, op))
+          res += ((row1._2, row2._2))
+      }
+    }
+
+    res.toList.iterator
   }  
   
   def checkCondition(value1: Int, value2: Int, op:String): Boolean = {
@@ -244,6 +227,7 @@ class ThetaJoin(numR: Long, numS: Long, reducers: Int, bucketsize: Int) extends 
       case "<=" => value1 <= value2
       case ">" => value1 > value2
       case ">=" => value1 >= value2
+      case "<>" => value1 != value2
     }
   }
 }
