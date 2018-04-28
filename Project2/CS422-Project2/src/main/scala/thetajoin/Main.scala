@@ -6,10 +6,10 @@ object Main {
   def main(args: Array[String]) {
     val reducers = 10
     val maxInput = 1000 
-    val inputFile1="/Users/Mikael/Documents/Databases/Project2/CS422-Project2/input1_1K.csv"
-    val inputFile2="/Users/Mikael/Documents/Databases/Project2/CS422-Project2/input2_1K.csv"
+    val inputFile1="/Users/Mikael/Documents/Databases/Project2/CS422-Project2/input/input1_1K.csv"
+    val inputFile2="/Users/Mikael/Documents/Databases/Project2/CS422-Project2/input/input2_1K.csv"
     
-    val output = "output"
+    val output = "outputThetaJoin"
     
     val sparkConf = new SparkConf().setAppName("CS422-Project2").setMaster("local[16]")
     val ctx = new SparkContext(sparkConf)

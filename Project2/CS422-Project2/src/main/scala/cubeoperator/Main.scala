@@ -8,8 +8,8 @@ object Main {
 
     val reducers = 10
 
-    val inputFile= "/Users/Mikael/Documents/Databases/Project2/CS422-Project2/lineorder_small.tbl"
-    val output = "output"
+    val inputFile= "/Users/Mikael/Documents/Databases/Project2/CS422-Project2/input/lineorder_small.tbl"
+    val output = "outputCube"
 
     val sparkConf = new SparkConf().setAppName("CS422-Project2").setMaster("local[16]")
     val ctx = new SparkContext(sparkConf)
@@ -52,6 +52,6 @@ object Main {
     q1.coalesce(1)
       .write
       .format("com.databricks.spark.csv")
-      .save("/Users/Mikael/Documents/Databases/Project2/CS422-Project2/output/sql.csv")
+      .save("/Users/Mikael/Documents/Databases/Project2/CS422-Project2/output/sparkSQL")
   }
 }

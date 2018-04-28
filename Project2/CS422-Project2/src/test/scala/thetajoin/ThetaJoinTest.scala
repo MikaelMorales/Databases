@@ -16,14 +16,14 @@ class ThetaJoinTest extends FlatSpec {
     val reducers = 10
     val maxInput = 1000
 
-    //    val inputFile1="input1_1K.csv"
-    //    val inputFile2="input2_1K.csv"
+    //val inputFile1="input1_1K.csv"
+    //val inputFile2="input2_1K.csv"
 
-    val input1="/Users/Mikael/Documents/Databases/Project2/CS422-Project2/input1_1K.csv"
-    val input2="/Users/Mikael/Documents/Databases/Project2/CS422-Project2/input2_1K.csv"
+    //val input1 = new File(getClass.getResource(inputFile1).getFile).getPath
+    //val input2 = new File(getClass.getResource(inputFile2).getFile).getPath
 
-    //    val input1 = new File(getClass.getResource(inputFile1).getFile).getPath
-    //    val input2 = new File(getClass.getResource(inputFile2).getFile).getPath
+    val input1="/Users/Mikael/Documents/Databases/Project2/CS422-Project2/input/input1_2K.csv"
+    val input2="/Users/Mikael/Documents/Databases/Project2/CS422-Project2/input/input2_2K.csv"
 
     val output = "outputTest"
 
@@ -50,11 +50,11 @@ class ThetaJoinTest extends FlatSpec {
     val dataset1 = new Dataset(rdd1, schema1)
     val dataset2 = new Dataset(rdd2, schema2)
 
-    test(dataset1, dataset2, reducers, maxInput, "=", (x, y) => x == y, schema1, schema2, rdd1, rdd2)
-    test(dataset1, dataset2, reducers, maxInput, "<=", (x, y) => x <= y, schema1, schema2, rdd1, rdd2)
-    test(dataset1, dataset2, reducers, maxInput, ">=", (x, y) => x >= y, schema1, schema2, rdd1, rdd2)
-    test(dataset1, dataset2, reducers, maxInput, "<>", (x, y) => x != y, schema1, schema2, rdd1, rdd2)
-    test(dataset1, dataset2, reducers, maxInput, "<", (x, y) => x < y, schema1, schema2, rdd1, rdd2)
+//    test(dataset1, dataset2, reducers, maxInput, "=", (x, y) => x == y, schema1, schema2, rdd1, rdd2)
+//    test(dataset1, dataset2, reducers, maxInput, "<=", (x, y) => x <= y, schema1, schema2, rdd1, rdd2)
+//    test(dataset1, dataset2, reducers, maxInput, ">=", (x, y) => x >= y, schema1, schema2, rdd1, rdd2)
+//    test(dataset1, dataset2, reducers, maxInput, "<>", (x, y) => x != y, schema1, schema2, rdd1, rdd2)
+//    test(dataset1, dataset2, reducers, maxInput, "<", (x, y) => x < y, schema1, schema2, rdd1, rdd2)
     test(dataset1, dataset2, reducers, maxInput, ">", (x, y) => x > y, schema1, schema2, rdd1, rdd2)
   }
 
@@ -63,7 +63,7 @@ class ThetaJoinTest extends FlatSpec {
     val resultSize = getTestedImplementationResult(dataset1, dataset2, reducers, maxInput, op)
     val t2 = System.nanoTime
 
-    println((t2-t1)/(Math.pow(10,9)))
+    println((t2-t1)/Math.pow(10,9))
 
     val index1 = schema1.indexOf("num")
     val index2 = schema2.indexOf("num")
