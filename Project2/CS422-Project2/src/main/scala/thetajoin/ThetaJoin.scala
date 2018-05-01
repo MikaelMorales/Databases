@@ -43,10 +43,9 @@ class ThetaJoin(numR: Long, numS: Long, reducers: Int, bucketsize: Int) extends 
     val index2 = schema2.indexOf(attr2)        
     
     // Sample both datasets
-    val cs = numS / Math.sqrt(numS*numR*reducers)
-    val cr = numR / Math.sqrt(numS*numR*reducers)
-    horizontalBoundaries = initializeBoundaries(rdd2, index2, cs)
-    verticalBoundaries = initializeBoundaries(rdd1, index1, cr)
+    val fraction = 1.0 / Math.sqrt(numS*numR/reducers)
+    horizontalBoundaries = initializeBoundaries(rdd2, index2, fraction)
+    verticalBoundaries = initializeBoundaries(rdd1, index1, fraction)
     verticalCounts = initializeCount(rdd1, index1, verticalBoundaries)
     horizontalCounts = initializeCount(rdd2, index2, horizontalBoundaries)
 
