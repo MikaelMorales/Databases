@@ -53,7 +53,7 @@ class ThetaJoinTest extends FlatSpec {
     test(dataset1, dataset2, reducers, maxInput, "=", (x, y) => x == y, schema1, schema2, rdd1, rdd2)
     test(dataset1, dataset2, reducers, maxInput, "<=", (x, y) => x <= y, schema1, schema2, rdd1, rdd2)
     test(dataset1, dataset2, reducers, maxInput, ">=", (x, y) => x >= y, schema1, schema2, rdd1, rdd2)
-    test(dataset1, dataset2, reducers, maxInput, "<>", (x, y) => x != y, schema1, schema2, rdd1, rdd2)
+    test(dataset1, dataset2, reducers, maxInput, "!=", (x, y) => x != y, schema1, schema2, rdd1, rdd2)
     test(dataset1, dataset2, reducers, maxInput, "<", (x, y) => x < y, schema1, schema2, rdd1, rdd2)
     test(dataset1, dataset2, reducers, maxInput, ">", (x, y) => x > y, schema1, schema2, rdd1, rdd2)
   }

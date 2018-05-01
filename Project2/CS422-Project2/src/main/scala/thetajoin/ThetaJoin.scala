@@ -7,27 +7,25 @@ import org.slf4j.{Logger, LoggerFactory}
 
 import scala.collection.mutable.{ArrayBuffer, ListBuffer}
 
-
 class ThetaJoin(numR: Long, numS: Long, reducers: Int, bucketsize: Int) extends java.io.Serializable {
-
   case class Region(rowS: Long, rowF: Long, colS: Long, colF: Long)
 
   val logger: Logger = LoggerFactory.getLogger("ThetaJoin")
   
-  // random samples for each relation
+  // Random samples for each relation
   // helper structures, you are allowed
   // not to use them
   var horizontalBoundaries: Array[Int] = Array[Int]()
   var verticalBoundaries: Array[Int] = Array[Int]()
   
-  // number of values that fall in each partition
+  // Number of values that fall in each partition
   // helper structures, you are allowed
   // not to use them
   var horizontalCounts: Array[Int] = Array[Int]()
   var verticalCounts: Array[Int] = Array[Int]()
   
   /*
-   * this method gets as input two datasets and the condition
+   * This method gets as input two datasets and the condition
    * and returns an RDD with the result by projecting only 
    * attr1 and attr2
    * You are not allowed to change the definition of this function.
@@ -173,7 +171,7 @@ class ThetaJoin(numR: Long, numS: Long, reducers: Int, bucketsize: Int) extends 
       case "<" => Rl < Su
       case "<=" => Rl <= Su
       case "=" => (Rl >= Sl && Rl <= Su) || Ru >= Sl
-      case "<>" => Rl != Sl || Ru != Sl || Rl != Ru
+      case "!=" => Rl != Sl || Ru != Sl || Rl != Ru
       case ">" => Ru > Sl
       case ">=" => Ru >= Sl
     }
@@ -226,8 +224,7 @@ class ThetaJoin(numR: Long, numS: Long, reducers: Int, bucketsize: Int) extends 
       case "<=" => value1 <= value2
       case ">" => value1 > value2
       case ">=" => value1 >= value2
-      case "<>" => value1 != value2
+      case "!=" => value1 != value2
     }
   }
 }
-
