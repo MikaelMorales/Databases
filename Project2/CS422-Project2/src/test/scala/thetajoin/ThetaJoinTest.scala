@@ -1,14 +1,14 @@
 package thetajoin
 
 import org.apache.spark.rdd.RDD
-import org.apache.spark.sql.Row
+import org.apache.spark.sql.{Row, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
 import org.scalatest._
 
 class ThetaJoinTest extends FlatSpec {
-  val sparkConf = new SparkConf().setAppName("CS422-Project2").setMaster("local[16]")
-  val ctx = new SparkContext(sparkConf)
-  val sqlContext = new org.apache.spark.sql.SQLContext(ctx)
+  val sparkConf: SparkConf = new SparkConf().setAppName("CS422-Project2").setMaster("local[16]")
+  val ctx: SparkContext = new SparkContext(sparkConf)
+  val sqlContext: SQLContext = new org.apache.spark.sql.SQLContext(ctx)
 
   test()
 
@@ -58,7 +58,7 @@ class ThetaJoinTest extends FlatSpec {
     test(dataset1, dataset2, reducers, maxInput, ">", (x, y) => x > y, schema1, schema2, rdd1, rdd2)
   }
 
-  def test(dataset1: Dataset, dataset2: Dataset, reducers: Int, maxInput: Int, op: String, cond: (Int, Int) => Boolean, schema1: List[String], schema2: List[String], rdd1: RDD[Row], rdd2: RDD[Row]) = {
+  private def test(dataset1: Dataset, dataset2: Dataset, reducers: Int, maxInput: Int, op: String, cond: (Int, Int) => Boolean, schema1: List[String], schema2: List[String], rdd1: RDD[Row], rdd2: RDD[Row]) = {
     val t1 = System.nanoTime
     val resultSize = getTestedImplementationResult(dataset1, dataset2, reducers, maxInput, op)
     val t2 = System.nanoTime
@@ -73,14 +73,14 @@ class ThetaJoinTest extends FlatSpec {
     assert(resultSize === resultSizeCartesian)
   }
 
-  def getTestedImplementationResult(dataset1: Dataset, dataset2: Dataset, reducers: Int, maxInput: Int, op: String): Long = {
-    val tj = new ThetaJoin(dataset1.getRDD.count, dataset2.getRDD.count, reducers, maxInput)
+  private def getTestedImplementationResult(dataset1: Dataset, dataset2: Dataset, reducers: Int, maxInput: Int, op: String): Long = {
+    val tj = new ThetaJoin(dataset1.getRDD().count, dataset2.getRDD().count, reducers, maxInput)
     val res = tj.theta_join(dataset1, dataset2, "num", "num", op)
 
     res.count
   }
 
-  def getReferenceImplementationResult(rdd1: RDD[Row], rdd2: RDD[Row], index1: Int, index2: Int, cond: (Int, Int) => Boolean): Long = {
+  private def getReferenceImplementationResult(rdd1: RDD[Row], rdd2: RDD[Row], index1: Int, index2: Int, cond: (Int, Int) => Boolean): Long = {
     val cartRes = rdd1.cartesian(rdd2).flatMap(x => {
       val v1 = x._1(index1).asInstanceOf[Int]
       val v2 = x._2(index2).asInstanceOf[Int]

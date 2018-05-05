@@ -7,38 +7,38 @@
 		revision="0.1.0"
 		conf="provided"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20180415103752"/>
+		date="20180505161115"/>
 	<dependencies>
 		<module organisation="org.apache.hadoop" name="hadoop-common">
-			<revision name="2.7.0" status="release" pubdate="20150411004314" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="145">
+			<revision name="2.7.0" status="release" pubdate="20150411004314" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="144">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="42913" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.hadoop/hadoop-common/ivy-2.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-common/2.7.0/hadoop-common-2.7.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="hadoop-common" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2046463" time="731" location="/Users/Mikael/.ivy2/cache/org.apache.hadoop/hadoop-common/srcs/hadoop-common-2.7.0-sources.jar">
+					<artifact name="hadoop-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2046463" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.hadoop/hadoop-common/srcs/hadoop-common-2.7.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-common/2.7.0/hadoop-common-2.7.0-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.htrace" name="htrace-core">
-			<revision name="3.1.0-incubating" status="release" pubdate="20150115203701" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://incubator.apache.org/projects/htrace.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="164">
+			<revision name="3.1.0-incubating" status="release" pubdate="20150115203701" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://incubator.apache.org/projects/htrace.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="163">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="5150" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.htrace/htrace-core/ivy-3.1.0-incubating.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/htrace/htrace-core/3.1.0-incubating/htrace-core-3.1.0-incubating.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.1.0-incubating" rev-constraint-default="3.1.0-incubating" rev-constraint-dynamic="3.1.0-incubating" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="htrace-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="37546" time="115" location="/Users/Mikael/.ivy2/cache/org.apache.htrace/htrace-core/srcs/htrace-core-3.1.0-incubating-sources.jar">
+					<artifact name="htrace-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="37546" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.htrace/htrace-core/srcs/htrace-core-3.1.0-incubating-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/htrace/htrace-core/3.1.0-incubating/htrace-core-3.1.0-incubating-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="commons-net" name="commons-net">
-			<revision name="3.1" status="release" pubdate="20120214194228" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="150">
+			<revision name="3.1" status="release" pubdate="20120214194228" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="149">
 				<metadata-artifact status="no" details="" size="7821" time="0" location="/Users/Mikael/.ivy2/cache/commons-net/commons-net/ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-net/commons-net/3.1/commons-net-3.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="commons-net" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="406713" time="225" location="/Users/Mikael/.ivy2/cache/commons-net/commons-net/srcs/commons-net-3.1-sources.jar">
+					<artifact name="commons-net" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="406713" time="0" location="/Users/Mikael/.ivy2/cache/commons-net/commons-net/srcs/commons-net-3.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-net/commons-net/3.1/commons-net-3.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -62,7 +62,7 @@
 				<metadata-artifact status="no" details="" size="3381" time="0" location="/Users/Mikael/.ivy2/cache/com.google.code.gson/gson/ivy-2.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.2.4/gson-2.2.4.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.2.4" rev-constraint-default="2.2.4" rev-constraint-dynamic="2.2.4" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="gson" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="127562" time="168" location="/Users/Mikael/.ivy2/cache/com.google.code.gson/gson/srcs/gson-2.2.4-sources.jar">
+					<artifact name="gson" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="127562" time="0" location="/Users/Mikael/.ivy2/cache/com.google.code.gson/gson/srcs/gson-2.2.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.2.4/gson-2.2.4-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -82,10 +82,10 @@
 		<module organisation="org.apache.spark" name="spark-mllib_2.11">
 			<revision name="2.1.0" status="release" pubdate="20161216081226" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="108">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="8579" time="70" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-mllib_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-mllib_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.1.0/spark-mllib_2.11-2.1.0.pom"/>
+				<metadata-artifact status="successful" details="" size="8579" time="98" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-mllib_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-mllib_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.1.0/spark-mllib_2.11-2.1.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="spark-mllib_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="788998" time="439" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-mllib_2.11/srcs/spark-mllib_2.11-2.1.0-sources.jar">
+					<artifact name="spark-mllib_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="788998" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-mllib_2.11/srcs/spark-mllib_2.11-2.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.1.0/spark-mllib_2.11-2.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -94,10 +94,10 @@
 		<module organisation="org.apache.spark" name="spark-streaming_2.11">
 			<revision name="2.1.0" status="release" pubdate="20161216080548" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="137">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="9478" time="70" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-streaming_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-streaming_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.1.0/spark-streaming_2.11-2.1.0.pom"/>
+				<metadata-artifact status="successful" details="" size="9478" time="109" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-streaming_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-streaming_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.1.0/spark-streaming_2.11-2.1.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="spark-streaming_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="248694" time="189" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-streaming_2.11/srcs/spark-streaming_2.11-2.1.0-sources.jar">
+					<artifact name="spark-streaming_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="248694" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-streaming_2.11/srcs/spark-streaming_2.11-2.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.1.0/spark-streaming_2.11-2.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -106,10 +106,10 @@
 		<module organisation="org.apache.spark" name="spark-sql_2.11">
 			<revision name="2.1.0" status="release" pubdate="20161216081135" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="101">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="9666" time="72" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-sql_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-sql_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0.pom"/>
+				<metadata-artifact status="successful" details="" size="9666" time="107" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-sql_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-sql_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="spark-sql_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="821814" time="337" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-sql_2.11/srcs/spark-sql_2.11-2.1.0-sources.jar">
+					<artifact name="spark-sql_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="821814" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-sql_2.11/srcs/spark-sql_2.11-2.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -121,7 +121,7 @@
 				<metadata-artifact status="no" details="" size="13987" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.curator/curator-recipes/ivy-2.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-recipes/2.7.1/curator-recipes-2.7.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="curator-recipes" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="154195" time="148" location="/Users/Mikael/.ivy2/cache/org.apache.curator/curator-recipes/srcs/curator-recipes-2.7.1-sources.jar">
+					<artifact name="curator-recipes" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="154195" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.curator/curator-recipes/srcs/curator-recipes-2.7.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/curator/curator-recipes/2.7.1/curator-recipes-2.7.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -130,10 +130,10 @@
 		<module organisation="org.apache.spark" name="spark-catalyst_2.11">
 			<revision name="2.1.0" status="release" pubdate="20161216080900" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="90">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="7757" time="75" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.1.0/spark-catalyst_2.11-2.1.0.pom"/>
+				<metadata-artifact status="successful" details="" size="7757" time="100" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.1.0/spark-catalyst_2.11-2.1.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="spark-catalyst_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="772040" time="325" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/srcs/spark-catalyst_2.11-2.1.0-sources.jar">
+					<artifact name="spark-catalyst_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="772040" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/srcs/spark-catalyst_2.11-2.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.1.0/spark-catalyst_2.11-2.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -144,7 +144,7 @@
 				<metadata-artifact status="no" details="" size="10506" time="0" location="/Users/Mikael/.ivy2/cache/commons-codec/commons-codec/ivy-1.10.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-codec/commons-codec/1.10/commons-codec-1.10.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.10" rev-constraint-default="1.10" rev-constraint-dynamic="1.10" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="commons-codec" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="301032" time="196" location="/Users/Mikael/.ivy2/cache/commons-codec/commons-codec/srcs/commons-codec-1.10-sources.jar">
+					<artifact name="commons-codec" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="301032" time="0" location="/Users/Mikael/.ivy2/cache/commons-codec/commons-codec/srcs/commons-codec-1.10-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -163,7 +163,7 @@
 			</revision>
 		</module>
 		<module organisation="commons-collections" name="commons-collections">
-			<revision name="3.2.1" status="release" pubdate="20080831134528" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/collections/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="154">
+			<revision name="3.2.1" status="release" pubdate="20080831134528" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/collections/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="153">
 				<metadata-artifact status="no" details="" size="4590" time="0" location="/Users/Mikael/.ivy2/cache/commons-collections/commons-collections/ivy-3.2.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="0.1.0"/>
 				<artifacts>
@@ -179,7 +179,7 @@
 				<metadata-artifact status="no" details="" size="7299" time="0" location="/Users/Mikael/.ivy2/cache/org.jpmml/pmml-model/ivy-1.2.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jpmml/pmml-model/1.2.15/pmml-model-1.2.15.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.2.15" rev-constraint-default="1.2.15" rev-constraint-dynamic="1.2.15" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="pmml-model" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="495260" time="245" location="/Users/Mikael/.ivy2/cache/org.jpmml/pmml-model/srcs/pmml-model-1.2.15-sources.jar">
+					<artifact name="pmml-model" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="495260" time="0" location="/Users/Mikael/.ivy2/cache/org.jpmml/pmml-model/srcs/pmml-model-1.2.15-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jpmml/pmml-model/1.2.15/pmml-model-1.2.15-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -191,7 +191,7 @@
 				<metadata-artifact status="no" details="" size="6151" time="0" location="/Users/Mikael/.ivy2/cache/org.jpmml/pmml-schema/ivy-1.2.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jpmml/pmml-schema/1.2.15/pmml-schema-1.2.15.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.2.15" rev-constraint-default="1.2.15" rev-constraint-dynamic="1.2.15" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="pmml-schema" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="4627" time="103" location="/Users/Mikael/.ivy2/cache/org.jpmml/pmml-schema/srcs/pmml-schema-1.2.15-sources.jar">
+					<artifact name="pmml-schema" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4627" time="0" location="/Users/Mikael/.ivy2/cache/org.jpmml/pmml-schema/srcs/pmml-schema-1.2.15-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jpmml/pmml-schema/1.2.15/pmml-schema-1.2.15-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -215,7 +215,7 @@
 				<metadata-artifact status="no" details="" size="3895" time="0" location="/Users/Mikael/.ivy2/cache/com.univocity/univocity-parsers/ivy-2.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/univocity/univocity-parsers/2.2.1/univocity-parsers-2.2.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.2.1" rev-constraint-default="2.2.1" rev-constraint-dynamic="2.2.1" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="univocity-parsers" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="321628" time="195" location="/Users/Mikael/.ivy2/cache/com.univocity/univocity-parsers/srcs/univocity-parsers-2.2.1-sources.jar">
+					<artifact name="univocity-parsers" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="321628" time="0" location="/Users/Mikael/.ivy2/cache/com.univocity/univocity-parsers/srcs/univocity-parsers-2.2.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/univocity/univocity-parsers/2.2.1/univocity-parsers-2.2.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -227,7 +227,7 @@
 				<metadata-artifact status="no" details="" size="35656" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.hadoop/hadoop-auth/ivy-2.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-auth/2.7.0/hadoop-auth-2.7.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="hadoop-auth" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="54762" time="217" location="/Users/Mikael/.ivy2/cache/org.apache.hadoop/hadoop-auth/srcs/hadoop-auth-2.7.0-sources.jar">
+					<artifact name="hadoop-auth" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="54762" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.hadoop/hadoop-auth/srcs/hadoop-auth-2.7.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-auth/2.7.0/hadoop-auth-2.7.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -239,19 +239,19 @@
 				<metadata-artifact status="no" details="" size="26789" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.directory.server/apacheds-kerberos-codec/ivy-2.0.0-M15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.0.0-M15" rev-constraint-default="2.0.0-M15" rev-constraint-dynamic="2.0.0-M15" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="apacheds-kerberos-codec" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="726316" time="325" location="/Users/Mikael/.ivy2/cache/org.apache.directory.server/apacheds-kerberos-codec/srcs/apacheds-kerberos-codec-2.0.0-M15-sources.jar">
+					<artifact name="apacheds-kerberos-codec" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="726316" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.directory.server/apacheds-kerberos-codec/srcs/apacheds-kerberos-codec-2.0.0-M15-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.directory.api" name="api-util">
-			<revision name="1.0.0-M20" status="release" pubdate="20130814102558" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="147">
+			<revision name="1.0.0-M20" status="release" pubdate="20130814102558" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="146">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="14221" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.directory.api/api-util/ivy-1.0.0-M20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.0.0-M20" rev-constraint-default="1.0.0-M20" rev-constraint-dynamic="1.0.0-M20" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="api-util" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="78219" time="150" location="/Users/Mikael/.ivy2/cache/org.apache.directory.api/api-util/srcs/api-util-1.0.0-M20-sources.jar">
+					<artifact name="api-util" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="78219" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.directory.api/api-util/srcs/api-util-1.0.0-M20-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -263,7 +263,7 @@
 				<metadata-artifact status="no" details="" size="8539" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.2.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="4.2.5" rev-constraint-default="4.2.5" rev-constraint-dynamic="4.2.5" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="httpclient" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="524878" time="252" location="/Users/Mikael/.ivy2/cache/org.apache.httpcomponents/httpclient/srcs/httpclient-4.2.5-sources.jar">
+					<artifact name="httpclient" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="524878" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.httpcomponents/httpclient/srcs/httpclient-4.2.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -275,7 +275,7 @@
 				<metadata-artifact status="no" details="" size="31682" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.hadoop/hadoop-annotations/ivy-2.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-annotations/2.7.0/hadoop-annotations-2.7.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="hadoop-annotations" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="11798" time="111" location="/Users/Mikael/.ivy2/cache/org.apache.hadoop/hadoop-annotations/srcs/hadoop-annotations-2.7.0-sources.jar">
+					<artifact name="hadoop-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="11798" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.hadoop/hadoop-annotations/srcs/hadoop-annotations-2.7.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-annotations/2.7.0/hadoop-annotations-2.7.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -284,22 +284,22 @@
 		<module organisation="org.apache.spark" name="spark-graphx_2.11">
 			<revision name="2.1.0" status="release" pubdate="20161216081014" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="6574" time="75" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-graphx_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-graphx_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.11/2.1.0/spark-graphx_2.11-2.1.0.pom"/>
+				<metadata-artifact status="successful" details="" size="6574" time="104" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-graphx_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-graphx_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.11/2.1.0/spark-graphx_2.11-2.1.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="spark-graphx_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="98511" time="250" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-graphx_2.11/srcs/spark-graphx_2.11-2.1.0-sources.jar">
+					<artifact name="spark-graphx_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="98511" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-graphx_2.11/srcs/spark-graphx_2.11-2.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.11/2.1.0/spark-graphx_2.11-2.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-core_2.11">
-			<revision name="2.1.0" status="release" pubdate="20161216080538" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="169">
+			<revision name="2.1.0" status="release" pubdate="20161216080538" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="168">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="20892" time="72" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-core_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-core_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.1.0/spark-core_2.11-2.1.0.pom"/>
+				<metadata-artifact status="successful" details="" size="20892" time="102" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-core_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-core_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.1.0/spark-core_2.11-2.1.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="spark-core_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1734039" time="593" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-core_2.11/srcs/spark-core_2.11-2.1.0-sources.jar">
+					<artifact name="spark-core_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1734039" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-core_2.11/srcs/spark-core_2.11-2.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.1.0/spark-core_2.11-2.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -311,7 +311,7 @@
 				<metadata-artifact status="no" details="" size="14887" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.commons/commons-crypto/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-crypto/1.0.0/commons-crypto-1.0.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="commons-crypto" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="94099" time="161" location="/Users/Mikael/.ivy2/cache/org.apache.commons/commons-crypto/srcs/commons-crypto-1.0.0-sources.jar">
+					<artifact name="commons-crypto" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="94099" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.commons/commons-crypto/srcs/commons-crypto-1.0.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-crypto/1.0.0/commons-crypto-1.0.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -323,7 +323,7 @@
 				<metadata-artifact status="no" details="" size="5566" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.ivy/ivy/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/ivy/ivy/2.4.0/ivy-2.4.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="ivy" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="922723" time="369" location="/Users/Mikael/.ivy2/cache/org.apache.ivy/ivy/srcs/ivy-2.4.0-sources.jar">
+					<artifact name="ivy" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="922723" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.ivy/ivy/srcs/ivy-2.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/ivy/ivy/2.4.0/ivy-2.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -335,19 +335,19 @@
 				<metadata-artifact status="no" details="" size="4217" time="0" location="/Users/Mikael/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-scala_2.11/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.6.5/jackson-module-scala_2.11-2.6.5.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jackson-module-scala_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="52587" time="125" location="/Users/Mikael/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-scala_2.11/srcs/jackson-module-scala_2.11-2.6.5-sources.jar">
+					<artifact name="jackson-module-scala_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="52587" time="0" location="/Users/Mikael/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-scala_2.11/srcs/jackson-module-scala_2.11-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.6.5/jackson-module-scala_2.11-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.fasterxml.jackson.module" name="jackson-module-paranamer">
-			<revision name="2.6.5" status="release" pubdate="20160119071604" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="153">
+			<revision name="2.6.5" status="release" pubdate="20160119071604" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="152">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="7636" time="0" location="/Users/Mikael/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-paranamer/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-paranamer/2.6.5/jackson-module-paranamer-2.6.5.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jackson-module-paranamer" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="6567" time="115" location="/Users/Mikael/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-paranamer/srcs/jackson-module-paranamer-2.6.5-sources.jar">
+					<artifact name="jackson-module-paranamer" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="6567" time="0" location="/Users/Mikael/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-paranamer/srcs/jackson-module-paranamer-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-paranamer/2.6.5/jackson-module-paranamer-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -359,7 +359,7 @@
 				<metadata-artifact status="no" details="" size="5373" time="0" location="/Users/Mikael/.ivy2/cache/io.dropwizard.metrics/metrics-graphite/ivy-3.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-graphite/3.1.2/metrics-graphite-3.1.2.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.1.2" rev-constraint-default="3.1.2" rev-constraint-dynamic="3.1.2" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="metrics-graphite" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="10675" time="110" location="/Users/Mikael/.ivy2/cache/io.dropwizard.metrics/metrics-graphite/srcs/metrics-graphite-3.1.2-sources.jar">
+					<artifact name="metrics-graphite" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10675" time="0" location="/Users/Mikael/.ivy2/cache/io.dropwizard.metrics/metrics-graphite/srcs/metrics-graphite-3.1.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-graphite/3.1.2/metrics-graphite-3.1.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -371,14 +371,14 @@
 				<metadata-artifact status="no" details="" size="5156" time="0" location="/Users/Mikael/.ivy2/cache/io.dropwizard.metrics/metrics-jvm/ivy-3.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jvm/3.1.2/metrics-jvm-3.1.2.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.1.2" rev-constraint-default="3.1.2" rev-constraint-dynamic="3.1.2" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="metrics-jvm" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="8756" time="110" location="/Users/Mikael/.ivy2/cache/io.dropwizard.metrics/metrics-jvm/srcs/metrics-jvm-3.1.2-sources.jar">
+					<artifact name="metrics-jvm" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="8756" time="0" location="/Users/Mikael/.ivy2/cache/io.dropwizard.metrics/metrics-jvm/srcs/metrics-jvm-3.1.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jvm/3.1.2/metrics-jvm-3.1.2-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.clearspring.analytics" name="stream">
-			<revision name="2.7.0" status="release" pubdate="20140523154100" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/addthis/stream-lib" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="156">
+			<revision name="2.7.0" status="release" pubdate="20140523154100" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/addthis/stream-lib" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="155">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="4221" time="0" location="/Users/Mikael/.ivy2/cache/com.clearspring.analytics/stream/ivy-2.7.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/clearspring/analytics/stream/2.7.0/stream-2.7.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="0.1.0"/>
@@ -407,7 +407,7 @@
 				<metadata-artifact status="no" details="" size="2967" time="0" location="/Users/Mikael/.ivy2/cache/org.json4s/json4s-jackson_2.11/ivy-3.2.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.11/3.2.11/json4s-jackson_2.11-3.2.11.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.2.11" rev-constraint-default="3.2.11" rev-constraint-dynamic="3.2.11" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="json4s-jackson_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="7083" time="108" location="/Users/Mikael/.ivy2/cache/org.json4s/json4s-jackson_2.11/srcs/json4s-jackson_2.11-3.2.11-sources.jar">
+					<artifact name="json4s-jackson_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7083" time="0" location="/Users/Mikael/.ivy2/cache/org.json4s/json4s-jackson_2.11/srcs/json4s-jackson_2.11-3.2.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.11/3.2.11/json4s-jackson_2.11-3.2.11-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -419,7 +419,7 @@
 				<metadata-artifact status="no" details="" size="2962" time="0" location="/Users/Mikael/.ivy2/cache/org.json4s/json4s-core_2.11/ivy-3.2.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.2.11/json4s-core_2.11-3.2.11.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.2.11" rev-constraint-default="3.2.11" rev-constraint-dynamic="3.2.11" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="json4s-core_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="39377" time="120" location="/Users/Mikael/.ivy2/cache/org.json4s/json4s-core_2.11/srcs/json4s-core_2.11-3.2.11-sources.jar">
+					<artifact name="json4s-core_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="39377" time="0" location="/Users/Mikael/.ivy2/cache/org.json4s/json4s-core_2.11/srcs/json4s-core_2.11-3.2.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.2.11/json4s-core_2.11-3.2.11-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -442,19 +442,19 @@
 				<metadata-artifact status="no" details="" size="2522" time="0" location="/Users/Mikael/.ivy2/cache/org.json4s/json4s-ast_2.11/ivy-3.2.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.2.11/json4s-ast_2.11-3.2.11.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.2.11" rev-constraint-default="3.2.11" rev-constraint-dynamic="3.2.11" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="json4s-ast_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="7279" time="106" location="/Users/Mikael/.ivy2/cache/org.json4s/json4s-ast_2.11/srcs/json4s-ast_2.11-3.2.11-sources.jar">
+					<artifact name="json4s-ast_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7279" time="0" location="/Users/Mikael/.ivy2/cache/org.json4s/json4s-ast_2.11/srcs/json4s-ast_2.11-3.2.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.2.11/json4s-ast_2.11-3.2.11-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.roaringbitmap" name="RoaringBitmap">
-			<revision name="0.5.11" status="release" pubdate="20151117013511" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lemire/RoaringBitmap" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="151">
+			<revision name="0.5.11" status="release" pubdate="20151117013511" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lemire/RoaringBitmap" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="150">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="4060" time="0" location="/Users/Mikael/.ivy2/cache/org.roaringbitmap/RoaringBitmap/ivy-0.5.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/roaringbitmap/RoaringBitmap/0.5.11/RoaringBitmap-0.5.11.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="0.5.11" rev-constraint-default="0.5.11" rev-constraint-dynamic="0.5.11" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="RoaringBitmap" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="124254" time="174" location="/Users/Mikael/.ivy2/cache/org.roaringbitmap/RoaringBitmap/srcs/RoaringBitmap-0.5.11-sources.jar">
+					<artifact name="RoaringBitmap" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="124254" time="0" location="/Users/Mikael/.ivy2/cache/org.roaringbitmap/RoaringBitmap/srcs/RoaringBitmap-0.5.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/roaringbitmap/RoaringBitmap/0.5.11/RoaringBitmap-0.5.11-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -466,7 +466,7 @@
 				<metadata-artifact status="no" details="" size="2738" time="0" location="/Users/Mikael/.ivy2/cache/net.jpountz.lz4/lz4/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/jpountz/lz4/lz4/1.3.0/lz4-1.3.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="lz4" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="50577" time="121" location="/Users/Mikael/.ivy2/cache/net.jpountz.lz4/lz4/srcs/lz4-1.3.0-sources.jar">
+					<artifact name="lz4" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="50577" time="0" location="/Users/Mikael/.ivy2/cache/net.jpountz.lz4/lz4/srcs/lz4-1.3.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/jpountz/lz4/lz4/1.3.0/lz4-1.3.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -478,7 +478,7 @@
 				<metadata-artifact status="no" details="" size="3450" time="0" location="/Users/Mikael/.ivy2/cache/org.xerial.snappy/snappy-java/ivy-1.1.2.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.2.6/snappy-java-1.1.2.6.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.1.2.6" rev-constraint-default="1.1.2.6" rev-constraint-dynamic="1.1.2.6" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="snappy-java" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1049625" time="392" location="/Users/Mikael/.ivy2/cache/org.xerial.snappy/snappy-java/srcs/snappy-java-1.1.2.6-sources.jar">
+					<artifact name="snappy-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1049625" time="0" location="/Users/Mikael/.ivy2/cache/org.xerial.snappy/snappy-java/srcs/snappy-java-1.1.2.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.2.6/snappy-java-1.1.2.6-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -490,7 +490,7 @@
 				<metadata-artifact status="no" details="" size="3554" time="0" location="/Users/Mikael/.ivy2/cache/com.ning/compress-lzf/ivy-1.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/ning/compress-lzf/1.0.3/compress-lzf-1.0.3.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="compress-lzf" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="70093" time="127" location="/Users/Mikael/.ivy2/cache/com.ning/compress-lzf/srcs/compress-lzf-1.0.3-sources.jar">
+					<artifact name="compress-lzf" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="70093" time="0" location="/Users/Mikael/.ivy2/cache/com.ning/compress-lzf/srcs/compress-lzf-1.0.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/ning/compress-lzf/1.0.3/compress-lzf-1.0.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -502,7 +502,7 @@
 				<metadata-artifact status="no" details="" size="5275" time="0" location="/Users/Mikael/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.16.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.16/jcl-over-slf4j-1.7.16.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.7.16" rev-constraint-default="1.7.16" rev-constraint-dynamic="1.7.16" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jcl-over-slf4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="23213" time="110" location="/Users/Mikael/.ivy2/cache/org.slf4j/jcl-over-slf4j/srcs/jcl-over-slf4j-1.7.16-sources.jar">
+					<artifact name="jcl-over-slf4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="23213" time="0" location="/Users/Mikael/.ivy2/cache/org.slf4j/jcl-over-slf4j/srcs/jcl-over-slf4j-1.7.16-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.16/jcl-over-slf4j-1.7.16-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -514,7 +514,7 @@
 				<metadata-artifact status="no" details="" size="4276" time="0" location="/Users/Mikael/.ivy2/cache/javax.servlet/javax.servlet-api/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="javax.servlet-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="223386" time="253" location="/Users/Mikael/.ivy2/cache/javax.servlet/javax.servlet-api/srcs/javax.servlet-api-3.1.0-sources.jar">
+					<artifact name="javax.servlet-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="223386" time="0" location="/Users/Mikael/.ivy2/cache/javax.servlet/javax.servlet-api/srcs/javax.servlet-api-3.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -523,10 +523,10 @@
 		<module organisation="org.apache.spark" name="spark-network-shuffle_2.11">
 			<revision name="2.1.0" status="release" pubdate="20161216081127" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="94">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="4148" time="69" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.1.0/spark-network-shuffle_2.11-2.1.0.pom"/>
+				<metadata-artifact status="successful" details="" size="4148" time="85" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.1.0/spark-network-shuffle_2.11-2.1.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="spark-network-shuffle_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="40348" time="120" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.11/srcs/spark-network-shuffle_2.11-2.1.0-sources.jar">
+					<artifact name="spark-network-shuffle_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="40348" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.11/srcs/spark-network-shuffle_2.11-2.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.1.0/spark-network-shuffle_2.11-2.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -535,10 +535,10 @@
 		<module organisation="org.apache.spark" name="spark-network-common_2.11">
 			<revision name="2.1.0" status="release" pubdate="20161216080508" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="5046" time="69" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-network-common_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-network-common_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.1.0/spark-network-common_2.11-2.1.0.pom"/>
+				<metadata-artifact status="successful" details="" size="5046" time="99" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-network-common_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-network-common_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.1.0/spark-network-common_2.11-2.1.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="spark-network-common_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="110564" time="236" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-network-common_2.11/srcs/spark-network-common_2.11-2.1.0-sources.jar">
+					<artifact name="spark-network-common_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="110564" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-network-common_2.11/srcs/spark-network-common_2.11-2.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.1.0/spark-network-common_2.11-2.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -550,7 +550,7 @@
 				<metadata-artifact status="no" details="" size="6495" time="0" location="/Users/Mikael/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.5/jackson-annotations-2.6.5.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jackson-annotations" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="50255" time="123" location="/Users/Mikael/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/srcs/jackson-annotations-2.6.5-sources.jar">
+					<artifact name="jackson-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="50255" time="0" location="/Users/Mikael/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/srcs/jackson-annotations-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.5/jackson-annotations-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -562,7 +562,7 @@
 				<metadata-artifact status="no" details="" size="8936" time="0" location="/Users/Mikael/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.6.5/jackson-databind-2.6.5.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jackson-databind" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="858568" time="351" location="/Users/Mikael/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/srcs/jackson-databind-2.6.5-sources.jar">
+					<artifact name="jackson-databind" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="858568" time="0" location="/Users/Mikael/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/srcs/jackson-databind-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.6.5/jackson-databind-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -574,7 +574,7 @@
 				<metadata-artifact status="no" details="" size="4642" time="0" location="/Users/Mikael/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/ivy-1.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.8" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="leveldbjni-all" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="70225" time="129" location="/Users/Mikael/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/srcs/leveldbjni-all-1.8-sources.jar">
+					<artifact name="leveldbjni-all" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="70225" time="0" location="/Users/Mikael/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/srcs/leveldbjni-all-1.8-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -586,20 +586,20 @@
 				<metadata-artifact status="no" details="" size="17797" time="0" location="/Users/Mikael/.ivy2/cache/io.netty/netty-all/ivy-4.0.42.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-all/4.0.42.Final/netty-all-4.0.42.Final.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="4.0.42.Final" rev-constraint-default="4.0.42.Final" rev-constraint-dynamic="4.0.42.Final" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="netty-all" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1814690" time="631" location="/Users/Mikael/.ivy2/cache/io.netty/netty-all/srcs/netty-all-4.0.42.Final-sources.jar">
+					<artifact name="netty-all" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1814690" time="0" location="/Users/Mikael/.ivy2/cache/io.netty/netty-all/srcs/netty-all-4.0.42.Final-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-all/4.0.42.Final/netty-all-4.0.42.Final-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.xbean" name="xbean-asm5-shaded">
-			<revision name="4.4" status="release" pubdate="20150910064801" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="149">
+			<revision name="4.4" status="release" pubdate="20150910064801" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="148">
 				<license name="Unknown License" url="http://asm.ow2.org/license.html"/>
 				<license name="Unknown License" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="11989" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.xbean/xbean-asm5-shaded/ivy-4.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/xbean/xbean-asm5-shaded/4.4/xbean-asm5-shaded-4.4.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="4.4" rev-constraint-default="4.4" rev-constraint-dynamic="4.4" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="xbean-asm5-shaded" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="671472" time="607" location="/Users/Mikael/.ivy2/cache/org.apache.xbean/xbean-asm5-shaded/srcs/xbean-asm5-shaded-4.4-sources.jar">
+					<artifact name="xbean-asm5-shaded" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="671472" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.xbean/xbean-asm5-shaded/srcs/xbean-asm5-shaded-4.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/xbean/xbean-asm5-shaded/4.4/xbean-asm5-shaded-4.4-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -635,14 +635,14 @@
 				<metadata-artifact status="no" details="" size="11109" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.avro/avro/ivy-1.7.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/avro/1.7.7/avro-1.7.7.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="avro" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="260233" time="190" location="/Users/Mikael/.ivy2/cache/org.apache.avro/avro/srcs/avro-1.7.7-sources.jar">
+					<artifact name="avro" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="260233" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.avro/avro/srcs/avro-1.7.7-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/avro/1.7.7/avro-1.7.7-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.commons" name="commons-compress">
-			<revision name="1.4.1" status="release" pubdate="20120522065724" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/compress/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="159">
+			<revision name="1.4.1" status="release" pubdate="20120522065724" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/compress/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="158">
 				<metadata-artifact status="no" details="" size="7900" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.commons/commons-compress/ivy-1.4.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="0.1.0"/>
 				<artifacts>
@@ -658,7 +658,7 @@
 				<metadata-artifact status="no" details="" size="2787" time="0" location="/Users/Mikael/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/ivy-1.9.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.9.13" rev-constraint-default="1.9.13" rev-constraint-dynamic="1.9.13" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jackson-mapper-asl" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="548251" time="262" location="/Users/Mikael/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/srcs/jackson-mapper-asl-1.9.13-sources.jar">
+					<artifact name="jackson-mapper-asl" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="548251" time="0" location="/Users/Mikael/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/srcs/jackson-mapper-asl-1.9.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -670,7 +670,7 @@
 				<metadata-artifact status="no" details="" size="3894" time="0" location="/Users/Mikael/.ivy2/cache/net.java.dev.jets3t/jets3t/ivy-0.9.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jets3t/jets3t/0.9.0/jets3t-0.9.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="0.9.0" rev-constraint-default="0.9.0" rev-constraint-dynamic="0.9.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jets3t" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="707573" time="311" location="/Users/Mikael/.ivy2/cache/net.java.dev.jets3t/jets3t/srcs/jets3t-0.9.0-sources.jar">
+					<artifact name="jets3t" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="707573" time="0" location="/Users/Mikael/.ivy2/cache/net.java.dev.jets3t/jets3t/srcs/jets3t-0.9.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/java/dev/jets3t/jets3t/0.9.0/jets3t-0.9.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -682,7 +682,7 @@
 				<metadata-artifact status="no" details="" size="3011" time="0" location="/Users/Mikael/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/ivy-0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jamesmurty/utils/java-xmlbuilder/0.4/java-xmlbuilder-0.4.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="0.4" rev-constraint-default="0.4" rev-constraint-dynamic="0.4" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="java-xmlbuilder" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="19546" time="110" location="/Users/Mikael/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/srcs/java-xmlbuilder-0.4-sources.jar">
+					<artifact name="java-xmlbuilder" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="19546" time="0" location="/Users/Mikael/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/srcs/java-xmlbuilder-0.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jamesmurty/utils/java-xmlbuilder/0.4/java-xmlbuilder-0.4-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -694,7 +694,7 @@
 				<metadata-artifact status="no" details="" size="6556" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="4.2.4" rev-constraint-default="4.2.4" rev-constraint-dynamic="4.2.4" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="httpcore" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="325247" time="227" location="/Users/Mikael/.ivy2/cache/org.apache.httpcomponents/httpcore/srcs/httpcore-4.2.4-sources.jar">
+					<artifact name="httpcore" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="325247" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.httpcomponents/httpcore/srcs/httpcore-4.2.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -706,7 +706,7 @@
 				<metadata-artifact status="no" details="" size="7652" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.parquet/parquet-hadoop/ivy-1.8.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-hadoop/1.8.1/parquet-hadoop-1.8.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.8.1" rev-constraint-default="1.8.1" rev-constraint-dynamic="1.8.1" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="parquet-hadoop" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="134464" time="145" location="/Users/Mikael/.ivy2/cache/org.apache.parquet/parquet-hadoop/srcs/parquet-hadoop-1.8.1-sources.jar">
+					<artifact name="parquet-hadoop" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="134464" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.parquet/parquet-hadoop/srcs/parquet-hadoop-1.8.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-hadoop/1.8.1/parquet-hadoop-1.8.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -718,19 +718,19 @@
 				<metadata-artifact status="no" details="" size="4138" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.parquet/parquet-format/ivy-2.3.0-incubating.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-format/2.3.0-incubating/parquet-format-2.3.0-incubating.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.3.0-incubating" rev-constraint-default="2.3.0-incubating" rev-constraint-dynamic="2.3.0-incubating" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="parquet-format" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="92727" time="145" location="/Users/Mikael/.ivy2/cache/org.apache.parquet/parquet-format/srcs/parquet-format-2.3.0-incubating-sources.jar">
+					<artifact name="parquet-format" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="92727" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.parquet/parquet-format/srcs/parquet-format-2.3.0-incubating-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-format/2.3.0-incubating/parquet-format-2.3.0-incubating-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.parquet" name="parquet-column">
-			<revision name="1.8.1" status="release" pubdate="20150717225651" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://parquet.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="161">
+			<revision name="1.8.1" status="release" pubdate="20150717225651" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://parquet.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="160">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="7638" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.parquet/parquet-column/ivy-1.8.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-column/1.8.1/parquet-column-1.8.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.8.1" rev-constraint-default="1.8.1" rev-constraint-dynamic="1.8.1" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="parquet-column" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="243400" time="183" location="/Users/Mikael/.ivy2/cache/org.apache.parquet/parquet-column/srcs/parquet-column-1.8.1-sources.jar">
+					<artifact name="parquet-column" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="243400" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.parquet/parquet-column/srcs/parquet-column-1.8.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-column/1.8.1/parquet-column-1.8.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -742,7 +742,7 @@
 				<metadata-artifact status="no" details="" size="6545" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.parquet/parquet-encoding/ivy-1.8.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-encoding/1.8.1/parquet-encoding-1.8.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.8.1" rev-constraint-default="1.8.1" rev-constraint-dynamic="1.8.1" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="parquet-encoding" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="175765" time="157" location="/Users/Mikael/.ivy2/cache/org.apache.parquet/parquet-encoding/srcs/parquet-encoding-1.8.1-sources.jar">
+					<artifact name="parquet-encoding" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="175765" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.parquet/parquet-encoding/srcs/parquet-encoding-1.8.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-encoding/1.8.1/parquet-encoding-1.8.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -754,7 +754,7 @@
 				<metadata-artifact status="no" details="" size="6357" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.parquet/parquet-common/ivy-1.8.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-common/1.8.1/parquet-common-1.8.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.8.1" rev-constraint-default="1.8.1" rev-constraint-dynamic="1.8.1" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="parquet-common" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="30289" time="115" location="/Users/Mikael/.ivy2/cache/org.apache.parquet/parquet-common/srcs/parquet-common-1.8.1-sources.jar">
+					<artifact name="parquet-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="30289" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.parquet/parquet-common/srcs/parquet-common-1.8.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-common/1.8.1/parquet-common-1.8.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -766,7 +766,7 @@
 				<metadata-artifact status="no" details="" size="6836" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.parquet/parquet-jackson/ivy-1.8.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-jackson/1.8.1/parquet-jackson-1.8.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.8.1" rev-constraint-default="1.8.1" rev-constraint-dynamic="1.8.1" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="parquet-jackson" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="4844" time="109" location="/Users/Mikael/.ivy2/cache/org.apache.parquet/parquet-jackson/srcs/parquet-jackson-1.8.1-sources.jar">
+					<artifact name="parquet-jackson" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4844" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.parquet/parquet-jackson/srcs/parquet-jackson-1.8.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-jackson/1.8.1/parquet-jackson-1.8.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -777,7 +777,7 @@
 				<metadata-artifact status="no" details="" size="6522" time="0" location="/Users/Mikael/.ivy2/cache/commons-lang/commons-lang/ivy-2.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="commons-lang" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="372982" time="210" location="/Users/Mikael/.ivy2/cache/commons-lang/commons-lang/srcs/commons-lang-2.6-sources.jar">
+					<artifact name="commons-lang" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="372982" time="0" location="/Users/Mikael/.ivy2/cache/commons-lang/commons-lang/srcs/commons-lang-2.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -800,7 +800,7 @@
 				<metadata-artifact status="no" details="" size="15565" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.directory.api/api-asn1-api/ivy-1.0.0-M20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.0.0-M20" rev-constraint-default="1.0.0-M20" rev-constraint-dynamic="1.0.0-M20" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="api-asn1-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="21097" time="117" location="/Users/Mikael/.ivy2/cache/org.apache.directory.api/api-asn1-api/srcs/api-asn1-api-1.0.0-M20-sources.jar">
+					<artifact name="api-asn1-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="21097" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.directory.api/api-asn1-api/srcs/api-asn1-api-1.0.0-M20-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -812,7 +812,7 @@
 				<metadata-artifact status="no" details="" size="5028" time="0" location="/Users/Mikael/.ivy2/cache/org.codehaus.janino/janino/ivy-3.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/janino/janino/3.0.0/janino-3.0.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.0.0" rev-constraint-default="3.0.0" rev-constraint-dynamic="3.0.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="janino" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="372569" time="219" location="/Users/Mikael/.ivy2/cache/org.codehaus.janino/janino/srcs/janino-3.0.0-sources.jar">
+					<artifact name="janino" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="372569" time="0" location="/Users/Mikael/.ivy2/cache/org.codehaus.janino/janino/srcs/janino-3.0.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/janino/janino/3.0.0/janino-3.0.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -824,7 +824,7 @@
 				<metadata-artifact status="no" details="" size="5424" time="0" location="/Users/Mikael/.ivy2/cache/io.dropwizard.metrics/metrics-json/ivy-3.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-json/3.1.2/metrics-json-3.1.2.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.1.2" rev-constraint-default="3.1.2" rev-constraint-dynamic="3.1.2" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="metrics-json" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3484" time="108" location="/Users/Mikael/.ivy2/cache/io.dropwizard.metrics/metrics-json/srcs/metrics-json-3.1.2-sources.jar">
+					<artifact name="metrics-json" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3484" time="0" location="/Users/Mikael/.ivy2/cache/io.dropwizard.metrics/metrics-json/srcs/metrics-json-3.1.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-json/3.1.2/metrics-json-3.1.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -836,7 +836,7 @@
 				<metadata-artifact status="no" details="" size="5135" time="0" location="/Users/Mikael/.ivy2/cache/io.dropwizard.metrics/metrics-core/ivy-3.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.1.2" rev-constraint-default="3.1.2" rev-constraint-dynamic="3.1.2" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="metrics-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="52914" time="138" location="/Users/Mikael/.ivy2/cache/io.dropwizard.metrics/metrics-core/srcs/metrics-core-3.1.2-sources.jar">
+					<artifact name="metrics-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="52914" time="0" location="/Users/Mikael/.ivy2/cache/io.dropwizard.metrics/metrics-core/srcs/metrics-core-3.1.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -848,7 +848,7 @@
 				<metadata-artifact status="no" details="" size="2611" time="0" location="/Users/Mikael/.ivy2/cache/com.jcraft/jsch/ivy-0.1.42.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.42/jsch-0.1.42.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="0.1.42" rev-constraint-default="0.1.42" rev-constraint-dynamic="0.1.42" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jsch" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="211244" time="247" location="/Users/Mikael/.ivy2/cache/com.jcraft/jsch/srcs/jsch-0.1.42-sources.jar">
+					<artifact name="jsch" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="211244" time="0" location="/Users/Mikael/.ivy2/cache/com.jcraft/jsch/srcs/jsch-0.1.42-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.42/jsch-0.1.42-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -860,7 +860,7 @@
 				<metadata-artifact status="no" details="" size="35227" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.containers/jersey-container-servlet/ivy-2.22.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet/2.22.2/jersey-container-servlet-2.22.2.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.22.2" rev-constraint-default="2.22.2" rev-constraint-dynamic="2.22.2" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jersey-container-servlet" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="15919" time="132" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.containers/jersey-container-servlet/srcs/jersey-container-servlet-2.22.2-sources.jar">
+					<artifact name="jersey-container-servlet" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15919" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.containers/jersey-container-servlet/srcs/jersey-container-servlet-2.22.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet/2.22.2/jersey-container-servlet-2.22.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -872,7 +872,7 @@
 				<metadata-artifact status="no" details="" size="35363" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.containers/jersey-container-servlet-core/ivy-2.22.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.22.2/jersey-container-servlet-core-2.22.2.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.22.2" rev-constraint-default="2.22.2" rev-constraint-dynamic="2.22.2" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jersey-container-servlet-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="62750" time="131" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.containers/jersey-container-servlet-core/srcs/jersey-container-servlet-core-2.22.2-sources.jar">
+					<artifact name="jersey-container-servlet-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="62750" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.containers/jersey-container-servlet-core/srcs/jersey-container-servlet-core-2.22.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.22.2/jersey-container-servlet-core-2.22.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -884,7 +884,7 @@
 				<metadata-artifact status="no" details="" size="36509" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.core/jersey-server/ivy-2.22.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-server/2.22.2/jersey-server-2.22.2.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.22.2" rev-constraint-default="2.22.2" rev-constraint-dynamic="2.22.2" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jersey-server" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="757324" time="323" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.core/jersey-server/srcs/jersey-server-2.22.2-sources.jar">
+					<artifact name="jersey-server" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="757324" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.core/jersey-server/srcs/jersey-server-2.22.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-server/2.22.2/jersey-server-2.22.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -896,7 +896,7 @@
 				<metadata-artifact status="no" details="" size="3200" time="0" location="/Users/Mikael/.ivy2/cache/javax.validation/validation-api/ivy-1.1.0.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.1.0.Final" rev-constraint-default="1.1.0.Final" rev-constraint-dynamic="1.1.0.Final" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="validation-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="94671" time="185" location="/Users/Mikael/.ivy2/cache/javax.validation/validation-api/srcs/validation-api-1.1.0.Final-sources.jar">
+					<artifact name="validation-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="94671" time="0" location="/Users/Mikael/.ivy2/cache/javax.validation/validation-api/srcs/validation-api-1.1.0.Final-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -908,7 +908,7 @@
 				<metadata-artifact status="no" details="" size="35308" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.core/jersey-client/ivy-2.22.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.22.2/jersey-client-2.22.2.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.22.2" rev-constraint-default="2.22.2" rev-constraint-dynamic="2.22.2" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jersey-client" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="128842" time="170" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.core/jersey-client/srcs/jersey-client-2.22.2-sources.jar">
+					<artifact name="jersey-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="128842" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.core/jersey-client/srcs/jersey-client-2.22.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.22.2/jersey-client-2.22.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -932,7 +932,7 @@
 				<metadata-artifact status="no" details="" size="2640" time="0" location="/Users/Mikael/.ivy2/cache/org.scala-lang/scalap/ivy-2.11.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scalap/2.11.7/scalap-2.11.7.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="scalap" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="37052" time="119" location="/Users/Mikael/.ivy2/cache/org.scala-lang/scalap/srcs/scalap-2.11.7-sources.jar">
+					<artifact name="scalap" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="37052" time="0" location="/Users/Mikael/.ivy2/cache/org.scala-lang/scalap/srcs/scalap-2.11.7-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scalap/2.11.7/scalap-2.11.7-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -941,10 +941,10 @@
 		<module organisation="org.apache.spark" name="spark-launcher_2.11">
 			<revision name="2.1.0" status="release" pubdate="20161216080916" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="6351" time="71" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-launcher_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-launcher_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.1.0/spark-launcher_2.11-2.1.0.pom"/>
+				<metadata-artifact status="successful" details="" size="6351" time="159" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-launcher_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-launcher_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.1.0/spark-launcher_2.11-2.1.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="spark-launcher_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="44520" time="118" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-launcher_2.11/srcs/spark-launcher_2.11-2.1.0-sources.jar">
+					<artifact name="spark-launcher_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="44520" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-launcher_2.11/srcs/spark-launcher_2.11-2.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.1.0/spark-launcher_2.11-2.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -956,19 +956,19 @@
 				<metadata-artifact status="no" details="" size="5260" time="0" location="/Users/Mikael/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.16.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.16/jul-to-slf4j-1.7.16.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.7.16" rev-constraint-default="1.7.16" rev-constraint-dynamic="1.7.16" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jul-to-slf4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="4872" time="101" location="/Users/Mikael/.ivy2/cache/org.slf4j/jul-to-slf4j/srcs/jul-to-slf4j-1.7.16-sources.jar">
+					<artifact name="jul-to-slf4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4872" time="0" location="/Users/Mikael/.ivy2/cache/org.slf4j/jul-to-slf4j/srcs/jul-to-slf4j-1.7.16-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.16/jul-to-slf4j-1.7.16-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="slf4j-log4j12">
-			<revision name="1.7.16" status="release" pubdate="20160211212635" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="167">
+			<revision name="1.7.16" status="release" pubdate="20160211212635" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="166">
 				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
 				<metadata-artifact status="no" details="" size="5276" time="0" location="/Users/Mikael/.ivy2/cache/org.slf4j/slf4j-log4j12/ivy-1.7.16.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.7.16/slf4j-log4j12-1.7.16.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.7.16" rev-constraint-default="1.7.16" rev-constraint-dynamic="1.7.16" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="slf4j-log4j12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="11191" time="108" location="/Users/Mikael/.ivy2/cache/org.slf4j/slf4j-log4j12/srcs/slf4j-log4j12-1.7.16-sources.jar">
+					<artifact name="slf4j-log4j12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="11191" time="0" location="/Users/Mikael/.ivy2/cache/org.slf4j/slf4j-log4j12/srcs/slf4j-log4j12-1.7.16-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.7.16/slf4j-log4j12-1.7.16-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -979,7 +979,7 @@
 				<metadata-artifact status="no" details="" size="10235" time="0" location="/Users/Mikael/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="commons-logging" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="73915" time="134" location="/Users/Mikael/.ivy2/cache/commons-logging/commons-logging/srcs/commons-logging-1.1.3-sources.jar">
+					<artifact name="commons-logging" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="73915" time="0" location="/Users/Mikael/.ivy2/cache/commons-logging/commons-logging/srcs/commons-logging-1.1.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -991,7 +991,7 @@
 				<metadata-artifact status="no" details="" size="2564" time="0" location="/Users/Mikael/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/ivy-1.9.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.9.13" rev-constraint-default="1.9.13" rev-constraint-dynamic="1.9.13" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jackson-core-asl" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="240367" time="185" location="/Users/Mikael/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/srcs/jackson-core-asl-1.9.13-sources.jar">
+					<artifact name="jackson-core-asl" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="240367" time="0" location="/Users/Mikael/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/srcs/jackson-core-asl-1.9.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1000,10 +1000,10 @@
 		<module organisation="org.apache.spark" name="spark-unsafe_2.11">
 			<revision name="2.1.0" status="release" pubdate="20161216080441" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="4618" time="65" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-unsafe_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-unsafe_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.1.0/spark-unsafe_2.11-2.1.0.pom"/>
+				<metadata-artifact status="successful" details="" size="4618" time="96" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-unsafe_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-unsafe_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.1.0/spark-unsafe_2.11-2.1.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="spark-unsafe_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="36410" time="114" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-unsafe_2.11/srcs/spark-unsafe_2.11-2.1.0-sources.jar">
+					<artifact name="spark-unsafe_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="36410" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-unsafe_2.11/srcs/spark-unsafe_2.11-2.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.1.0/spark-unsafe_2.11-2.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1015,7 +1015,7 @@
 				<metadata-artifact status="no" details="" size="12365" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.commons/commons-lang3/ivy-3.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.5" rev-constraint-default="3.5" rev-constraint-dynamic="3.5" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="commons-lang3" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="526211" time="259" location="/Users/Mikael/.ivy2/cache/org.apache.commons/commons-lang3/srcs/commons-lang3-3.5-sources.jar">
+					<artifact name="commons-lang3" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="526211" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.commons/commons-lang3/srcs/commons-lang3-3.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1038,55 +1038,55 @@
 				<metadata-artifact status="no" details="" size="3175" time="0" location="/Users/Mikael/.ivy2/cache/com.twitter/chill_2.11/ivy-0.8.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/chill_2.11/0.8.0/chill_2.11-0.8.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="0.8.0" rev-constraint-default="0.8.0" rev-constraint-dynamic="0.8.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="chill_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="34973" time="118" location="/Users/Mikael/.ivy2/cache/com.twitter/chill_2.11/srcs/chill_2.11-0.8.0-sources.jar">
+					<artifact name="chill_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="34973" time="0" location="/Users/Mikael/.ivy2/cache/com.twitter/chill_2.11/srcs/chill_2.11-0.8.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/chill_2.11/0.8.0/chill_2.11-0.8.0-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.twitter" name="chill-java">
-			<revision name="0.8.0" status="release" pubdate="20160211202921" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/chill" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="152">
+			<revision name="0.8.0" status="release" pubdate="20160211202921" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/chill" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="151">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2893" time="0" location="/Users/Mikael/.ivy2/cache/com.twitter/chill-java/ivy-0.8.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/chill-java/0.8.0/chill-java-0.8.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="0.8.0" rev-constraint-default="0.8.0" rev-constraint-dynamic="0.8.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="chill-java" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="49606" time="140" location="/Users/Mikael/.ivy2/cache/com.twitter/chill-java/srcs/chill-java-0.8.0-sources.jar">
+					<artifact name="chill-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="49606" time="0" location="/Users/Mikael/.ivy2/cache/com.twitter/chill-java/srcs/chill-java-0.8.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/chill-java/0.8.0/chill-java-0.8.0-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.esotericsoftware" name="kryo-shaded">
-			<revision name="3.0.3" status="release" pubdate="20150726234710" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="160">
+			<revision name="3.0.3" status="release" pubdate="20150726234710" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="159">
 				<license name="New BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
 				<metadata-artifact status="no" details="" size="4130" time="0" location="/Users/Mikael/.ivy2/cache/com.esotericsoftware/kryo-shaded/ivy-3.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/esotericsoftware/kryo-shaded/3.0.3/kryo-shaded-3.0.3.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.0.3" rev-constraint-default="3.0.3" rev-constraint-dynamic="3.0.3" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="kryo-shaded" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="191107" time="164" location="/Users/Mikael/.ivy2/cache/com.esotericsoftware/kryo-shaded/srcs/kryo-shaded-3.0.3-sources.jar">
+					<artifact name="kryo-shaded" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="191107" time="0" location="/Users/Mikael/.ivy2/cache/com.esotericsoftware/kryo-shaded/srcs/kryo-shaded-3.0.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/esotericsoftware/kryo-shaded/3.0.3/kryo-shaded-3.0.3-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.objenesis" name="objenesis">
-			<revision name="2.1" status="release" pubdate="20131010232537" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://objenesis.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="144">
+			<revision name="2.1" status="release" pubdate="20131010232537" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://objenesis.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="143">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3342" time="0" location="/Users/Mikael/.ivy2/cache/org.objenesis/objenesis/ivy-2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="objenesis" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="44014" time="119" location="/Users/Mikael/.ivy2/cache/org.objenesis/objenesis/srcs/objenesis-2.1-sources.jar">
+					<artifact name="objenesis" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="44014" time="0" location="/Users/Mikael/.ivy2/cache/org.objenesis/objenesis/srcs/objenesis-2.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.esotericsoftware" name="minlog">
-			<revision name="1.3.0" status="release" pubdate="20140721015604" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/EsotericSoftware/minlog" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="157">
+			<revision name="1.3.0" status="release" pubdate="20140721015604" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/EsotericSoftware/minlog" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="156">
 				<license name="New BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
 				<metadata-artifact status="no" details="" size="3271" time="0" location="/Users/Mikael/.ivy2/cache/com.esotericsoftware/minlog/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="minlog" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2458" time="103" location="/Users/Mikael/.ivy2/cache/com.esotericsoftware/minlog/srcs/minlog-1.3.0-sources.jar">
+					<artifact name="minlog" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2458" time="0" location="/Users/Mikael/.ivy2/cache/com.esotericsoftware/minlog/srcs/minlog-1.3.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1098,7 +1098,7 @@
 				<metadata-artifact status="no" details="" size="25493" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.directory.server/apacheds-i18n/ivy-2.0.0-M15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/directory/server/apacheds-i18n/2.0.0-M15/apacheds-i18n-2.0.0-M15.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.0.0-M15" rev-constraint-default="2.0.0-M15" rev-constraint-dynamic="2.0.0-M15" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="apacheds-i18n" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="27976" time="144" location="/Users/Mikael/.ivy2/cache/org.apache.directory.server/apacheds-i18n/srcs/apacheds-i18n-2.0.0-M15-sources.jar">
+					<artifact name="apacheds-i18n" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="27976" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.directory.server/apacheds-i18n/srcs/apacheds-i18n-2.0.0-M15-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/directory/server/apacheds-i18n/2.0.0-M15/apacheds-i18n-2.0.0-M15-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1110,31 +1110,31 @@
 				<metadata-artifact status="no" details="" size="35538" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.media/jersey-media-jaxb/ivy-2.22.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-jaxb/2.22.2/jersey-media-jaxb-2.22.2.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.22.2" rev-constraint-default="2.22.2" rev-constraint-dynamic="2.22.2" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jersey-media-jaxb" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="53475" time="133" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.media/jersey-media-jaxb/srcs/jersey-media-jaxb-2.22.2-sources.jar">
+					<artifact name="jersey-media-jaxb" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="53475" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.media/jersey-media-jaxb/srcs/jersey-media-jaxb-2.22.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-jaxb/2.22.2/jersey-media-jaxb-2.22.2-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.glassfish.jersey.core" name="jersey-common">
-			<revision name="2.22.2" status="release" pubdate="20160216132814" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="165">
+			<revision name="2.22.2" status="release" pubdate="20160216132814" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="164">
 				<license name="CDDL+GPL License" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
 				<metadata-artifact status="no" details="" size="36007" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.core/jersey-common/ivy-2.22.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.22.2/jersey-common-2.22.2.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.22.2" rev-constraint-default="2.22.2" rev-constraint-dynamic="2.22.2" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jersey-common" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="599014" time="278" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.core/jersey-common/srcs/jersey-common-2.22.2-sources.jar">
+					<artifact name="jersey-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="599014" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.core/jersey-common/srcs/jersey-common-2.22.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.22.2/jersey-common-2.22.2-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.glassfish.hk2" name="hk2-locator">
-			<revision name="2.4.0-b34" status="release" pubdate="20151119125643" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="148">
+			<revision name="2.4.0-b34" status="release" pubdate="20151119125643" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="147">
 				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.html"/>
 				<metadata-artifact status="no" details="" size="25607" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.hk2/hk2-locator/ivy-2.4.0-b34.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-locator/2.4.0-b34/hk2-locator-2.4.0-b34.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.4.0-b34" rev-constraint-default="2.4.0-b34" rev-constraint-dynamic="2.4.0-b34" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="hk2-locator" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="128049" time="166" location="/Users/Mikael/.ivy2/cache/org.glassfish.hk2/hk2-locator/srcs/hk2-locator-2.4.0-b34-sources.jar">
+					<artifact name="hk2-locator" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="128049" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.hk2/hk2-locator/srcs/hk2-locator-2.4.0-b34-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-locator/2.4.0-b34/hk2-locator-2.4.0-b34-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1148,7 +1148,7 @@
 				<metadata-artifact status="no" details="" size="3199" time="0" location="/Users/Mikael/.ivy2/cache/org.javassist/javassist/ivy-3.18.1-GA.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.18.1-GA" rev-constraint-default="3.18.1-GA" rev-constraint-dynamic="3.18.1-GA" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="javassist" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="513427" time="253" location="/Users/Mikael/.ivy2/cache/org.javassist/javassist/srcs/javassist-3.18.1-GA-sources.jar">
+					<artifact name="javassist" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="513427" time="0" location="/Users/Mikael/.ivy2/cache/org.javassist/javassist/srcs/javassist-3.18.1-GA-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1160,7 +1160,7 @@
 				<metadata-artifact status="no" details="" size="26032" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.hk2.external/javax.inject/ivy-2.4.0-b34.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/javax.inject/2.4.0-b34/javax.inject-2.4.0-b34.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.4.0-b34" rev-constraint-default="2.4.0-b34" rev-constraint-dynamic="2.4.0-b34" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="javax.inject" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="13157" time="108" location="/Users/Mikael/.ivy2/cache/org.glassfish.hk2.external/javax.inject/srcs/javax.inject-2.4.0-b34-sources.jar">
+					<artifact name="javax.inject" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="13157" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.hk2.external/javax.inject/srcs/javax.inject-2.4.0-b34-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/javax.inject/2.4.0-b34/javax.inject-2.4.0-b34-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1172,7 +1172,7 @@
 				<metadata-artifact status="no" details="" size="25305" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.hk2/hk2-api/ivy-2.4.0-b34.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-api/2.4.0-b34/hk2-api-2.4.0-b34.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.4.0-b34" rev-constraint-default="2.4.0-b34" rev-constraint-dynamic="2.4.0-b34" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="hk2-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="257019" time="183" location="/Users/Mikael/.ivy2/cache/org.glassfish.hk2/hk2-api/srcs/hk2-api-2.4.0-b34-sources.jar">
+					<artifact name="hk2-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="257019" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.hk2/hk2-api/srcs/hk2-api-2.4.0-b34-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-api/2.4.0-b34/hk2-api-2.4.0-b34-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1184,7 +1184,7 @@
 				<metadata-artifact status="no" details="" size="25953" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.hk2.external/aopalliance-repackaged/ivy-2.4.0-b34.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.4.0-b34/aopalliance-repackaged-2.4.0-b34.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.4.0-b34" rev-constraint-default="2.4.0-b34" rev-constraint-dynamic="2.4.0-b34" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="aopalliance-repackaged" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="23639" time="117" location="/Users/Mikael/.ivy2/cache/org.glassfish.hk2.external/aopalliance-repackaged/srcs/aopalliance-repackaged-2.4.0-b34-sources.jar">
+					<artifact name="aopalliance-repackaged" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="23639" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.hk2.external/aopalliance-repackaged/srcs/aopalliance-repackaged-2.4.0-b34-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.4.0-b34/aopalliance-repackaged-2.4.0-b34-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1196,19 +1196,19 @@
 				<metadata-artifact status="no" details="" size="24902" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.hk2/hk2-utils/ivy-2.4.0-b34.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.4.0-b34/hk2-utils-2.4.0-b34.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.4.0-b34" rev-constraint-default="2.4.0-b34" rev-constraint-dynamic="2.4.0-b34" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="hk2-utils" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="88644" time="153" location="/Users/Mikael/.ivy2/cache/org.glassfish.hk2/hk2-utils/srcs/hk2-utils-2.4.0-b34-sources.jar">
+					<artifact name="hk2-utils" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="88644" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.hk2/hk2-utils/srcs/hk2-utils-2.4.0-b34-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.4.0-b34/hk2-utils-2.4.0-b34-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.glassfish.hk2" name="osgi-resource-locator">
-			<revision name="1.0.1" status="release" pubdate="20110113160008" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="143">
+			<revision name="1.0.1" status="release" pubdate="20110113160008" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="142">
 				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
 				<metadata-artifact status="no" details="" size="3175" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.hk2/osgi-resource-locator/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="osgi-resource-locator" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="13010" time="125" location="/Users/Mikael/.ivy2/cache/org.glassfish.hk2/osgi-resource-locator/srcs/osgi-resource-locator-1.0.1-sources.jar">
+					<artifact name="osgi-resource-locator" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="13010" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.hk2/osgi-resource-locator/srcs/osgi-resource-locator-1.0.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1220,7 +1220,7 @@
 				<metadata-artifact status="no" details="" size="35222" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.bundles.repackaged/jersey-guava/ivy-2.22.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.22.2/jersey-guava-2.22.2.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.22.2" rev-constraint-default="2.22.2" rev-constraint-dynamic="2.22.2" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jersey-guava" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1308830" time="471" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.bundles.repackaged/jersey-guava/srcs/jersey-guava-2.22.2-sources.jar">
+					<artifact name="jersey-guava" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1308830" time="0" location="/Users/Mikael/.ivy2/cache/org.glassfish.jersey.bundles.repackaged/jersey-guava/srcs/jersey-guava-2.22.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.22.2/jersey-guava-2.22.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1232,7 +1232,7 @@
 				<metadata-artifact status="no" details="" size="4135" time="0" location="/Users/Mikael/.ivy2/cache/javax.annotation/javax.annotation-api/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="javax.annotation-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="42311" time="131" location="/Users/Mikael/.ivy2/cache/javax.annotation/javax.annotation-api/srcs/javax.annotation-api-1.2-sources.jar">
+					<artifact name="javax.annotation-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="42311" time="0" location="/Users/Mikael/.ivy2/cache/javax.annotation/javax.annotation-api/srcs/javax.annotation-api-1.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1245,7 +1245,7 @@
 				<metadata-artifact status="no" details="" size="4023" time="0" location="/Users/Mikael/.ivy2/cache/javax.ws.rs/javax.ws.rs-api/ivy-2.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="javax.ws.rs-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="265372" time="179" location="/Users/Mikael/.ivy2/cache/javax.ws.rs/javax.ws.rs-api/srcs/javax.ws.rs-api-2.0.1-sources.jar">
+					<artifact name="javax.ws.rs-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="265372" time="0" location="/Users/Mikael/.ivy2/cache/javax.ws.rs/javax.ws.rs-api/srcs/javax.ws.rs-api-2.0.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1257,7 +1257,7 @@
 				<metadata-artifact status="no" details="" size="2519" time="0" location="/Users/Mikael/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-3.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.0.0" rev-constraint-default="3.0.0" rev-constraint-dynamic="3.0.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jsr305" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="362" time="105" location="/Users/Mikael/.ivy2/cache/com.google.code.findbugs/jsr305/srcs/jsr305-3.0.0-sources.jar">
+					<artifact name="jsr305" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="362" time="0" location="/Users/Mikael/.ivy2/cache/com.google.code.findbugs/jsr305/srcs/jsr305-3.0.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1269,7 +1269,7 @@
 				<metadata-artifact status="no" details="" size="3392" time="0" location="/Users/Mikael/.ivy2/cache/org.antlr/antlr4-runtime/ivy-4.5.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="4.5.3" rev-constraint-default="4.5.3" rev-constraint-dynamic="4.5.3" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="antlr4-runtime" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="397485" time="371" location="/Users/Mikael/.ivy2/cache/org.antlr/antlr4-runtime/srcs/antlr4-runtime-4.5.3-sources.jar">
+					<artifact name="antlr4-runtime" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="397485" time="0" location="/Users/Mikael/.ivy2/cache/org.antlr/antlr4-runtime/srcs/antlr4-runtime-4.5.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1281,7 +1281,7 @@
 				<metadata-artifact status="no" details="" size="13835" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.curator/curator-framework/ivy-2.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-framework/2.7.1/curator-framework-2.7.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="curator-framework" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="118723" time="148" location="/Users/Mikael/.ivy2/cache/org.apache.curator/curator-framework/srcs/curator-framework-2.7.1-sources.jar">
+					<artifact name="curator-framework" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="118723" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.curator/curator-framework/srcs/curator-framework-2.7.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/curator/curator-framework/2.7.1/curator-framework-2.7.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1293,7 +1293,7 @@
 				<metadata-artifact status="no" details="" size="13882" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.curator/curator-client/ivy-2.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-client/2.7.1/curator-client-2.7.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="curator-client" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="53722" time="127" location="/Users/Mikael/.ivy2/cache/org.apache.curator/curator-client/srcs/curator-client-2.7.1-sources.jar">
+					<artifact name="curator-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="53722" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.curator/curator-client/srcs/curator-client-2.7.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/curator/curator-client/2.7.1/curator-client-2.7.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1304,7 +1304,7 @@
 				<metadata-artifact status="no" details="" size="4352" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.zookeeper/zookeeper/ivy-3.4.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.4.6" rev-constraint-default="3.4.6" rev-constraint-dynamic="3.4.6" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="zookeeper" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="554612" time="269" location="/Users/Mikael/.ivy2/cache/org.apache.zookeeper/zookeeper/srcs/zookeeper-3.4.6-sources.jar">
+					<artifact name="zookeeper" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="554612" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.zookeeper/zookeeper/srcs/zookeeper-3.4.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1328,7 +1328,7 @@
 				<metadata-artifact status="no" details="" size="4025" time="0" location="/Users/Mikael/.ivy2/cache/net.razorvine/pyrolite/ivy-4.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/razorvine/pyrolite/4.13/pyrolite-4.13.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="4.13" rev-constraint-default="4.13" rev-constraint-dynamic="4.13" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="pyrolite" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="60914" time="191" location="/Users/Mikael/.ivy2/cache/net.razorvine/pyrolite/srcs/pyrolite-4.13-sources.jar">
+					<artifact name="pyrolite" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="60914" time="0" location="/Users/Mikael/.ivy2/cache/net.razorvine/pyrolite/srcs/pyrolite-4.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/razorvine/pyrolite/4.13/pyrolite-4.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1340,7 +1340,7 @@
 				<metadata-artifact status="no" details="" size="4770" time="0" location="/Users/Mikael/.ivy2/cache/org.codehaus.janino/commons-compiler/ivy-3.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/janino/commons-compiler/3.0.0/commons-compiler-3.0.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.0.0" rev-constraint-default="3.0.0" rev-constraint-dynamic="3.0.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="commons-compiler" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="55931" time="186" location="/Users/Mikael/.ivy2/cache/org.codehaus.janino/commons-compiler/srcs/commons-compiler-3.0.0-sources.jar">
+					<artifact name="commons-compiler" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="55931" time="0" location="/Users/Mikael/.ivy2/cache/org.codehaus.janino/commons-compiler/srcs/commons-compiler-3.0.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/janino/commons-compiler/3.0.0/commons-compiler-3.0.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1352,7 +1352,7 @@
 				<metadata-artifact status="no" details="" size="5199" time="0" location="/Users/Mikael/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.16.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.7.16" rev-constraint-default="1.7.16" rev-constraint-dynamic="1.7.16" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="55350" time="124" location="/Users/Mikael/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.16-sources.jar">
+					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="55350" time="0" location="/Users/Mikael/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.16-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1361,58 +1361,58 @@
 		<module organisation="org.apache.spark" name="spark-mllib-local_2.11">
 			<revision name="2.1.0" status="release" pubdate="20161216080132" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="4055" time="66" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-mllib-local_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-mllib-local_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.1.0/spark-mllib-local_2.11-2.1.0.pom"/>
+				<metadata-artifact status="successful" details="" size="4055" time="103" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-mllib-local_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-mllib-local_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.1.0/spark-mllib-local_2.11-2.1.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="spark-mllib-local_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="27681" time="113" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-mllib-local_2.11/srcs/spark-mllib-local_2.11-2.1.0-sources.jar">
+					<artifact name="spark-mllib-local_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="27681" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-mllib-local_2.11/srcs/spark-mllib-local_2.11-2.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.1.0/spark-mllib-local_2.11-2.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.commons" name="commons-math3">
-			<revision name="3.4.1" status="release" pubdate="20150108182810" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-math/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="146">
+			<revision name="3.4.1" status="release" pubdate="20150108182810" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-math/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="145">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="11263" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.commons/commons-math3/ivy-3.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.4.1" rev-constraint-default="3.4.1" rev-constraint-dynamic="3.4.1" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="commons-math3" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2322449" time="2034" location="/Users/Mikael/.ivy2/cache/org.apache.commons/commons-math3/srcs/commons-math3-3.4.1-sources.jar">
+					<artifact name="commons-math3" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2322449" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.commons/commons-math3/srcs/commons-math3-3.4.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.scalanlp" name="breeze_2.11">
-			<revision name="0.12" status="release" pubdate="20160116205419" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalanlp.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="155">
+			<revision name="0.12" status="release" pubdate="20160116205419" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalanlp.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="154">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="4720" time="0" location="/Users/Mikael/.ivy2/cache/org.scalanlp/breeze_2.11/ivy-0.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalanlp/breeze_2.11/0.12/breeze_2.11-0.12.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="0.12" rev-constraint-default="0.12" rev-constraint-dynamic="0.12" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="breeze_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="469064" time="255" location="/Users/Mikael/.ivy2/cache/org.scalanlp/breeze_2.11/srcs/breeze_2.11-0.12-sources.jar">
+					<artifact name="breeze_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="469064" time="0" location="/Users/Mikael/.ivy2/cache/org.scalanlp/breeze_2.11/srcs/breeze_2.11-0.12-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalanlp/breeze_2.11/0.12/breeze_2.11-0.12-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.chuusai" name="shapeless_2.11">
-			<revision name="2.0.0" status="release" pubdate="20140417120556" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/shapeless" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="168">
+			<revision name="2.0.0" status="release" pubdate="20140417120556" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/shapeless" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="167">
 				<license name="Apache License" url="http://www.apache.org/licenses/"/>
 				<metadata-artifact status="no" details="" size="2926" time="0" location="/Users/Mikael/.ivy2/cache/com.chuusai/shapeless_2.11/ivy-2.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.0.0/shapeless_2.11-2.0.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.0.0" rev-constraint-default="2.0.0" rev-constraint-dynamic="2.0.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="shapeless_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="134515" time="149" location="/Users/Mikael/.ivy2/cache/com.chuusai/shapeless_2.11/srcs/shapeless_2.11-2.0.0-sources.jar">
+					<artifact name="shapeless_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="134515" time="0" location="/Users/Mikael/.ivy2/cache/com.chuusai/shapeless_2.11/srcs/shapeless_2.11-2.0.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.0.0/shapeless_2.11-2.0.0-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.spire-math" name="spire_2.11">
-			<revision name="0.7.4" status="release" pubdate="20140424172931" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spire-math.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="162">
+			<revision name="0.7.4" status="release" pubdate="20140424172931" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spire-math.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="161">
 				<license name="BSD-style" url="http://opensource.org/licenses/MIT"/>
 				<metadata-artifact status="no" details="" size="3163" time="0" location="/Users/Mikael/.ivy2/cache/org.spire-math/spire_2.11/ivy-0.7.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/spire-math/spire_2.11/0.7.4/spire_2.11-0.7.4.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="0.7.4" rev-constraint-default="0.7.4" rev-constraint-dynamic="0.7.4" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="spire_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="175888" time="176" location="/Users/Mikael/.ivy2/cache/org.spire-math/spire_2.11/srcs/spire_2.11-0.7.4-sources.jar">
+					<artifact name="spire_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="175888" time="0" location="/Users/Mikael/.ivy2/cache/org.spire-math/spire_2.11/srcs/spire_2.11-0.7.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/spire-math/spire_2.11/0.7.4/spire_2.11-0.7.4-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1424,7 +1424,7 @@
 				<metadata-artifact status="no" details="" size="3034" time="0" location="/Users/Mikael/.ivy2/cache/org.spire-math/spire-macros_2.11/ivy-0.7.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/spire-math/spire-macros_2.11/0.7.4/spire-macros_2.11-0.7.4.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="0.7.4" rev-constraint-default="0.7.4" rev-constraint-dynamic="0.7.4" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="spire-macros_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="6151" time="103" location="/Users/Mikael/.ivy2/cache/org.spire-math/spire-macros_2.11/srcs/spire-macros_2.11-0.7.4-sources.jar">
+					<artifact name="spire-macros_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="6151" time="0" location="/Users/Mikael/.ivy2/cache/org.spire-math/spire-macros_2.11/srcs/spire-macros_2.11-0.7.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/spire-math/spire-macros_2.11/0.7.4/spire-macros_2.11-0.7.4-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1438,7 +1438,7 @@
 				<metadata-artifact status="no" details="" size="2991" time="0" location="/Users/Mikael/.ivy2/cache/com.github.rwl/jtransforms/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/rwl/jtransforms/2.4.0/jtransforms-2.4.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jtransforms" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="224626" time="170" location="/Users/Mikael/.ivy2/cache/com.github.rwl/jtransforms/srcs/jtransforms-2.4.0-sources.jar">
+					<artifact name="jtransforms" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="224626" time="0" location="/Users/Mikael/.ivy2/cache/com.github.rwl/jtransforms/srcs/jtransforms-2.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/rwl/jtransforms/2.4.0/jtransforms-2.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1450,7 +1450,7 @@
 				<metadata-artifact status="no" details="" size="3354" time="0" location="/Users/Mikael/.ivy2/cache/net.sf.opencsv/opencsv/ivy-2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/opencsv/opencsv/2.3/opencsv-2.3.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.3" rev-constraint-default="2.3" rev-constraint-dynamic="2.3" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="opencsv" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="17058" time="111" location="/Users/Mikael/.ivy2/cache/net.sf.opencsv/opencsv/srcs/opencsv-2.3-sources.jar">
+					<artifact name="opencsv" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="17058" time="0" location="/Users/Mikael/.ivy2/cache/net.sf.opencsv/opencsv/srcs/opencsv-2.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/opencsv/opencsv/2.3/opencsv-2.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1462,19 +1462,9 @@
 				<metadata-artifact status="no" details="" size="4893" time="0" location="/Users/Mikael/.ivy2/cache/com.github.fommil.netlib/core/ivy-1.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/fommil/netlib/core/1.1.2/core-1.1.2.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.1.2" rev-constraint-default="1.1.2" rev-constraint-dynamic="1.1.2" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="679224" time="315" location="/Users/Mikael/.ivy2/cache/com.github.fommil.netlib/core/srcs/core-1.1.2-sources.jar">
+					<artifact name="core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="679224" time="0" location="/Users/Mikael/.ivy2/cache/com.github.fommil.netlib/core/srcs/core-1.1.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/fommil/netlib/core/1.1.2/core-1.1.2-sources.jar"/>
 					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="net.sourceforge.f2j" name="arpack_combined_all">
-			<revision name="0.1" status="release" pubdate="20130709062740" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://f2j.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="139">
-				<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
-				<metadata-artifact status="no" details="" size="2567" time="0" location="/Users/Mikael/.ivy2/cache/net.sourceforge.f2j/arpack_combined_all/ivy-0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.pom"/>
-				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="0.1" rev-constraint-default="0.1" rev-constraint-dynamic="0.1" callerrev="0.1.0"/>
-				<artifacts>
-					<artifact name="arpack_combined_all" type="src" ext="jar" extra-classifier="sources" status="failed" details="" size="0" time="0"/>
 				</artifacts>
 			</revision>
 		</module>
@@ -1484,7 +1474,7 @@
 				<metadata-artifact status="no" details="" size="3149" time="0" location="/Users/Mikael/.ivy2/cache/org.scalanlp/breeze-macros_2.11/ivy-0.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalanlp/breeze-macros_2.11/0.12/breeze-macros_2.11-0.12.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="0.12" rev-constraint-default="0.12" rev-constraint-dynamic="0.12" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="breeze-macros_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="7973" time="107" location="/Users/Mikael/.ivy2/cache/org.scalanlp/breeze-macros_2.11/srcs/breeze-macros_2.11-0.12-sources.jar">
+					<artifact name="breeze-macros_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7973" time="0" location="/Users/Mikael/.ivy2/cache/org.scalanlp/breeze-macros_2.11/srcs/breeze-macros_2.11-0.12-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalanlp/breeze-macros_2.11/0.12/breeze-macros_2.11-0.12-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1496,7 +1486,7 @@
 				<metadata-artifact status="no" details="" size="7041" time="0" location="/Users/Mikael/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.6.5/jackson-core-2.6.5.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="271958" time="207" location="/Users/Mikael/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/srcs/jackson-core-2.6.5-sources.jar">
+					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="271958" time="0" location="/Users/Mikael/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/srcs/jackson-core-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.6.5/jackson-core-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1508,7 +1498,7 @@
 				<metadata-artifact status="no" details="" size="3446" time="0" location="/Users/Mikael/.ivy2/cache/net.sf.py4j/py4j/ivy-0.10.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/py4j/py4j/0.10.4/py4j-0.10.4.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="0.10.4" rev-constraint-default="0.10.4" rev-constraint-dynamic="0.10.4" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="py4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="117746" time="160" location="/Users/Mikael/.ivy2/cache/net.sf.py4j/py4j/srcs/py4j-0.10.4-sources.jar">
+					<artifact name="py4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="117746" time="0" location="/Users/Mikael/.ivy2/cache/net.sf.py4j/py4j/srcs/py4j-0.10.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/py4j/py4j/0.10.4/py4j-0.10.4-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1559,7 +1549,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-common">
-			<revision name="2.2.0" status="release" pubdate="20131007083659" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="141">
+			<revision name="2.2.0" status="release" pubdate="20131007083659" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="140">
 				<metadata-artifact status="no" details="" size="28613" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1.0"/>
 				<artifacts>
@@ -1570,7 +1560,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-yarn-server-common">
-			<revision name="2.2.0" status="release" pubdate="20131007083526" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="166">
+			<revision name="2.2.0" status="release" pubdate="20131007083526" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="165">
 				<metadata-artifact status="no" details="" size="30944" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-common/ivy-2.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-common/2.2.0/hadoop-yarn-server-common-2.2.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1.0"/>
 				<artifacts>
@@ -1642,7 +1632,7 @@
 				<metadata-artifact status="no" details="" size="3070" time="0" location="/Users/Mikael/.ivy2/cache/org.codehaus.jackson/jackson-xc/ivy-1.8.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-xc/1.8.3/jackson-xc-1.8.3.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jackson-xc" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="18215" time="162" location="/Users/Mikael/.ivy2/cache/org.codehaus.jackson/jackson-xc/srcs/jackson-xc-1.8.3-sources.jar">
+					<artifact name="jackson-xc" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="18215" time="0" location="/Users/Mikael/.ivy2/cache/org.codehaus.jackson/jackson-xc/srcs/jackson-xc-1.8.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-xc/1.8.3/jackson-xc-1.8.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1655,7 +1645,7 @@
 				<metadata-artifact status="no" details="" size="3072" time="0" location="/Users/Mikael/.ivy2/cache/org.codehaus.jackson/jackson-jaxrs/ivy-1.8.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-jaxrs/1.8.3/jackson-jaxrs-1.8.3.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jackson-jaxrs" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="11333" time="107" location="/Users/Mikael/.ivy2/cache/org.codehaus.jackson/jackson-jaxrs/srcs/jackson-jaxrs-1.8.3-sources.jar">
+					<artifact name="jackson-jaxrs" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="11333" time="0" location="/Users/Mikael/.ivy2/cache/org.codehaus.jackson/jackson-jaxrs/srcs/jackson-jaxrs-1.8.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-jaxrs/1.8.3/jackson-jaxrs-1.8.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1675,7 +1665,7 @@
 			</revision>
 		</module>
 		<module organisation="javax.xml.bind" name="jaxb-api">
-			<revision name="2.2.2" status="release" pubdate="20101213044445" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://jaxb.dev.java.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="163">
+			<revision name="2.2.2" status="release" pubdate="20101213044445" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://jaxb.dev.java.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="162">
 				<license name="CDDL 1.1" url="https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html"/>
 				<license name="GPL2 w/ CPE" url="https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html"/>
 				<metadata-artifact status="no" details="" size="2871" time="0" location="/Users/Mikael/.ivy2/cache/javax.xml.bind/jaxb-api/ivy-2.2.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.pom"/>
@@ -1706,7 +1696,7 @@
 				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/Mikael/.ivy2/cache/javax.xml.stream/stax-api/ivy-1.0-2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.0-2" rev-constraint-default="1.0-2" rev-constraint-dynamic="1.0-2" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="stax-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="42699" time="128" location="/Users/Mikael/.ivy2/cache/javax.xml.stream/stax-api/srcs/stax-api-1.0-2-sources.jar">
+					<artifact name="stax-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="42699" time="0" location="/Users/Mikael/.ivy2/cache/javax.xml.stream/stax-api/srcs/stax-api-1.0-2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1747,7 +1737,7 @@
 			</revision>
 		</module>
 		<module organisation="aopalliance" name="aopalliance">
-			<revision name="1.0" status="release" pubdate="20080831134510" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://aopalliance.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="142">
+			<revision name="1.0" status="release" pubdate="20080831134510" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://aopalliance.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="141">
 				<license name="Public Domain"/>
 				<metadata-artifact status="no" details="" size="2291" time="0" location="/Users/Mikael/.ivy2/cache/aopalliance/aopalliance/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/aopalliance/aopalliance/1.0/aopalliance-1.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.1.0"/>
@@ -1759,7 +1749,7 @@
 			</revision>
 		</module>
 		<module organisation="javax.inject" name="javax.inject">
-			<revision name="1" status="release" pubdate="20091014013500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="158">
+			<revision name="1" status="release" pubdate="20091014013500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="157">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2380" time="0" location="/Users/Mikael/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/javax/inject/javax.inject/1/javax.inject-1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="0.1.0"/>
@@ -1786,7 +1776,7 @@
 				<metadata-artifact status="no" details="" size="2320" time="0" location="/Users/Mikael/.ivy2/cache/javax.servlet/servlet-api/ivy-2.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.5" rev-constraint-default="2.5" rev-constraint-dynamic="2.5" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="servlet-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="158114" time="169" location="/Users/Mikael/.ivy2/cache/javax.servlet/servlet-api/srcs/servlet-api-2.5-sources.jar">
+					<artifact name="servlet-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="158114" time="0" location="/Users/Mikael/.ivy2/cache/javax.servlet/servlet-api/srcs/servlet-api-2.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1797,14 +1787,14 @@
 				<metadata-artifact status="no" details="" size="2316" time="0" location="/Users/Mikael/.ivy2/cache/javax.servlet.jsp/jsp-api/ivy-2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jsp-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="208969" time="166" location="/Users/Mikael/.ivy2/cache/javax.servlet.jsp/jsp-api/srcs/jsp-api-2.1-sources.jar">
+					<artifact name="jsp-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="208969" time="0" location="/Users/Mikael/.ivy2/cache/javax.servlet.jsp/jsp-api/srcs/jsp-api-2.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="commons-cli" name="commons-cli">
-			<revision name="1.2" status="release" pubdate="20090319210835" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/cli/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="140">
+			<revision name="1.2" status="release" pubdate="20090319210835" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/cli/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="139">
 				<metadata-artifact status="no" details="" size="4456" time="0" location="/Users/Mikael/.ivy2/cache/commons-cli/commons-cli/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-cli/commons-cli/1.2/commons-cli-1.2.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="0.1.0"/>
 				<artifacts>
@@ -1820,7 +1810,7 @@
 				<metadata-artifact status="no" details="" size="2583" time="0" location="/Users/Mikael/.ivy2/cache/junit/junit/ivy-3.8.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.8.1" rev-constraint-default="3.8.1" rev-constraint-dynamic="3.8.1" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="junit" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="57635" time="121" location="/Users/Mikael/.ivy2/cache/junit/junit/srcs/junit-3.8.1-sources.jar">
+					<artifact name="junit" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="57635" time="0" location="/Users/Mikael/.ivy2/cache/junit/junit/srcs/junit-3.8.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1842,7 +1832,7 @@
 				<metadata-artifact status="no" details="" size="2926" time="0" location="/Users/Mikael/.ivy2/cache/asm/asm/ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/asm/asm/3.1/asm-3.1.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="asm" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="108730" time="148" location="/Users/Mikael/.ivy2/cache/asm/asm/srcs/asm-3.1-sources.jar">
+					<artifact name="asm" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="108730" time="0" location="/Users/Mikael/.ivy2/cache/asm/asm/srcs/asm-3.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/asm/asm/3.1/asm-3.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1855,7 +1845,7 @@
 				<metadata-artifact status="no" details="" size="5216" time="0" location="/Users/Mikael/.ivy2/cache/com.sun.jersey/jersey-core/ivy-1.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jersey-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="431251" time="230" location="/Users/Mikael/.ivy2/cache/com.sun.jersey/jersey-core/srcs/jersey-core-1.9-sources.jar">
+					<artifact name="jersey-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="431251" time="0" location="/Users/Mikael/.ivy2/cache/com.sun.jersey/jersey-core/srcs/jersey-core-1.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/sun/jersey/jersey-core/1.9/jersey-core-1.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1866,7 +1856,7 @@
 				<metadata-artifact status="no" details="" size="6626" time="0" location="/Users/Mikael/.ivy2/cache/org.mortbay.jetty/jetty/ivy-6.1.26.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="6.1.26" rev-constraint-default="6.1.26" rev-constraint-dynamic="6.1.26" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="jetty" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="395643" time="217" location="/Users/Mikael/.ivy2/cache/org.mortbay.jetty/jetty/srcs/jetty-6.1.26-sources.jar">
+					<artifact name="jetty" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="395643" time="0" location="/Users/Mikael/.ivy2/cache/org.mortbay.jetty/jetty/srcs/jetty-6.1.26-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1912,7 +1902,7 @@
 				<metadata-artifact status="no" details="" size="2296" time="0" location="/Users/Mikael/.ivy2/cache/oro/oro/ivy-2.0.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/oro/oro/2.0.8/oro-2.0.8.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.0.8" rev-constraint-default="2.0.8" rev-constraint-dynamic="2.0.8" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="oro" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="239964" time="205" location="/Users/Mikael/.ivy2/cache/oro/oro/srcs/oro-2.0.8-sources.jar">
+					<artifact name="oro" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="239964" time="0" location="/Users/Mikael/.ivy2/cache/oro/oro/srcs/oro-2.0.8-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/oro/oro/2.0.8/oro-2.0.8-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1921,10 +1911,10 @@
 		<module organisation="org.apache.spark" name="spark-sketch_2.11">
 			<revision name="2.1.0" status="release" pubdate="20161216080725" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="0">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="3118" time="67" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-sketch_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-sketch_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.1.0/spark-sketch_2.11-2.1.0.pom"/>
+				<metadata-artifact status="successful" details="" size="3118" time="90" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-sketch_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-sketch_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.1.0/spark-sketch_2.11-2.1.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="spark-sketch_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="22662" time="122" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-sketch_2.11/srcs/spark-sketch_2.11-2.1.0-sources.jar">
+					<artifact name="spark-sketch_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="22662" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-sketch_2.11/srcs/spark-sketch_2.11-2.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.1.0/spark-sketch_2.11-2.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1933,10 +1923,10 @@
 		<module organisation="org.apache.spark" name="spark-tags_2.11">
 			<revision name="2.1.0" status="release" pubdate="20161216080603" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="1817" time="63" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-tags_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-tags_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.1.0/spark-tags_2.11-2.1.0.pom"/>
+				<metadata-artifact status="successful" details="" size="1817" time="98" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-tags_2.11/ivy-2.1.0.xml" searched="true" original-local-location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-tags_2.11/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.1.0/spark-tags_2.11-2.1.0.pom"/>
 				<caller organisation="default" name="cs422-project2$sources_2.11" conf="provided" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="0.1.0"/>
 				<artifacts>
-					<artifact name="spark-tags_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="15751" time="109" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-tags_2.11/srcs/spark-tags_2.11-2.1.0-sources.jar">
+					<artifact name="spark-tags_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15751" time="0" location="/Users/Mikael/.ivy2/cache/org.apache.spark/spark-tags_2.11/srcs/spark-tags_2.11-2.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.1.0/spark-tags_2.11-2.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>

@@ -1,7 +1,7 @@
 FROM diasbase
 
 # Install hdfs
-RUN wget http://mirror.switch.ch/mirror/apache/dist/hadoop/common/hadoop-2.7.5/hadoop-2.7.5.tar.gz
+RUN wget http://archive.apache.org/dist/hadoop/common/hadoop-2.7.5/hadoop-2.7.5.tar.gz
 RUN tar -xvzf hadoop-2.7.5.tar.gz
 RUN rm hadoop-2.7.5.tar.gz
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
