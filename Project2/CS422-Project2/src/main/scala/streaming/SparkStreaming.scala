@@ -27,7 +27,7 @@ class SparkStreaming(sparkConf: SparkConf, args: Array[String]) {
 
   private val globalCMS = new CountMinSketch(delta, eps)
   private val seenCMSKeys = new mutable.HashSet[(String, String)]()
-  private val globalExact = scala.collection.mutable.HashMap[(String, String), Long]()
+  private val globalExact = new mutable.HashMap[(String, String), Long]()
 
   def consume() {
     // Create a DStream that represents streaming data from a directory source.
