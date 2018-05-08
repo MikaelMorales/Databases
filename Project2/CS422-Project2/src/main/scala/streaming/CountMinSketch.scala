@@ -3,6 +3,9 @@ package streaming
 import scala.util.hashing.MurmurHash3
 
 /**
+  * Count-Min Sketch class, with d hash functions. It creates
+  * a (d,w) matrix and each new key gets hashed d times and then it is added to
+  * each row of the matrix with the given weight (default value is 1).
   * @author Morales Mikael <mikael.moralesgonzalez@epfl.ch>
   */
 class CountMinSketch(delta: Double, eps: Double) {
@@ -12,7 +15,7 @@ class CountMinSketch(delta: Double, eps: Double) {
   private val matrix: Array[Array[Long]] = Array.ofDim(d,w)
   private val hashWithIndexes = (1 to d).map(hashFunction).zipWithIndex
 
-  def update(key: (String, String), weight: Int = 1): Unit = {
+  def update(key: (String, String), weight: Long = 1): Unit = {
     hashWithIndexes.foreach { case (hash, index) =>
         matrix(index)(hash(key)) += weight
     }
@@ -25,6 +28,6 @@ class CountMinSketch(delta: Double, eps: Double) {
   }
 
   def hashFunction(seed: Int): ((String, String)) => Int = {
-    case (x,y) => MurmurHash3.stringHash(x+y, seed) % w
+    case (x,y) => Math.floorMod(MurmurHash3.stringHash(x+y, seed), w)
   }
 }

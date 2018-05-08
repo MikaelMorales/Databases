@@ -3,6 +3,8 @@ package streaming
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 
+import scala.collection.mutable
+
 class SparkStreaming(sparkConf: SparkConf, args: Array[String]) {
   // Get the directory in which the stream is filled.
   val inputDirectory: String = args(0)
@@ -24,13 +26,14 @@ class SparkStreaming(sparkConf: SparkConf, args: Array[String]) {
   val ssc = new StreamingContext(sparkConf, Seconds(seconds))
 
   private val globalCMS = new CountMinSketch(delta, eps)
+  private val seenCMSKeys = new mutable.HashSet[(String, String)]()
   private val globalExact = scala.collection.mutable.HashMap[(String, String), Long]()
 
   def consume() {
-    // create a DStream that represents streaming data from a directory source.
+    // Create a DStream that represents streaming data from a directory source.
     val linesDStream = ssc.textFileStream(inputDirectory)
 
-    // parse the stream. (line -> (IP1, IP2))
+    // Parse the stream. (line -> (IP1, IP2))
     val words = linesDStream.map(x => (x.split("\t")(0), x.split("\t")(1)))
 
     if (execType.contains("precise")) {
@@ -49,14 +52,15 @@ class SparkStreaming(sparkConf: SparkConf, args: Array[String]) {
       }
     } else if (execType.contains("approx")) {
       words.foreachRDD { rdd =>
-        val batch = rdd.map(x => (x, 1L)).reduceByKey(_+_)
+        val batch = rdd.map(x => (x, 1L)).reduceByKey(_+_).collect()
         val localCMS = new CountMinSketch(delta, eps)
-        batch.foreach { case (k, _) =>
-          localCMS.update(k)
-          globalCMS.update(k)
+        batch.foreach { case (k, w) =>
+          localCMS.update(k, w)
+          globalCMS.update(k, w)
+          seenCMSKeys.add(k)
         }
-        val localTopK = batch.map{ case (k,_) => (localCMS.get(k), k) }.sortByKey(ascending = false).take(TOPK)
-        val globalTopK = batch.map{ case (k,_) => (globalCMS.get(k), k) }.sortByKey(ascending = false).take(TOPK)
+        val localTopK = batch.map{ case (k,_) => (localCMS.get(k), k) }.sortBy(t => -t._1).take(TOPK)
+        val globalTopK = seenCMSKeys.toSeq.map{ k => (globalCMS.get(k), k) }.sortBy(t => -t._1).take(TOPK)
         if (localTopK.nonEmpty && globalTopK.nonEmpty) {
           println("This batch: " + localTopK.mkString("[", ",", "]"))
           println("Global: " + globalTopK.mkString("[", ",", "]"))
