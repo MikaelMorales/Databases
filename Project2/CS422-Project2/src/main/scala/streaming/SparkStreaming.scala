@@ -34,28 +34,29 @@ class SparkStreaming(sparkConf: SparkConf, args: Array[String]) {
     val words = linesDStream.map(x => (x.split("\t")(0), x.split("\t")(1)))
 
     if (execType.contains("precise")) {
-      words.map(x => (x, 1L)).reduceByKey(_+_).foreachRDD { rdd =>
-        val partialMap = rdd.collect().toMap
-        val localTopK = rdd.map { case (ips, count) => (count, ips) }.sortByKey(ascending = false).take(TOPK)
+      words.foreachRDD { rdd =>
+        val batch = rdd.map(x => (x, 1L)).reduceByKey(_+_)
+        val partialMap = batch.collect().toMap
+        val localTopK = batch.map{ case (ips, count) => (count, ips) }.sortByKey(ascending = false).take(TOPK)
         partialMap.foreach { case (key, value) =>
             globalExact.put(key, globalExact.getOrElse(key, 0L) + value)
         }
-        val globalTopK = globalExact.toSeq.map { case (ips, count) => (count, ips) }.sortBy(t => -t._1).take(TOPK)
+        val globalTopK = globalExact.toSeq.map{ case (ips, count) => (count, ips) }.sortBy(t => -t._1).take(TOPK)
         if (localTopK.nonEmpty && globalTopK.nonEmpty) {
           println("This batch: " + localTopK.mkString("[", ",", "]"))
           println("Global: " + globalTopK.mkString("[", ",", "]"))
         }
       }
     } else if (execType.contains("approx")) {
-
-      words.map(x => (x, 1L)).reduceByKey(_+_).foreachRDD { rdd =>
+      words.foreachRDD { rdd =>
+        val batch = rdd.map(x => (x, 1L)).reduceByKey(_+_)
         val localCMS = new CountMinSketch(delta, eps)
-        rdd.foreach { case (k,_) =>
+        batch.foreach { case (k, _) =>
           localCMS.update(k)
           globalCMS.update(k)
         }
-        val localTopK = rdd.map{case (k,_) => (localCMS.get(k), k)}.sortByKey(ascending = false).take(TOPK)
-        val globalTopK = rdd.map{case (k,_) => (globalCMS.get(k), k)}.sortByKey(ascending = false).take(TOPK)
+        val localTopK = batch.map{ case (k,_) => (localCMS.get(k), k) }.sortByKey(ascending = false).take(TOPK)
+        val globalTopK = batch.map{ case (k,_) => (globalCMS.get(k), k) }.sortByKey(ascending = false).take(TOPK)
         if (localTopK.nonEmpty && globalTopK.nonEmpty) {
           println("This batch: " + localTopK.mkString("[", ",", "]"))
           println("Global: " + globalTopK.mkString("[", ",", "]"))

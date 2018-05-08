@@ -14,3 +14,6 @@ reload
 package
 reload
 package
+reload
+compile
+package
