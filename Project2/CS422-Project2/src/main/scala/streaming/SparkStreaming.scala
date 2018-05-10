@@ -9,24 +9,30 @@ class SparkStreaming(sparkConf: SparkConf, args: Array[String]) {
   // Get the directory in which the stream is filled.
   val inputDirectory: String = args(0)
 
-  // number of seconds per window
+  // Number of seconds per window
   val seconds: Int = args(1).toInt
 
   // K: number of heavy hitters stored
   val TOPK: Int = args(2).toInt
 
-  // precise Or approx
+  // Precise Or approx
   val execType = args(3)
 
   // Default values for Count-Min Sketch
+  if (execType == "approx" && args.length < 8) {
+    throw new IllegalArgumentException("Not enough parameters passed with 'approx' approach")
+  }
+
   val delta: Double = if (args.length < 5) 1E-3 else args(4).toDouble
   val eps: Double = if (args.length < 6) 0.01 else args(5).toDouble
+  private val ipAddress1: String = if (args.length < 7) "111.37.249.138" else args(6)
+  private val ipAddress2: String = if (args.length < 8) "3.249.158.125" else args(7)
+  val ipAddress: (String, String) = (ipAddress1, ipAddress2)
 
-  //  create a StreamingContext, the main entry point for all streaming functionality.
+  // Create a StreamingContext, the main entry point for all streaming functionality.
   val ssc = new StreamingContext(sparkConf, Seconds(seconds))
 
   private val globalCMS = new CountMinSketch(delta, eps)
-  private val seenCMSKeys = new mutable.HashSet[(String, String)]()
   private val globalExact = new mutable.HashMap[(String, String), Long]()
 
   def consume() {
@@ -57,14 +63,11 @@ class SparkStreaming(sparkConf: SparkConf, args: Array[String]) {
         batch.foreach { case (k, w) =>
           localCMS.update(k, w)
           globalCMS.update(k, w)
-          seenCMSKeys.add(k)
         }
-        val localTopK = batch.map{ case (k,_) => (localCMS.get(k), k) }.sortBy(t => -t._1).take(TOPK)
-        val globalTopK = seenCMSKeys.toSeq.map{ k => (globalCMS.get(k), k) }.sortBy(t => -t._1).take(TOPK)
-        if (localTopK.nonEmpty && globalTopK.nonEmpty) {
-          println("This batch: " + localTopK.mkString("[", ",", "]"))
-          println("Global: " + globalTopK.mkString("[", ",", "]"))
-        }
+        val local = (localCMS.get(ipAddress), ipAddress)
+        val global = (globalCMS.get(ipAddress), ipAddress)
+        println("This batch: " + local.toString())
+        println("Global: " + global.toString())
       }
     }
 
