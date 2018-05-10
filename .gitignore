@@ -34,6 +34,7 @@ Temporary Items
 
 ## Big files ##
 *.csv
+*.tbl
 
 ## Eclipse ##
 .metadata
