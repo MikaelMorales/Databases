@@ -197,7 +197,7 @@ class ThetaJoin(numR: Long, numS: Long, reducers: Int, bucketsize: Int) extends 
   }
 
   /*
-   * this method takes as input two lists of values that belong to the same partition
+   * This method takes as input two lists of values that belong to the same partition
    * and performs the theta join on them. Both datasets are lists of tuples (Int, Int)
    * where ._1 is the partition number and ._2 is the value. 
    * Of course you might change this function (both definition and body) if it does not 

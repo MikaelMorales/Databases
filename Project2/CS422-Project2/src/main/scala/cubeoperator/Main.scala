@@ -9,8 +9,8 @@ object Main {
     val ctx = new SparkContext(sparkConf)
     val sqlContext = new org.apache.spark.sql.SQLContext(ctx)
 
-    val inputFile1= "/Users/Mikael/Documents/Databases/Project2/CS422-Project2/input/lineorder_small.tbl"
-    val inputFile2= "/Users/Mikael/Documents/Databases/Project2/CS422-Project2/input/lineorder_medium.tbl"
+    val inputFile1= "input/lineorder_small.tbl"
+    val inputFile2= "input/lineorder_medium.tbl"
     val files = List(inputFile1, inputFile2)
 
     val groupingList1 = List("lo_suppkey")

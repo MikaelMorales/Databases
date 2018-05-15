@@ -118,6 +118,8 @@ class CubeOperator(reducers: Int) {
   /**************************************************************************
     * Alternative implementation of reduce and combine that shows every step
     * of the algorithm as shown in the project statement
+    *
+    * Note: This is not the implementations used in my answer
     *************************************************************************/
   def combine(rdd: RDD[(List[Any], Double)], agg: String): RDD[(List[Any], List[Double])] = {
     val initialValue = (x: Double) => x :: Nil
